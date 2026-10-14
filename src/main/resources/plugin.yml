@@ -1,0 +1,27 @@
+name: GuardianAC
+version: '${project.version}'
+main: dev.guardianac.GuardianPlugin
+api-version: '1.20'
+description: GuardianAC Ultimate - configurable event-based anti-cheat and persistent bans
+authors: [GuardianAC Contributors]
+commands:
+  guardian:
+    aliases: [gac]
+    description: GuardianAC Ultimate administration
+    usage: /gac status
+permissions:
+  guardianac.view:
+    default: op
+  guardianac.admin:
+    default: op
+  guardianac.ban:
+    default: op
+  guardianac.ipban:
+    default: op
+  guardianac.unban:
+    default: op
+  guardianac.alerts:
+    default: op
+  guardianac.bypass:
+    description: Explicit exemption; operators are checked unless granted this permission.
+    default: false

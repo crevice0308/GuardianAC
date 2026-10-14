@@ -1,0 +1,7 @@
+Apache Maven Wrapper scripts, version 3.3.2
+Copyright The Apache Software Foundation.
+Source: https://github.com/apache/maven-wrapper/tree/maven-wrapper-3.3.2/maven-wrapper-distribution/src/resources
+Licensed under Apache License 2.0; see LICENSE.txt.
+Maven distribution 3.9.9 is downloaded separately and verified with the SHA-256
+in maven-wrapper.properties (archive additionally checked against Maven Central's
+published SHA-512 when preparing this repository).

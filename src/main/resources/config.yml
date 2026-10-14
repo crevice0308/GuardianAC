@@ -1,0 +1,75 @@
+# GuardianAC Ultimate. Durations: 30m, 24h, 7d, permanent. No standalone kick punishment.
+# Server-event heuristics; calibrate on your server before relying on automated penalties.
+punishment:
+  auto-ban: true
+  # UUID or UUID_AND_IP. IP bans affect shared networks; secure proxy forwarding first.
+  mode: UUID_AND_IP
+  duration: 24h
+  reason: 'Unfair play: {check}'
+  broadcast: true
+  # Max outstanding storage jobs. Full queue => no penalty and an operator error.
+  queue-capacity: 256
+violations:
+  decay-per-second: 0.75
+  minimum-findings: 6
+  minimum-evidence-ticks: 40
+  alert-cooldown-ticks: 40
+checks:
+  speed:
+    enabled: true
+    threshold: 18.0
+    weight: 2.0
+  fly:
+    enabled: true
+    threshold: 18.0
+    weight: 2.5
+  reach:
+    enabled: true
+    threshold: 16.0
+    weight: 2.0
+  killaura:
+    enabled: true
+    threshold: 18.0
+    weight: 2.5
+detection:
+  speed-tolerance: 1.15
+  speed-buffer: 4
+  air-grace-ticks: 18
+  fly-buffer: 8
+  hover-vertical-tolerance: 0.025
+  ascent-min-vertical: 0.15
+  reach-margin: 0.10
+  reach-buffer: 3
+  max-attack-gap-ticks: 40
+  killaura-angle-degrees: 125.0
+  killaura-buffer: 6
+  max-attacks-per-tick: 3
+  max-distinct-targets-per-window: 4
+  target-window-ticks: 4
+safety:
+  max-ping-ms: 250
+  max-tick-ms: 80.0
+  lag-grace-ticks: 40
+  join-grace-ticks: 60
+  teleport-grace-ticks: 40
+  velocity-grace-ticks: 30
+  damage-grace-ticks: 20
+  # Incremental speed allowance for server batching and standard sprint-jumps.
+  horizontal-base-limit: 0.40
+  reach-base-limit: 3.05
+  max-reach-latency-allowance: 0.35
+  # Bounded history used to forgive target displacement during ping, never to accuse.
+  target-history-ticks: 6
+  # Automatic IP bans fall back to UUID if another connected UUID shares the address.
+  protect-shared-ip: true
+messages:
+  prefix: '&8[&bGuardian&fAC&8] &7'
+  alert: '&f{player} &8· &b{check} &8· &7VL &f{vl}'
+  ban-screen: "&bGuardianAC Ultimate\n\n&fAccess suspended\n&7Player: &f{player}\n&7Reason: &f{reason}\n&7Expires: &f{expires}\n&8Ban ID: {id}"
+  # Legacy & color codes, with placeholders {player}, {reason}, {expires}, {id}, {check}.
+  ban-broadcast:
+    - '&8&m                                                '
+    - '  &b&lGUARDIAN &fAC &8/ &7Integrity enforced'
+    - '  &f{player} &7has been banned.'
+    - '  &8{reason} &8· &7{expires}'
+    - '&8&m                                                '
