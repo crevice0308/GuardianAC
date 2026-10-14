@@ -1,0 +1,8 @@
+GuardianAC Ultimate includes Gson 2.11.0, relocated to dev.guardianac.internal.gson.
+Gson is copyright Google Inc. and its contributors, licensed under Apache License 2.0.
+Source: https://github.com/google/gson/tree/gson-parent-2.11.0
+The license is included at META-INF/licenses/gson-LICENSE.txt.
+
+The Spigot API is provided by the server and is not bundled in this artifact.
+No code or libraries from the user-supplied reference JAR or source05 archive
+are included in this implementation.
