@@ -22,17 +22,17 @@ import urllib.request
 
 REPOSITORY = 'crevice0308/GuardianAC'
 TAG = 'v1.0.0-dev.1'
-SOURCE_COUNT = 292
+SOURCE_COUNT = 296
 BUILD_COUNT = 155
 PART_BYTES = 4 * 1024 * 1024
 JAR_NAME = 'GuardianAC-Ultimate-1.0.0-dev.1-fb56fa5d8fcc.jar'
 JAR_SIZE = 18399808
 JAR_SHA = 'fb56fa5d8fcca60271863f7ced20df1ff9dfc79bbbc9e0757fc68b309687a5d1'
 ZIP_NAME = 'GuardianAC-Ultimate-1.0.0-dev.1-fb56fa5d8fcc-public-source.zip'
-ZIP_SIZE = 57898239
-ZIP_SHA = '7ca8ec302b4f7488fb4a35776a8b9031e4a219cd2a89fee5f0110068a52ba999'
-MANIFEST_SHA = '80a88e2ad1a5a7fec1b0826f6acac36231eae122c463755f8141d12faa167659'
-EXPECTED_TREE_SHA = 'e21cdf43789f1c72c831647d133ce981be96ad92'
+ZIP_SIZE = 57916897
+ZIP_SHA = '187110b8079fec12334a93b963bbec13f28cb6688a4f403b3a697a0f031cfeb0'
+MANIFEST_SHA = '33fd9e357f702122d99b31558bd4341948bcb75e68847b680b73e3fa642ff933'
+EXPECTED_TREE_SHA = '83466fc77059117c5adc4b2503da7cb228bb17b4'
 CI_PATH = '.github/workflows/ci.yml'
 CI_INPUT = 'release-input/original-ci.yml'
 LARGE_SOURCE_PATHS = frozenset({
@@ -261,7 +261,7 @@ def hydrate(manifest, staging, clean, dist):
     write_new(dist / JAR_NAME, jar)
     verify_source_files(clean, manifest, exact=True)
     verify_build_inputs(clean, manifest, jar)
-    print('Hydrated exactly 292 source files and verified all 155 build inputs; fixed JAR unchanged.')
+    print('Hydrated exactly 296 source files and verified all 155 build inputs; fixed JAR unchanged.')
 
 
 def run(command, *, cwd=None, capture=False, data=None):

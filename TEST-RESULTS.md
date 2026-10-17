@@ -51,9 +51,17 @@ Static official baseline software hashes and bytecode-gate facts are retained in
 ## Reproduce engineering checks
 
 ```sh
-./gradlew --no-daemon clean test shadowJar sourcesJar
+BUILD_DIR="$(dirname "$(pwd -P)")/GuardianAC-Ultimate-build"
+python3 tools/prepare_verified_build.py --destination "$BUILD_DIR"
+cd "$BUILD_DIR"
+./gradlew --dependency-verification=strict --no-daemon clean test shadowJar sourcesJar
 python3 tools/verify_jar.py build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar
 python3 third-party/sources/verify_sources.py --plugin-jar build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar
 ```
+
+The isolated-copy preparation tests are new build-support tests, not additions to
+the historical anti-cheat runtime totals above. The original source tree remains
+the source-handoff verification target; its build copy has an explicitly augmented
+metadata verification file. See [BUILDING.md](BUILDING.md).
 
 The ordinary CI lists the offline regression commands. Live harness source is supplied for controlled evaluation, but these commands do not start Minecraft. Any live rerun requires explicit EULA acceptance, a separate disposable loopback-only fixture, the retained privacy/termination gates and no real user credentials or production player data. Detailed old recordings are intentionally absent from this public package.

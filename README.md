@@ -30,15 +30,20 @@ Java 25 / Minecraft 26.3 を対象とする、単独JARのサーバー側アン�
 
 ## ソースからのビルド
 
-JDK 25と、初回に公式Gradle・Maven・Spigot・CodeMC配布元へ接続できる環境が必要です。
+POSIX Linux環境（WSL2など）、Python 3.11以降、JDK 25と、初回に公式Gradle・Maven・Spigot・CodeMC配布元へ接続できる環境が必要です。
 
 ```sh
-./gradlew --no-daemon clean test shadowJar sourcesJar
+BUILD_DIR="$(dirname "$(pwd -P)")/GuardianAC-Ultimate-build"
+python3 tools/prepare_verified_build.py --destination "$BUILD_DIR"
+cd "$BUILD_DIR"
+./gradlew --dependency-verification=strict --no-daemon clean test shadowJar sourcesJar
 python3 tools/verify_jar.py build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar
 python3 third-party/sources/verify_sources.py --plugin-jar build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar
 ```
 
-単体プラグインは `build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar` です。`-plain.jar` は配布対象ではありません。テストサーバーを起動する場合のMinecraft EULA同意は、その管理者が別途行ってください。
+補完済みの別ビルドコピー内で実行します。元の155入力は変更しません。空キャッシュでは元の `./gradlew` 単独実行はメタデータ不足で停止するため、上の準備手順が必要です。[ビルド詳細](BUILDING.md)も参照してください。
+
+単体プラグインは、そのコピー内の `build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar` です。`-plain.jar` は配布対象ではありません。テストサーバーを起動する場合のMinecraft EULA同意は、その管理者が別途行ってください。
 
 ## 検証の読み方
 

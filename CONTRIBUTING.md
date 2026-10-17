@@ -4,7 +4,9 @@ GPL-3.0-only original source. Contributions must include the right to distribute
 them under that license. Do not copy proprietary anti-cheat checks, client code,
 player data, IP addresses, credentials or server secrets into issues/tests.
 
-Use Java 25 and the pinned Gradle Wrapper. Run `./gradlew clean test shadowJar`.
+Use Java 25 and the pinned Gradle Wrapper through the isolated preparation
+procedure in [BUILDING.md](BUILDING.md). Keep the historical 155 inputs intact;
+review any metadata supplement from its exact official artifact before pinning.
 Every check requires a real observed signal, independent ID/family, positive and
 legitimate boundary fixtures, missing-data/exemption tests, and documented limits.
 Renaming the same predicate is not an additional detection module.

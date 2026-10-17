@@ -10,13 +10,18 @@ Defaults are STRICT and evidence-gated 24-hour UUID bans. Operators are checked 
 
 ## Build
 
-Use JDK 25 and the included Gradle wrapper. First resolution requires the configured official dependency repositories.
+Use POSIX Linux (for example WSL2), Python 3.11+, JDK 25 and the included Gradle wrapper. First resolution requires the configured official dependency repositories.
 
 ```sh
-./gradlew --no-daemon clean test shadowJar sourcesJar
+BUILD_DIR="$(dirname "$(pwd -P)")/GuardianAC-Ultimate-build"
+python3 tools/prepare_verified_build.py --destination "$BUILD_DIR"
+cd "$BUILD_DIR"
+./gradlew --dependency-verification=strict --no-daemon clean test shadowJar sourcesJar
 ```
 
-The standalone output is build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar, not the plain JAR. Running Minecraft itself requires the operator's EULA acceptance; normal build/unit tests do not start Minecraft.
+Use a fresh destination outside the source tree. The original 155 inputs stay unchanged; direct ./gradlew in the original tree fails on a clean cache because ancestor metadata checksums are incomplete. The isolated copy adds only reviewed metadata checksums. See [build details](../BUILDING.md).
+
+The standalone output inside the build copy is build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar, not the plain JAR. Running Minecraft itself requires the operator's EULA acceptance; normal build/unit tests do not start Minecraft.
 
 [Aggregate verification](../TEST-RESULTS.md) distinguishes retained historical results from unverified behavior. This public package excludes detailed execution logs and individual player/case records; ordinary test sources and the nonidentifying 155-input correspondence manifest remain. Counts are not measured production accuracy.
 
