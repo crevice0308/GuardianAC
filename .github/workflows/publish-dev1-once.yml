@@ -26,7 +26,6 @@ jobs:
       release_url: ${{ steps.publish.outputs.release_url }}
     env:
       PYTHONDONTWRITEBYTECODE: '1'
-      GRADLE_USER_HOME: ${{ runner.temp }}/guardianac-gradle-home
     steps:
       - name: Check out exact staging push without stored credentials
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # verified official v4
@@ -43,7 +42,7 @@ jobs:
           test "$GITHUB_RUN_ATTEMPT" = 1
           test "$(git -C staging rev-parse HEAD)" = "$GITHUB_SHA"
           test -z "${GH_TOKEN:-}${GITHUB_TOKEN:-}"
-          printf '%s  %s\n' 6da90219c6efd2880d3efb3b96ca5d8b9bd9f7d19a2c81a65c6a519aae585550 staging/release-input/hydrate_and_publish.py | sha256sum -c -
+          printf '%s  %s\n' bce8851953409d0d23aa192cb700d4df586ea483b0c0e37377b17a257de4c407 staging/release-input/hydrate_and_publish.py | sha256sum -c -
           python3 -B staging/release-input/hydrate_and_publish.py hydrate \
             --manifest staging/release-input/manifest.json --staging staging \
             --clean "$RUNNER_TEMP/guardianac-clean" --dist "$RUNNER_TEMP/guardianac-dist" \
@@ -62,14 +61,15 @@ jobs:
         run: |
           set -euo pipefail
           test -z "${GH_TOKEN:-}${GITHUB_TOKEN:-}"
-          test "$GRADLE_USER_HOME" = "$RUNNER_TEMP/guardianac-gradle-home"
-          test ! -e "$GRADLE_USER_HOME"
+          test ! -e "$RUNNER_TEMP/guardianac-gradle-home"
           python3 -B "$RUNNER_TEMP/guardianac-clean/tools/test_prepare_verified_build.py"
           python3 -B "$RUNNER_TEMP/guardianac-clean/tools/prepare_verified_build.py" --destination "$RUNNER_TEMP/guardianac-build"
 
       - name: Build, test and assemble isolated copy
         shell: bash
         working-directory: ${{ runner.temp }}/guardianac-build
+        env:
+          GRADLE_USER_HOME: ${{ runner.temp }}/guardianac-gradle-home
         run: |
           set -euo pipefail
           test -z "${GH_TOKEN:-}${GITHUB_TOKEN:-}"
@@ -117,6 +117,8 @@ jobs:
       - name: Check repeat-build determinism without replacing fixed release JAR
         shell: bash
         working-directory: ${{ runner.temp }}/guardianac-build
+        env:
+          GRADLE_USER_HOME: ${{ runner.temp }}/guardianac-gradle-home
         run: |
           set -euo pipefail
           cp build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar "$RUNNER_TEMP/guardianac-first-build.jar"
@@ -127,7 +129,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          printf '%s  %s\n' 6da90219c6efd2880d3efb3b96ca5d8b9bd9f7d19a2c81a65c6a519aae585550 staging/release-input/hydrate_and_publish.py | sha256sum -c -
+          printf '%s  %s\n' bce8851953409d0d23aa192cb700d4df586ea483b0c0e37377b17a257de4c407 staging/release-input/hydrate_and_publish.py | sha256sum -c -
           python3 -B staging/release-input/hydrate_and_publish.py prepare \
             --manifest staging/release-input/manifest.json --staging staging \
             --clean "$RUNNER_TEMP/guardianac-clean" --dist "$RUNNER_TEMP/guardianac-dist" \
@@ -143,7 +145,7 @@ jobs:
           GH_PROMPT_DISABLED: '1'
         run: |
           set -euo pipefail
-          printf '%s  %s\n' 6da90219c6efd2880d3efb3b96ca5d8b9bd9f7d19a2c81a65c6a519aae585550 staging/release-input/hydrate_and_publish.py | sha256sum -c -
+          printf '%s  %s\n' bce8851953409d0d23aa192cb700d4df586ea483b0c0e37377b17a257de4c407 staging/release-input/hydrate_and_publish.py | sha256sum -c -
           python3 -B staging/release-input/hydrate_and_publish.py publish \
             --manifest staging/release-input/manifest.json --staging staging \
             --clean "$RUNNER_TEMP/guardianac-clean" --dist "$RUNNER_TEMP/guardianac-dist" \
