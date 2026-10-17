@@ -55,6 +55,17 @@
       ]
     },
     {
+      "group": "net.kyori",
+      "name": "adventure-bom",
+      "version": "4.26.1",
+      "artifact": "adventure-bom-4.26.1.pom",
+      "sha256": "296b21955ff65b8b50898b4a7d59cb183703007aa31bf7617d529132e5275223",
+      "source_urls": [
+        "https://repo.maven.apache.org/maven2/net/kyori/adventure-bom/4.26.1/adventure-bom-4.26.1.pom",
+        "https://repo1.maven.org/maven2/net/kyori/adventure-bom/4.26.1/adventure-bom-4.26.1.pom"
+      ]
+    },
+    {
       "group": "org.apache.groovy",
       "name": "groovy-bom",
       "version": "4.0.27",
@@ -115,6 +126,17 @@
       "sha256": "a9a4f27be94e99b9d570162d246a80f686d277d5d31aeb5481047cf51daf46e4",
       "source_urls": [
         "https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.11.4/junit-bom-5.11.4.module"
+      ]
+    },
+    {
+      "group": "org.junit",
+      "name": "junit-bom",
+      "version": "5.12.2",
+      "artifact": "junit-bom-5.12.2.module",
+      "sha256": "de70ac5d91a52656d8890a6d23b9e04d99b99b1a0402530decad71bf31b2735e",
+      "source_urls": [
+        "https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.12.2/junit-bom-5.12.2.module",
+        "https://repo1.maven.org/maven2/org/junit/junit-bom/5.12.2/junit-bom-5.12.2.module"
       ]
     },
     {

@@ -16,7 +16,9 @@ Documentation is adjusted to this narrower public package. Its ZIP hash and file
 
 The first public fresh-cache CI stopped before compilation because 16 ancestor
 POM/BOM/module artifacts were absent from the historical verification metadata.
-No existing checksum mismatch was observed. A reviewed metadata supplement, an
+A later runtime-classpath resolution stage exposed two additional absent BOM
+metadata entries (18 supplementary entries total). No existing checksum mismatch
+was observed. A reviewed metadata supplement, an
 isolated-copy preparation tool and regression tests are added to the public
 source. Normal CI and build instructions use that path. The original verification
 XML and all 155 recorded inputs remain unchanged in this distribution; only the
