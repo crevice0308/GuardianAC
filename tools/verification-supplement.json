@@ -33,6 +33,17 @@
       ]
     },
     {
+      "group": "com.google.guava",
+      "name": "guava-parent",
+      "version": "33.6.0-jre",
+      "artifact": "guava-parent-33.6.0-jre.pom",
+      "sha256": "374bd31f61b1cf612bee9ab2e4d70bbdf77dd85a49b431f809d4fbdc901f2dd4",
+      "source_urls": [
+        "https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/33.6.0-jre/guava-parent-33.6.0-jre.pom",
+        "https://repo1.maven.org/maven2/com/google/guava/guava-parent/33.6.0-jre/guava-parent-33.6.0-jre.pom"
+      ]
+    },
+    {
       "group": "jakarta.platform",
       "name": "jakarta.jakartaee-bom",
       "version": "9.1.0",

@@ -42,7 +42,7 @@ jobs:
           test "$GITHUB_RUN_ATTEMPT" = 1
           test "$(git -C staging rev-parse HEAD)" = "$GITHUB_SHA"
           test -z "${GH_TOKEN:-}${GITHUB_TOKEN:-}"
-          printf '%s  %s\n' cfe0c1f9c7cc2490fb1a4f3b927950591f0bd3606f46bfa854930f7d46a51d1d staging/release-input/hydrate_and_publish.py | sha256sum -c -
+          printf '%s  %s\n' afda7d90be3d8c1bcbf76dbddb0b53f2cb408f95fbd9683215e7c932e0dc1329 staging/release-input/hydrate_and_publish.py | sha256sum -c -
           python3 -B staging/release-input/hydrate_and_publish.py hydrate \
             --manifest staging/release-input/manifest.json --staging staging \
             --clean "$RUNNER_TEMP/guardianac-clean" --dist "$RUNNER_TEMP/guardianac-dist" \
@@ -129,7 +129,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          printf '%s  %s\n' cfe0c1f9c7cc2490fb1a4f3b927950591f0bd3606f46bfa854930f7d46a51d1d staging/release-input/hydrate_and_publish.py | sha256sum -c -
+          printf '%s  %s\n' afda7d90be3d8c1bcbf76dbddb0b53f2cb408f95fbd9683215e7c932e0dc1329 staging/release-input/hydrate_and_publish.py | sha256sum -c -
           python3 -B staging/release-input/hydrate_and_publish.py prepare \
             --manifest staging/release-input/manifest.json --staging staging \
             --clean "$RUNNER_TEMP/guardianac-clean" --dist "$RUNNER_TEMP/guardianac-dist" \
@@ -145,7 +145,7 @@ jobs:
           GH_PROMPT_DISABLED: '1'
         run: |
           set -euo pipefail
-          printf '%s  %s\n' cfe0c1f9c7cc2490fb1a4f3b927950591f0bd3606f46bfa854930f7d46a51d1d staging/release-input/hydrate_and_publish.py | sha256sum -c -
+          printf '%s  %s\n' afda7d90be3d8c1bcbf76dbddb0b53f2cb408f95fbd9683215e7c932e0dc1329 staging/release-input/hydrate_and_publish.py | sha256sum -c -
           python3 -B staging/release-input/hydrate_and_publish.py publish \
             --manifest staging/release-input/manifest.json --staging staging \
             --clean "$RUNNER_TEMP/guardianac-clean" --dist "$RUNNER_TEMP/guardianac-dist" \

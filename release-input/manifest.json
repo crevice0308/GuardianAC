@@ -6,8 +6,8 @@
   "build_input_count": 155,
   "source_zip": {
     "name": "GuardianAC-Ultimate-1.0.0-dev.1-fb56fa5d8fcc-public-source.zip",
-    "bytes": 57917184,
-    "sha256": "f28d13cf44eb45695357a3e1160413c601d12a68a6702179d0602f99a9620a7c"
+    "bytes": 57917310,
+    "sha256": "1050c0bf4f8c962c3241b2db53723a280fba496d375555c0bf8c65f516e01213"
   },
   "jar": {
     "name": "GuardianAC-Ultimate-1.0.0-dev.1-fb56fa5d8fcc.jar",
@@ -64,9 +64,9 @@
     },
     {
       "path": "BUILDING.md",
-      "bytes": 4049,
-      "sha256": "f30a02e4c20b5600f1fc588230efe5dec7aed11f623fe4867886e2bdaa06e1ac",
-      "git_blob_sha": "e07ce16cff572e50b0673bea6731684cbad4edd2",
+      "bytes": 4086,
+      "sha256": "0e6bada9426a558b4030d5ecfb9c5110b26a34424a27f0892c79b9fa85933043",
+      "git_blob_sha": "93257ddbc4ef4de9e90b23c1a1d766246bf016e9",
       "mode": "100644"
     },
     {
@@ -211,9 +211,9 @@
     },
     {
       "path": "docs/PRERELEASE-PROVENANCE.md",
-      "bytes": 3396,
-      "sha256": "6270d59767d8ca88c39551e72e0f105890ff6a1f61a9e0a31ded76cb67f05ec0",
-      "git_blob_sha": "4ae43b90fd44d9f2c2bb61a6e8809fd064d9ae32",
+      "bytes": 3424,
+      "sha256": "4d076760a3c839604af29297d334f0a1b1693d783fa12e8a7f03224ca9413c5a",
+      "git_blob_sha": "39f1d4e4a00c20354d6a3d4896d160cfe32b00ab",
       "mode": "100644"
     },
     {
@@ -2178,9 +2178,9 @@
     },
     {
       "path": "tools/verification-supplement.json",
-      "bytes": 7802,
-      "sha256": "0c60c53188673476413b01089c4c07d3776d45996f2c05dd44b1fddfac5b1b65",
-      "git_blob_sha": "2bfbd68edfb1953b2603df9a139f828d0055c3c8",
+      "bytes": 8302,
+      "sha256": "5fb949c6936d91c1c773a7f160bb51f1a0c5bc0f2ff83724c56745c65af2a76c",
+      "git_blob_sha": "4af89ab4c8a50262d0c532c29e4b9fa3cd9c9602",
       "mode": "100644"
     },
     {
