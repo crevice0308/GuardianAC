@@ -42,7 +42,7 @@ jobs:
           test "$GITHUB_RUN_ATTEMPT" = 1
           test "$(git -C staging rev-parse HEAD)" = "$GITHUB_SHA"
           test -z "${GH_TOKEN:-}${GITHUB_TOKEN:-}"
-          printf '%s  %s\n' afda7d90be3d8c1bcbf76dbddb0b53f2cb408f95fbd9683215e7c932e0dc1329 staging/release-input/hydrate_and_publish.py | sha256sum -c -
+          printf '%s  %s\n' 5a6fac64622e3ecded2d3276b38015cfb23276cbd4d05a2cd5a0040eee220d69 staging/release-input/hydrate_and_publish.py | sha256sum -c -
           python3 -B staging/release-input/hydrate_and_publish.py hydrate \
             --manifest staging/release-input/manifest.json --staging staging \
             --clean "$RUNNER_TEMP/guardianac-clean" --dist "$RUNNER_TEMP/guardianac-dist" \
@@ -83,6 +83,10 @@ jobs:
           python3 -B tools/verify_jar.py build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar
           python3 -B third-party/sources/verify_sources.py --plugin-jar build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar
 
+      - name: Test rebuilt distribution telemetry
+        working-directory: ${{ runner.temp }}/guardianac-build
+        run: python3 -B tools/test_embedded_telemetry.py
+
       - name: Install fixture parser
         shell: bash
         working-directory: ${{ runner.temp }}/guardianac-clean
@@ -100,7 +104,6 @@ jobs:
           set -euo pipefail
           python3 -B tools/test_package_source.py
           python3 -B tools/test_source_handoff.py
-          python3 -B tools/test_embedded_telemetry.py
           python3 -B test-support/runtime/test_fixture_safety.py
           python3 -B test-support/runtime/test_fixture_privacy.py
           python3 -B test-support/runtime/test_fixture_process.py
@@ -129,7 +132,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          printf '%s  %s\n' afda7d90be3d8c1bcbf76dbddb0b53f2cb408f95fbd9683215e7c932e0dc1329 staging/release-input/hydrate_and_publish.py | sha256sum -c -
+          printf '%s  %s\n' 5a6fac64622e3ecded2d3276b38015cfb23276cbd4d05a2cd5a0040eee220d69 staging/release-input/hydrate_and_publish.py | sha256sum -c -
           python3 -B staging/release-input/hydrate_and_publish.py prepare \
             --manifest staging/release-input/manifest.json --staging staging \
             --clean "$RUNNER_TEMP/guardianac-clean" --dist "$RUNNER_TEMP/guardianac-dist" \
@@ -145,7 +148,7 @@ jobs:
           GH_PROMPT_DISABLED: '1'
         run: |
           set -euo pipefail
-          printf '%s  %s\n' afda7d90be3d8c1bcbf76dbddb0b53f2cb408f95fbd9683215e7c932e0dc1329 staging/release-input/hydrate_and_publish.py | sha256sum -c -
+          printf '%s  %s\n' 5a6fac64622e3ecded2d3276b38015cfb23276cbd4d05a2cd5a0040eee220d69 staging/release-input/hydrate_and_publish.py | sha256sum -c -
           python3 -B staging/release-input/hydrate_and_publish.py publish \
             --manifest staging/release-input/manifest.json --staging staging \
             --clean "$RUNNER_TEMP/guardianac-clean" --dist "$RUNNER_TEMP/guardianac-dist" \

@@ -6,8 +6,8 @@
   "build_input_count": 155,
   "source_zip": {
     "name": "GuardianAC-Ultimate-1.0.0-dev.1-fb56fa5d8fcc-public-source.zip",
-    "bytes": 57917310,
-    "sha256": "1050c0bf4f8c962c3241b2db53723a280fba496d375555c0bf8c65f516e01213"
+    "bytes": 57917322,
+    "sha256": "1da4a9ead14548e155946e93b44962a7ae4abf5e3e3372bb26a182a4bf6d242d"
   },
   "jar": {
     "name": "GuardianAC-Ultimate-1.0.0-dev.1-fb56fa5d8fcc.jar",
@@ -49,9 +49,9 @@
   "files": [
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 2970,
-      "sha256": "9d2f15f291eef4a46e694996a5b1d1997ed0f55ab67706b8b11de484b97645ec",
-      "git_blob_sha": "d37032f617f59a0a1a58ad0cfae4391c5da7742f",
+      "bytes": 3086,
+      "sha256": "d2903d7edfb860ab782d02ef9a3cddc6d07d6b84d3e422d8a916e23ff8af2264",
+      "git_blob_sha": "4e71d35c5524ee45c3d4647c97252d292f507f11",
       "mode": "100644",
       "input_path": "release-input/original-ci.yml"
     },

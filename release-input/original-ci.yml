@@ -28,6 +28,9 @@ jobs:
       - name: Verify matching dependency sources
         working-directory: ${{ runner.temp }}/guardianac-build
         run: python3 third-party/sources/verify_sources.py --plugin-jar build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar
+      - name: Test rebuilt distribution telemetry
+        working-directory: ${{ runner.temp }}/guardianac-build
+        run: python3 -B tools/test_embedded_telemetry.py
       - name: Install fixture parser
         run: python3 -m pip install -r test-support/requirements-fixtures.txt
       - name: Test inert Java fixture port guard
@@ -36,7 +39,6 @@ jobs:
         run: |
           python3 -B tools/test_package_source.py
           python3 -B tools/test_source_handoff.py
-          python3 -B tools/test_embedded_telemetry.py
           python3 -B test-support/runtime/test_fixture_safety.py
           python3 -B test-support/runtime/test_fixture_privacy.py
           python3 -B test-support/runtime/test_fixture_process.py
