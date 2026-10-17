@@ -1,0 +1,5 @@
+__pycache__/
+fixture/classes/
+fixture/*.jar
+guardianac-modifier-evidence/
+guardianac-modifier-tools/

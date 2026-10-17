@@ -1,0 +1,149 @@
+name: Hydrate and publish fixed dev1 once
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/publish-dev1-once.yml]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: guardianac-fixed-dev1-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'crevice0308/GuardianAC' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    outputs:
+      clean_commit: ${{ steps.publish.outputs.clean_commit }}
+      staging_sha: ${{ steps.publish.outputs.staging_sha }}
+      release_id: ${{ steps.publish.outputs.release_id }}
+      release_url: ${{ steps.publish.outputs.release_url }}
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - name: Check out exact staging push without stored credentials
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # verified official v4
+        with:
+          ref: ${{ github.sha }}
+          path: staging
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Hydrate and verify fixed source and existing JAR offline
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_RUN_ATTEMPT" = 1
+          test "$(git -C staging rev-parse HEAD)" = "$GITHUB_SHA"
+          test -z "${GH_TOKEN:-}${GITHUB_TOKEN:-}"
+          printf '%s  %s\n' dc8b8abe9316ef68b90003d9e46e0a34e2aeeec09e4503d18771b94959588224 staging/release-input/hydrate_and_publish.py | sha256sum -c -
+          python3 -B staging/release-input/hydrate_and_publish.py hydrate \
+            --manifest staging/release-input/manifest.json --staging staging \
+            --clean "$RUNNER_TEMP/guardianac-clean" --dist "$RUNNER_TEMP/guardianac-dist" \
+            --evidence "$RUNNER_TEMP/guardianac-evidence"
+
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # verified official v4
+        with:
+          distribution: temurin
+          java-version: '25'
+
+      # This duplicates all original ci.yml checks because staging is incomplete.
+      # It never boots Minecraft. Tests may start only their inert local fixtures.
+      - name: Build, test and assemble clean source
+        shell: bash
+        working-directory: ${{ runner.temp }}/guardianac-clean
+        run: |
+          set -euo pipefail
+          test -z "${GH_TOKEN:-}${GITHUB_TOKEN:-}"
+          ./gradlew --no-daemon clean test shadowJar sourcesJar
+
+      - name: Audit rebuilt distribution and dependency sources
+        shell: bash
+        working-directory: ${{ runner.temp }}/guardianac-clean
+        run: |
+          set -euo pipefail
+          python3 -B tools/verify_jar.py build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar
+          python3 -B third-party/sources/verify_sources.py --plugin-jar build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar
+
+      - name: Install fixture parser
+        shell: bash
+        working-directory: ${{ runner.temp }}/guardianac-clean
+        run: python3 -m pip install -r test-support/requirements-fixtures.txt
+
+      - name: Test inert Java fixture port guard
+        shell: bash
+        working-directory: ${{ runner.temp }}/guardianac-clean
+        run: bash test-support/runtime/test_fixture_ports_java.sh
+
+      - name: Test all original isolated fixture and safety checks
+        shell: bash
+        working-directory: ${{ runner.temp }}/guardianac-clean
+        run: |
+          set -euo pipefail
+          python3 -B tools/test_package_source.py
+          python3 -B tools/test_source_handoff.py
+          python3 -B tools/test_embedded_telemetry.py
+          python3 -B test-support/runtime/test_fixture_safety.py
+          python3 -B test-support/runtime/test_fixture_privacy.py
+          python3 -B test-support/runtime/test_fixture_process.py
+          python3 -B test-support/runtime/test_terminal_gates.py
+          python3 -B test-support/runtime/test_server_statistics.py
+          python3 -B test-support/client/test_suite_gates.py
+          python3 -B test-support/modifier/test_delay_fifo.py
+          python3 -B test-support/modifier/test_packet_counter_snapshots.py
+          python3 -B test-support/load-limits/test_observations.py
+          python3 -B test-support/load-limits/test_source_binding.py
+          python3 -B test-support/ip-workflows/test_ip_workflows.py
+          python3 -B test-support/localization/test_runtime_messages.py
+
+      - name: Check repeat-build determinism without replacing fixed release JAR
+        shell: bash
+        working-directory: ${{ runner.temp }}/guardianac-clean
+        run: |
+          set -euo pipefail
+          cp build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar "$RUNNER_TEMP/guardianac-first-build.jar"
+          ./gradlew --no-daemon clean shadowJar
+          cmp "$RUNNER_TEMP/guardianac-first-build.jar" build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar
+
+      - name: Verify fixed release JAR, 155 inputs, audits and exact source ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          printf '%s  %s\n' dc8b8abe9316ef68b90003d9e46e0a34e2aeeec09e4503d18771b94959588224 staging/release-input/hydrate_and_publish.py | sha256sum -c -
+          python3 -B staging/release-input/hydrate_and_publish.py prepare \
+            --manifest staging/release-input/manifest.json --staging staging \
+            --clean "$RUNNER_TEMP/guardianac-clean" --dist "$RUNNER_TEMP/guardianac-dist" \
+            --evidence "$RUNNER_TEMP/guardianac-evidence"
+
+      - name: Create clean commit and bound tag, verify draft assets, then publish
+        id: publish
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: crevice0308/GuardianAC
+          GH_HOST: github.com
+          GH_PROMPT_DISABLED: '1'
+        run: |
+          set -euo pipefail
+          printf '%s  %s\n' dc8b8abe9316ef68b90003d9e46e0a34e2aeeec09e4503d18771b94959588224 staging/release-input/hydrate_and_publish.py | sha256sum -c -
+          python3 -B staging/release-input/hydrate_and_publish.py publish \
+            --manifest staging/release-input/manifest.json --staging staging \
+            --clean "$RUNNER_TEMP/guardianac-clean" --dist "$RUNNER_TEMP/guardianac-dist" \
+            --evidence "$RUNNER_TEMP/guardianac-evidence" --staging-sha "$GITHUB_SHA"
+
+      - name: Retain visible status on success or partial failure
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          if test -f "$RUNNER_TEMP/guardianac-evidence/publication-state.json"; then
+            cat "$RUNNER_TEMP/guardianac-evidence/publication-state.json"
+          fi
+          printf '%s\n' 'No remote cleanup or retries are performed by this workflow.' \
+            'The coordinator must inspect release/tag evidence and CAS main from staging_sha to clean_commit only after successful publication.' >> "$GITHUB_STEP_SUMMARY"

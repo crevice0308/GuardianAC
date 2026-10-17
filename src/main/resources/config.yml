@@ -1,0 +1,25 @@
+# GuardianAC Ultimate internal development configuration.
+# 基本設定・資源上限は管理GUIから保存できます。割り当て済み資源の変更は再起動が必要です。
+# Discord URLだけは秘密ファイルへ手動登録し、GUIに表示しません。
+language: ja
+preset: STRICT
+auto-ban: true
+ban-type: UUID
+ban-duration-hours: 24
+ip-duration-hours: 24
+allow-permanent-ip: false
+native-ban-sync: true
+broadcast: true
+discord-enabled: false
+automatic-tuning: true
+xray:
+  enabled: true
+  hide-caves: false
+checks: {}
+limits:
+  max-players: 2000
+  packets-per-tick: 1024
+  evidence-mib: 256
+  evidence-days: 90
+  replay-total-mib: 32
+  replay-per-player-kib: 64

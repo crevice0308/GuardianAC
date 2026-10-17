@@ -1,0 +1,36 @@
+name: GuardianAC
+version: '${version}'
+main: dev.guardianac.bukkit.GuardianPlugin
+api-version: '26.3'
+description: Evidence-based standalone anti-cheat, internal development build
+authors: [GuardianAC Contributors]
+load: POSTWORLD
+softdepend: [ProtocolLib, ProtocolSupport, ViaVersion, ViaBackwards, ViaRewind, Geyser-Spigot, floodgate]
+commands:
+  guardian:
+    description: GuardianAC management
+    aliases: [gac]
+    usage: /gac gui
+    permission: guardianac.view
+permissions:
+  guardianac.view:
+    description: Read-only GuardianAC administration
+    default: op
+  guardianac.admin:
+    description: Change GuardianAC configuration
+    default: op
+    children:
+      guardianac.view: true
+      guardianac.unban: true
+  guardianac.unban:
+    description: Confirm removal of GuardianAC-owned bans
+    default: op
+  guardianac.alerts:
+    description: Receive detailed administrative evidence alerts
+    default: op
+  guardianac.bypass:
+    description: Explicit anti-cheat exemption (not granted automatically to operators)
+    default: false
+  guardianac.xray.bypass:
+    description: Explicit ore/cave concealment exemption
+    default: false

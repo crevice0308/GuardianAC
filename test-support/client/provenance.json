@@ -1,0 +1,11 @@
+{
+  "protocol": 777,
+  "minecraft_version": "26.3",
+  "codec_source": "Canonical deobfuscated classes in fixture Paper 26.3 server JAR, inspected using Java 25 javap -c -p; packet registration facts retained in schema/packet-ids.json; decompiled extracts excluded from distribution",
+  "loopback_only": true,
+  "external_accounts_used": false,
+  "online_mode": false,
+  "protocol_client": "Python standard library sockets, zlib, struct; exact login/configuration/play wire framing. No Player proxy, EmbeddedChannel, or sample injection is used in joined-client suite.",
+  "limitations": ["Not an official Mojang rendered client", "No Microsoft authentication; test usernames have offline UUIDs", "Only implemented packet types are decoded; unrelated received packets are counted and ignored", "No global claim of Mineflayer/Prismarine released support for 26.3"],
+  "upstream_feasibility_sources": ["https://github.com/PrismarineJS/node-minecraft-protocol", "https://github.com/PrismarineJS/node-minecraft-protocol/pull/1532", "https://github.com/PrismarineJS/minecraft-data/blob/master/data/pc/common/protocolVersions.json"]
+}

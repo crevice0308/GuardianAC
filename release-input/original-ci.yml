@@ -1,0 +1,48 @@
+name: Build and verify
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - name: Build, test and assemble
+        run: ./gradlew --no-daemon clean test shadowJar sourcesJar
+      - name: Audit distribution
+        run: python3 tools/verify_jar.py build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar
+      - name: Verify matching dependency sources
+        run: python3 third-party/sources/verify_sources.py --plugin-jar build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar
+      - name: Install fixture parser
+        run: python3 -m pip install -r test-support/requirements-fixtures.txt
+      - name: Test inert Java fixture port guard
+        run: bash test-support/runtime/test_fixture_ports_java.sh
+      - name: Test isolated fixture safety
+        run: |
+          python3 -B tools/test_package_source.py
+          python3 -B tools/test_source_handoff.py
+          python3 -B tools/test_embedded_telemetry.py
+          python3 -B test-support/runtime/test_fixture_safety.py
+          python3 -B test-support/runtime/test_fixture_privacy.py
+          python3 -B test-support/runtime/test_fixture_process.py
+          python3 -B test-support/runtime/test_terminal_gates.py
+          python3 -B test-support/runtime/test_server_statistics.py
+          python3 -B test-support/client/test_suite_gates.py
+          python3 -B test-support/modifier/test_delay_fifo.py
+          python3 -B test-support/modifier/test_packet_counter_snapshots.py
+          python3 -B test-support/load-limits/test_observations.py
+          python3 -B test-support/load-limits/test_source_binding.py
+          python3 -B test-support/ip-workflows/test_ip_workflows.py
+          python3 -B test-support/localization/test_runtime_messages.py
+      - name: Check repeat-build determinism
+        run: |
+          cp build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar /tmp/first.jar
+          ./gradlew --no-daemon clean shadowJar
+          cmp /tmp/first.jar build/libs/GuardianAC-Ultimate-1.0.0-dev.1.jar
+      # Deliberately no GitHub Release, repository creation or publication action.

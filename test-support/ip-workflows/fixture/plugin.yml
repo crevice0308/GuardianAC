@@ -1,0 +1,11 @@
+name: RealClientFixture
+version: 1.0-ip-workflows
+main: test.guardianip.RealClientFixture
+api-version: '26.3'
+depend: [GuardianAC]
+commands:
+  gacip:
+    permission: gacip.admin
+permissions:
+  gacip.admin:
+    default: op

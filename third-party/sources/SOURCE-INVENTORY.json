@@ -1,0 +1,621 @@
+{
+  "schema_version": 1,
+  "retrieved_date_utc": "2026-10-14",
+  "scope": "Pristine upstream object-code inputs listed in ../dependency-inventory.json, plus supplied upstream sources. Final GuardianAC runtime applies RUNTIME-SOURCE-OVERLAY.json: the PacketEvents Spigot builder is rebuilt from a local edited source and bStats classes are excluded.",
+  "archives": [
+    {
+      "file": "adventure-api-4.26.1-sources.zip",
+      "url": "https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.26.1/adventure-api-4.26.1-sources.jar",
+      "response_url": "https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.26.1/adventure-api-4.26.1-sources.jar",
+      "bytes": 356639,
+      "sha256": "a39b5ec7967ee5375457c27381c09a47d4c379b3b537c499066c571db71cae8d",
+      "http_status": 200,
+      "member_count": 233,
+      "expanded_file_bytes": 1055912,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "format_note": "Original Maven Central sources JAR bytes, filename extension changed to .zip only",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "adventure-key-4.26.1-sources.zip",
+      "url": "https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.26.1/adventure-key-4.26.1-sources.jar",
+      "response_url": "https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.26.1/adventure-key-4.26.1-sources.jar",
+      "bytes": 13405,
+      "sha256": "133cc1f89181ac4618219e985c8a12ca9db3164b9942cdd68b10917c21334c2b",
+      "http_status": 200,
+      "member_count": 15,
+      "expanded_file_bytes": 29230,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "format_note": "Original Maven Central sources JAR bytes, filename extension changed to .zip only",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "adventure-nbt-4.26.1-sources.zip",
+      "url": "https://repo.maven.apache.org/maven2/net/kyori/adventure-nbt/4.26.1/adventure-nbt-4.26.1-sources.jar",
+      "response_url": "https://repo.maven.apache.org/maven2/net/kyori/adventure-nbt/4.26.1/adventure-nbt-4.26.1-sources.jar",
+      "bytes": 88348,
+      "sha256": "be29a3f8964b63067e627dabb7bb9761fbc0387262fa18607a760de4bd7dfe7c",
+      "http_status": 200,
+      "member_count": 58,
+      "expanded_file_bytes": 260590,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "format_note": "Original Maven Central sources JAR bytes, filename extension changed to .zip only",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "adventure-v4.26.1.tar.gz",
+      "url": "https://codeload.github.com/PaperMC/adventure/tar.gz/refs/tags/v4.26.1",
+      "response_url": "https://codeload.github.com/PaperMC/adventure/tar.gz/refs/tags/v4.26.1",
+      "bytes": 440326,
+      "sha256": "a824ae526fb5c532dc2d92a188bb89efb51f142de0f6605088dbf04089217869",
+      "http_status": 200,
+      "member_count": 962,
+      "expanded_file_bytes": 2978920,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "git_commit_from_official_archive_pax_header": "077d1d76a5858314bfc65bce23240739b3dcafc7",
+      "retained_upstream_binary_members": [
+        "adventure-4.26.1/gradle/wrapper/gradle-wrapper.jar"
+      ],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "bstats-base-3.1.0-sources.zip",
+      "url": "https://repo.maven.apache.org/maven2/org/bstats/bstats-base/3.1.0/bstats-base-3.1.0-sources.jar",
+      "response_url": "https://repo.maven.apache.org/maven2/org/bstats/bstats-base/3.1.0/bstats-base-3.1.0-sources.jar",
+      "http_status": 200,
+      "bytes": 12686,
+      "sha256": "0fc9ba96b71efdb64614d818ecdcbbc5a5a85b78188b7761a1230c95f7953341",
+      "member_count": 18,
+      "expanded_file_bytes": 34540,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "format_note": "Original Maven Central sources JAR bytes, filename extension changed to .zip only",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "bstats-bukkit-3.1.0-sources.zip",
+      "url": "https://repo.maven.apache.org/maven2/org/bstats/bstats-bukkit/3.1.0/bstats-bukkit-3.1.0-sources.jar",
+      "response_url": "https://repo.maven.apache.org/maven2/org/bstats/bstats-bukkit/3.1.0/bstats-bukkit-3.1.0-sources.jar",
+      "http_status": 200,
+      "bytes": 2518,
+      "sha256": "7365484b92048ff6437969bafcff24819d8724ddd98b1682ee8f59b0443bd61b",
+      "member_count": 6,
+      "expanded_file_bytes": 5590,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "format_note": "Original Maven Central sources JAR bytes, filename extension changed to .zip only",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "bstats-metrics-v3.1.0.tar.gz",
+      "url": "https://codeload.github.com/Bastian/bStats-Metrics/tar.gz/refs/tags/v3.1.0",
+      "response_url": "https://codeload.github.com/Bastian/bStats-Metrics/tar.gz/refs/tags/v3.1.0",
+      "http_status": 200,
+      "bytes": 79447,
+      "sha256": "684ec2286baf3c55ae8c4ca754feb4f2e2fcf1e6aae41c0c8e1a5b0e6e57de82",
+      "member_count": 87,
+      "expanded_file_bytes": 157525,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "git_commit_from_official_archive_pax_header": "3e8319112fa82d2ae90e1bffa3afab208587fff8",
+      "retained_upstream_binary_members": [
+        "bstats-metrics-3.1.0/gradle/wrapper/gradle-wrapper.jar"
+      ],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "error-prone-v2.48.0.tar.gz",
+      "url": "https://codeload.github.com/google/error-prone/tar.gz/refs/tags/v2.48.0",
+      "response_url": "https://codeload.github.com/google/error-prone/tar.gz/refs/tags/v2.48.0",
+      "bytes": 2196700,
+      "sha256": "5e18154a31ba059d53571b1af0abe35720c38849a131f1144398912de85757a4",
+      "http_status": 200,
+      "member_count": 2730,
+      "expanded_file_bytes": 15240362,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "git_commit_from_official_archive_pax_header": "7cec0a04b56cd79e72461ad771e532f503f0b407",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "error_prone_annotations-2.48.0-sources.zip",
+      "url": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.48.0/error_prone_annotations-2.48.0-sources.jar",
+      "response_url": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.48.0/error_prone_annotations-2.48.0-sources.jar",
+      "bytes": 40016,
+      "sha256": "5c1c7b797aa1effa050a06d2d98534a28750f5fa8bcca56d8f49a866ca8bd03f",
+      "http_status": 200,
+      "member_count": 42,
+      "expanded_file_bytes": 73014,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "format_note": "Original Maven Central sources JAR bytes, filename extension changed to .zip only",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "examination-api-1.3.0-sources.zip",
+      "url": "https://repo.maven.apache.org/maven2/net/kyori/examination-api/1.3.0/examination-api-1.3.0-sources.jar",
+      "response_url": "https://repo.maven.apache.org/maven2/net/kyori/examination-api/1.3.0/examination-api-1.3.0-sources.jar",
+      "bytes": 9092,
+      "sha256": "9b12fe0aad9017e1bbbeb3b4c8e0e0094dd3596d028e229057fc092ba4747f99",
+      "http_status": 200,
+      "member_count": 13,
+      "expanded_file_bytes": 33093,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "format_note": "Original Maven Central sources JAR bytes, filename extension changed to .zip only",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "examination-string-1.3.0-sources.zip",
+      "url": "https://repo.maven.apache.org/maven2/net/kyori/examination-string/1.3.0/examination-string-1.3.0-sources.jar",
+      "response_url": "https://repo.maven.apache.org/maven2/net/kyori/examination-string/1.3.0/examination-string-1.3.0-sources.jar",
+      "bytes": 8462,
+      "sha256": "ec922af37b1d4538de715697a938a6c74bda9482adaea2e6ba09e70a500b4d03",
+      "http_status": 200,
+      "member_count": 13,
+      "expanded_file_bytes": 19536,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "format_note": "Original Maven Central sources JAR bytes, filename extension changed to .zip only",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "examination-v1.3.0.tar.gz",
+      "url": "https://codeload.github.com/KyoriPowered/examination/tar.gz/refs/tags/v1.3.0",
+      "response_url": "https://codeload.github.com/KyoriPowered/examination/tar.gz/refs/tags/v1.3.0",
+      "bytes": 72375,
+      "sha256": "d3b51bd5681ec4a56a3dbfe1f1d5b47abcce0ff8fa5d89c6230cb88fd48e509e",
+      "http_status": 200,
+      "member_count": 61,
+      "expanded_file_bytes": 161228,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "git_commit_from_official_archive_pax_header": "9a5ae17573ea7e8517a7af2cccd3e34029cc6421",
+      "retained_upstream_binary_members": [
+        "examination-1.3.0/gradle/wrapper/gradle-wrapper.jar"
+      ],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "gson-2.14.0-sources.zip",
+      "url": "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.14.0/gson-2.14.0-sources.jar",
+      "response_url": "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.14.0/gson-2.14.0-sources.jar",
+      "bytes": 213519,
+      "sha256": "a4873f0ef88981cab520c3d7449cd89a68e605f15e9fe46e1aa2c77d5f87eb6f",
+      "http_status": 200,
+      "member_count": 107,
+      "expanded_file_bytes": 711185,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "format_note": "Original Maven Central sources JAR bytes, filename extension changed to .zip only",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "gson-gson-parent-2.14.0.tar.gz",
+      "url": "https://codeload.github.com/google/gson/tar.gz/refs/tags/gson-parent-2.14.0",
+      "response_url": "https://codeload.github.com/google/gson/tar.gz/refs/tags/gson-parent-2.14.0",
+      "http_status": 200,
+      "bytes": 484822,
+      "sha256": "587b12eae125a916b9cef2217694def2a42715339f2f239bd8c00d2783a1da82",
+      "member_count": 434,
+      "expanded_file_bytes": 2287775,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "git_commit_from_official_archive_pax_header": "3ff35d6269894901ab8006258395aafc4b9765cd",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "option-1.1.0-sources.zip",
+      "url": "https://repo.maven.apache.org/maven2/net/kyori/option/1.1.0/option-1.1.0-sources.jar",
+      "response_url": "https://repo.maven.apache.org/maven2/net/kyori/option/1.1.0/option-1.1.0-sources.jar",
+      "http_status": 200,
+      "bytes": 18741,
+      "sha256": "df829cf30d06e3eb426c9b2936f59bdf4ef3155c3a92d0b51faa301c9860abdb",
+      "member_count": 21,
+      "expanded_file_bytes": 46196,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "format_note": "Original Maven Central sources JAR bytes, filename extension changed to .zip only",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "option-v1.1.0.tar.gz",
+      "url": "https://codeload.github.com/KyoriPowered/option/tar.gz/refs/tags/v1.1.0",
+      "response_url": "https://codeload.github.com/KyoriPowered/option/tar.gz/refs/tags/v1.1.0",
+      "http_status": 200,
+      "bytes": 59399,
+      "sha256": "8e584d95c777e8746dcb148e8aeb145f23dd70e5c45d10ff6463999897bbc7cc",
+      "member_count": 57,
+      "expanded_file_bytes": 134287,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "git_commit_from_official_archive_pax_header": "c1f7a76af0882a4bf4466b0c1dc07af15261d775",
+      "retained_upstream_binary_members": [
+        "option-1.1.0/gradle/wrapper/gradle-wrapper.jar"
+      ],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "packetevents-v2.14.0.tar.gz",
+      "url": "https://codeload.github.com/retrooper/packetevents/tar.gz/refs/tags/v2.14.0",
+      "retrieval": "Previously retrieved official tag archive, retained unchanged",
+      "bytes": 3445769,
+      "sha256": "0474b4a507699a9eef60d6676a84a5f086858786b0c155b2aed6addb2edb6e49",
+      "member_count": 2018,
+      "expanded_file_bytes": 79334467,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "git_commit_from_official_archive_pax_header": "5a8a1224763c2a968cb023262a27d6fdba474e21",
+      "retained_upstream_binary_members": [
+        "packetevents-2.14.0/gradle/wrapper/gradle-wrapper.jar"
+      ],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "sqlite-amalgamation-3530400.zip",
+      "url": "https://www.sqlite.org/2026/sqlite-amalgamation-3530400.zip",
+      "response_url": "https://www.sqlite.org/2026/sqlite-amalgamation-3530400.zip",
+      "http_status": 200,
+      "bytes": 2946650,
+      "sha256": "1e71ddf93849c6a6ecf58b827c0692073d2dd7ee40196158068f7b29f422e87d",
+      "member_count": 5,
+      "expanded_file_bytes": 11431269,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "sqlite-jdbc-3.53.4.0-sources.zip",
+      "url": "https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.53.4.0/sqlite-jdbc-3.53.4.0-sources.jar",
+      "response_url": "https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.53.4.0/sqlite-jdbc-3.53.4.0-sources.jar",
+      "bytes": 14557234,
+      "sha256": "6f3fca1257fd02891e9b17b296b4e888cdd6af6d3e077ff7e50991657d69ed46",
+      "http_status": 200,
+      "member_count": 140,
+      "expanded_file_bytes": 26787641,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "format_note": "Original Maven Central sources JAR bytes, filename extension changed to .zip only",
+      "retained_upstream_binary_members": [
+        "org/sqlite/native/Linux/riscv64/libsqlitejdbc.so",
+        "org/sqlite/native/Linux/x86_64/libsqlitejdbc.so",
+        "org/sqlite/native/Linux/aarch64/libsqlitejdbc.so",
+        "org/sqlite/native/Linux/armv7/libsqlitejdbc.so",
+        "org/sqlite/native/Linux/arm/libsqlitejdbc.so",
+        "org/sqlite/native/Linux/x86/libsqlitejdbc.so",
+        "org/sqlite/native/Linux/ppc64/libsqlitejdbc.so",
+        "org/sqlite/native/Linux/armv6/libsqlitejdbc.so",
+        "org/sqlite/native/Linux-Android/x86_64/libsqlitejdbc.so",
+        "org/sqlite/native/Linux-Android/aarch64/libsqlitejdbc.so",
+        "org/sqlite/native/Linux-Android/arm/libsqlitejdbc.so",
+        "org/sqlite/native/Linux-Android/x86/libsqlitejdbc.so",
+        "org/sqlite/native/FreeBSD/x86_64/libsqlitejdbc.so",
+        "org/sqlite/native/FreeBSD/aarch64/libsqlitejdbc.so",
+        "org/sqlite/native/FreeBSD/x86/libsqlitejdbc.so",
+        "org/sqlite/native/Mac/x86_64/libsqlitejdbc.dylib",
+        "org/sqlite/native/Mac/aarch64/libsqlitejdbc.dylib",
+        "org/sqlite/native/Linux-Musl/x86_64/libsqlitejdbc.so",
+        "org/sqlite/native/Linux-Musl/aarch64/libsqlitejdbc.so",
+        "org/sqlite/native/Linux-Musl/x86/libsqlitejdbc.so",
+        "org/sqlite/native/Windows/x86_64/sqlitejdbc.dll",
+        "org/sqlite/native/Windows/aarch64/sqlitejdbc.dll",
+        "org/sqlite/native/Windows/armv7/sqlitejdbc.dll",
+        "org/sqlite/native/Windows/x86/sqlitejdbc.dll"
+      ],
+      "retained_upstream_database_fixtures": []
+    },
+    {
+      "file": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "url": "https://codeload.github.com/xerial/sqlite-jdbc/tar.gz/refs/tags/3.53.4.0",
+      "response_url": "https://codeload.github.com/xerial/sqlite-jdbc/tar.gz/refs/tags/3.53.4.0",
+      "bytes": 18598025,
+      "sha256": "9dded7305b4f3bab596d6a40eaab0cf0d3afad60006eb80073492103b06b081c",
+      "http_status": 200,
+      "member_count": 282,
+      "expanded_file_bytes": 31667450,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "git_commit_from_official_archive_pax_header": "cab7981c19ce04d691f0675f0b2586afc2bbf803",
+      "retained_upstream_binary_members": [
+        "sqlite-jdbc-3.53.4.0/demo/AppletDemo.jar",
+        "sqlite-jdbc-3.53.4.0/lib/jdbc-api-1.4.jar",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/FreeBSD/aarch64/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/FreeBSD/x86/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/FreeBSD/x86_64/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux-Android/aarch64/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux-Android/arm/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux-Android/x86/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux-Android/x86_64/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux-Musl/aarch64/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux-Musl/x86/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux-Musl/x86_64/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/aarch64/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/arm/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/armv6/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/armv7/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/ppc64/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/riscv64/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/x86/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/x86_64/libsqlitejdbc.so",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Mac/aarch64/libsqlitejdbc.dylib",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Mac/x86_64/libsqlitejdbc.dylib",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Windows/aarch64/sqlitejdbc.dll",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Windows/armv7/sqlitejdbc.dll",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Windows/x86/sqlitejdbc.dll",
+        "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Windows/x86_64/sqlitejdbc.dll",
+        "sqlite-jdbc-3.53.4.0/src/test/resources/org/sqlite/testdb.jar"
+      ],
+      "retained_upstream_database_fixtures": [
+        "sqlite-jdbc-3.53.4.0/src/test/resources/org/sqlite/attach_test.db",
+        "sqlite-jdbc-3.53.4.0/src/test/resources/org/sqlite/sample.db"
+      ]
+    },
+    {
+      "file": "sqlite-src-3530400.zip",
+      "url": "https://www.sqlite.org/2026/sqlite-src-3530400.zip",
+      "response_url": "https://www.sqlite.org/2026/sqlite-src-3530400.zip",
+      "http_status": 200,
+      "bytes": 14557315,
+      "sha256": "d18fa15aec74d8c17e1463f861095adc01b5ad190256acb4f91d22f0368d232b",
+      "member_count": 2264,
+      "expanded_file_bytes": 111974369,
+      "validation": "Archive integrity, bounded expansion, safe member paths, no links, no encrypted entries; not executed",
+      "retained_upstream_binary_members": [],
+      "retained_upstream_database_fixtures": [
+        "sqlite-src-3530400/test/fuzzdata8.db",
+        "sqlite-src-3530400/test/fuzzdata1.db",
+        "sqlite-src-3530400/test/fuzzdata4.db",
+        "sqlite-src-3530400/test/fuzzdata6.db",
+        "sqlite-src-3530400/test/fuzzdata3.db",
+        "sqlite-src-3530400/test/fuzzdata7.db",
+        "sqlite-src-3530400/test/dbfuzz2-seed1.db",
+        "sqlite-src-3530400/test/fuzzdata2.db",
+        "sqlite-src-3530400/test/sessionfuzz-data1.db",
+        "sqlite-src-3530400/test/fuzzdata5.db"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "name": "bStats (embedded in PacketEvents)",
+      "version": "3.1.0",
+      "tag": "v3.1.0",
+      "upstream": "https://github.com/Bastian/bStats-Metrics",
+      "tag_url": "https://github.com/Bastian/bStats-Metrics/tree/v3.1.0",
+      "source_archive": "bstats-metrics-v3.1.0.tar.gz",
+      "runtime_coordinates": [],
+      "published_sources": [
+        "bstats-base-3.1.0-sources.zip",
+        "bstats-bukkit-3.1.0-sources.zip"
+      ],
+      "build_files": [
+        "bstats-metrics-3.1.0/gradle.properties",
+        "bstats-metrics-3.1.0/build.gradle.kts",
+        "bstats-metrics-3.1.0/settings.gradle.kts",
+        "bstats-metrics-3.1.0/base/build.gradle.kts",
+        "bstats-metrics-3.1.0/bukkit/build.gradle.kts"
+      ],
+      "root_license_and_notice_members": [
+        "bstats-metrics-3.1.0/LICENSE"
+      ],
+      "final_runtime_status": "Reference-only upstream source and license retained; bStats object code must be excluded from patched GuardianAC output."
+    },
+    {
+      "name": "Option (embedded in PacketEvents)",
+      "version": "1.1.0",
+      "tag": "v1.1.0",
+      "upstream": "https://github.com/KyoriPowered/option",
+      "tag_url": "https://github.com/KyoriPowered/option/tree/v1.1.0",
+      "source_archive": "option-v1.1.0.tar.gz",
+      "runtime_coordinates": [],
+      "published_sources": [
+        "option-1.1.0-sources.zip"
+      ],
+      "build_files": [
+        "option-1.1.0/gradle.properties",
+        "option-1.1.0/build.gradle.kts",
+        "option-1.1.0/settings.gradle.kts"
+      ],
+      "root_license_and_notice_members": [
+        "option-1.1.0/license.txt"
+      ]
+    },
+    {
+      "name": "PacketEvents",
+      "version": "2.14.0",
+      "tag": "v2.14.0",
+      "upstream": "https://github.com/retrooper/packetevents",
+      "tag_url": "https://github.com/retrooper/packetevents/tree/v2.14.0",
+      "source_archive": "packetevents-v2.14.0.tar.gz",
+      "runtime_coordinates": [
+        "com.github.retrooper:packetevents-api:2.14.0",
+        "com.github.retrooper:packetevents-netty-common:2.14.0",
+        "com.github.retrooper:packetevents-spigot:2.14.0"
+      ],
+      "published_sources": [],
+      "build_files": [
+        "packetevents-2.14.0/build.gradle.kts",
+        "packetevents-2.14.0/settings.gradle.kts",
+        "packetevents-2.14.0/gradle.properties"
+      ],
+      "root_license_and_notice_members": [
+        "packetevents-2.14.0/LICENSE"
+      ],
+      "source_license_note": "GPL-3.0-or-later source headers; includes PacketEvents-authored Adventure patch sources. Original Adventure source retains MIT license.",
+      "final_runtime_status": "Modified distribution: local SpigotPacketEventsBuilder replacement removes metrics registration; original builder family and all embedded bStats classes excluded during packaging. Other components retain baseline provenance."
+    },
+    {
+      "name": "Gson",
+      "version": "2.14.0",
+      "tag": "gson-parent-2.14.0",
+      "upstream": "https://github.com/google/gson",
+      "tag_url": "https://github.com/google/gson/tree/gson-parent-2.14.0",
+      "source_archive": "gson-gson-parent-2.14.0.tar.gz",
+      "runtime_coordinates": [
+        "com.google.code.gson:gson:2.14.0"
+      ],
+      "published_sources": [
+        "gson-2.14.0-sources.zip"
+      ],
+      "build_files": [
+        "gson-gson-parent-2.14.0/pom.xml",
+        "gson-gson-parent-2.14.0/gson/pom.xml"
+      ],
+      "root_license_and_notice_members": [
+        "gson-gson-parent-2.14.0/LICENSE"
+      ]
+    },
+    {
+      "name": "Error Prone annotations",
+      "version": "2.48.0",
+      "tag": "v2.48.0",
+      "upstream": "https://github.com/google/error-prone",
+      "tag_url": "https://github.com/google/error-prone/tree/v2.48.0",
+      "source_archive": "error-prone-v2.48.0.tar.gz",
+      "runtime_coordinates": [
+        "com.google.errorprone:error_prone_annotations:2.48.0"
+      ],
+      "published_sources": [
+        "error_prone_annotations-2.48.0-sources.zip"
+      ],
+      "build_files": [
+        "error-prone-2.48.0/pom.xml",
+        "error-prone-2.48.0/annotations/pom.xml"
+      ],
+      "root_license_and_notice_members": [
+        "error-prone-2.48.0/COPYING"
+      ]
+    },
+    {
+      "name": "Adventure",
+      "version": "4.26.1",
+      "tag": "v4.26.1",
+      "upstream": "https://github.com/PaperMC/adventure",
+      "tag_url": "https://github.com/PaperMC/adventure/tree/v4.26.1",
+      "source_archive": "adventure-v4.26.1.tar.gz",
+      "runtime_coordinates": [
+        "net.kyori:adventure-api:4.26.1",
+        "net.kyori:adventure-key:4.26.1",
+        "net.kyori:adventure-nbt:4.26.1"
+      ],
+      "published_sources": [
+        "adventure-api-4.26.1-sources.zip",
+        "adventure-key-4.26.1-sources.zip",
+        "adventure-nbt-4.26.1-sources.zip"
+      ],
+      "build_files": [
+        "adventure-4.26.1/gradle.properties",
+        "adventure-4.26.1/build.gradle.kts",
+        "adventure-4.26.1/settings.gradle.kts",
+        "adventure-4.26.1/gradle/libs.versions.toml"
+      ],
+      "root_license_and_notice_members": [
+        "adventure-4.26.1/license.txt"
+      ]
+    },
+    {
+      "name": "Examination",
+      "version": "1.3.0",
+      "tag": "v1.3.0",
+      "upstream": "https://github.com/KyoriPowered/examination",
+      "tag_url": "https://github.com/KyoriPowered/examination/tree/v1.3.0",
+      "source_archive": "examination-v1.3.0.tar.gz",
+      "runtime_coordinates": [
+        "net.kyori:examination-api:1.3.0",
+        "net.kyori:examination-string:1.3.0"
+      ],
+      "published_sources": [
+        "examination-api-1.3.0-sources.zip",
+        "examination-string-1.3.0-sources.zip"
+      ],
+      "build_files": [
+        "examination-1.3.0/build.gradle",
+        "examination-1.3.0/settings.gradle",
+        "examination-1.3.0/api/build.gradle",
+        "examination-1.3.0/string/build.gradle"
+      ],
+      "root_license_and_notice_members": [
+        "examination-1.3.0/license.txt"
+      ]
+    },
+    {
+      "name": "SQLite JDBC",
+      "version": "3.53.4.0",
+      "tag": "3.53.4.0",
+      "upstream": "https://github.com/xerial/sqlite-jdbc",
+      "tag_url": "https://github.com/xerial/sqlite-jdbc/tree/3.53.4.0",
+      "source_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "runtime_coordinates": [
+        "org.xerial:sqlite-jdbc:3.53.4.0"
+      ],
+      "published_sources": [
+        "sqlite-jdbc-3.53.4.0-sources.zip"
+      ],
+      "build_files": [
+        "sqlite-jdbc-3.53.4.0/pom.xml",
+        "sqlite-jdbc-3.53.4.0/VERSION",
+        "sqlite-jdbc-3.53.4.0/Makefile",
+        "sqlite-jdbc-3.53.4.0/Makefile.common",
+        "sqlite-jdbc-3.53.4.0/CONTRIBUTING.md",
+        "sqlite-jdbc-3.53.4.0/.github/workflows/build-native.yml"
+      ],
+      "root_license_and_notice_members": [
+        "sqlite-jdbc-3.53.4.0/LICENSE",
+        "sqlite-jdbc-3.53.4.0/LICENSE.zentus",
+        "sqlite-jdbc-3.53.4.0/NOTICE"
+      ]
+    }
+  ],
+  "pre_shaded_components": [
+    {
+      "coordinates": [
+        "org.bstats:bstats-bukkit:3.1.0",
+        "org.bstats:bstats-base:3.1.0"
+      ],
+      "container": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "source_archive": "bstats-metrics-v3.1.0.tar.gz",
+      "version_evidence": "packetevents-2.14.0/libs.versions.toml bstats=3.1.0; spigot module and shadow conventions",
+      "final_runtime_status": "Present in pristine PacketEvents input only; forbidden in patched GuardianAC output."
+    },
+    {
+      "coordinate": "net.kyori:option:1.1.0",
+      "container": "com.github.retrooper:packetevents-api:2.14.0",
+      "source_archive": "option-v1.1.0.tar.gz",
+      "version_evidence": "adventure-4.26.1/gradle/libs.versions.toml option=1.1.0; PacketEvents patch serializer dependency graph and relocated option class paths"
+    },
+    {
+      "coordinates": [
+        "net.kyori:adventure-text-serializer-gson:4.26.1",
+        "net.kyori:adventure-text-serializer-json:4.26.1",
+        "net.kyori:adventure-text-serializer-json-legacy-impl:4.26.1",
+        "net.kyori:adventure-text-serializer-commons:4.26.1",
+        "net.kyori:adventure-text-serializer-legacy:4.26.1"
+      ],
+      "container": "com.github.retrooper:packetevents-api:2.14.0",
+      "source_archive": "adventure-v4.26.1.tar.gz",
+      "patches_and_relocation": "packetevents-v2.14.0.tar.gz: patch/ and buildSrc/; patched source supersedes original Adventure source"
+    }
+  ],
+  "sqlite_engine": {
+    "version": "3.53.4",
+    "source_id": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc",
+    "source_archive": "sqlite-src-3530400.zip",
+    "amalgamation_archive": "sqlite-amalgamation-3530400.zip",
+    "xerial_native_build_default": "ENABLE_UPDATE_DELETE_LIMIT=1; Makefile regenerates amalgamation from full source and applies Xerial extension patches",
+    "build_control_files": [
+      "sqlite-jdbc-3.53.4.0/Makefile",
+      "sqlite-jdbc-3.53.4.0/Makefile.common",
+      "sqlite-jdbc-3.53.4.0/docker/",
+      "sqlite-jdbc-3.53.4.0/.github/workflows/build-native.yml"
+    ],
+    "public_domain_source_evidence": [
+      "sqlite-src-3530400/LICENSE.md",
+      "sqlite-amalgamation-3530400/sqlite3.c header"
+    ]
+  },
+  "limits": [
+    "No upstream build scripts, compiled dependency code, server, or native library were executed for this audit.",
+    "Published artifact-to-source provenance and static matching are verified. The explicit local builder replacement is compiled by the GuardianAC build; complete upstream-project/native rebuilds and bit-for-bit compiler reproducibility are not claimed by this source audit.",
+    "Upstream build plugins, system libraries, compilers, SDKs and container images are not vendored. Docker image references in upstream build files are not all digest-pinned.",
+    "Unmodified vendor archives retain publicly distributed reference binaries and test fixtures; they contain no GuardianAC deployment data.",
+    "The pristine PacketEvents tag and published artifact hashes describe baseline inputs, not unchanged final builder bytecode. The local source overlay and build exclusions are required for the final plugin."
+  ],
+  "final_runtime_overlay": "RUNTIME-SOURCE-OVERLAY.json"
+}

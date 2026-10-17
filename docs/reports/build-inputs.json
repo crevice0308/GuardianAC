@@ -1,0 +1,781 @@
+{
+  "plugin_sha256": "fb56fa5d8fcca60271863f7ced20df1ff9dfc79bbbc9e0757fc68b309687a5d1",
+  "scope": "Exact production, resource, test, build and bundled notice inputs; independent fixture/doc/upstream-source archive inputs are tracked by source distribution manifests.",
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    {
+      "path": "NOTICE.txt",
+      "sha256": "cdb840c6da929b6a4f2738187faa8df621ac64b32edafcd658abb28ad7305ec1",
+      "bytes": 639
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "sha256": "7a4f497486f8302c0aa0520eeeee5129cb076e9b71342611534406a27590390a",
+      "bytes": 6998
+    },
+    {
+      "path": "build.gradle",
+      "sha256": "7a4853d4face8e8580cb57101cdfd33e78689e8ca13599f4beb9087336b93c8c",
+      "bytes": 4344
+    },
+    {
+      "path": "gradle/embedded-packetevents.gradle",
+      "sha256": "47b62d6cbc10e72769788ba61af1e0bf1af237ea12b6c4df0e70a9998b7bfa18",
+      "bytes": 6652
+    },
+    {
+      "path": "gradle/verification-metadata.xml",
+      "sha256": "241b33da7a4ee138d1429dd4de30476bf1bee7691a00b6611a1ff6063aef37c1",
+      "bytes": 51177
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "sha256": "3b8a25775a69158b5ad2b1d17a80a88dc7b40a352a73eb27d06c612a7ce68e98",
+      "bytes": 48749
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "sha256": "b9c24447093e4fab2b1f37bfb461d2a1eb14157a4808dff50e0f954801a8f8f1",
+      "bytes": 368
+    },
+    {
+      "path": "gradle.lockfile",
+      "sha256": "4cfea653a36470111bb6154270d50cc13a4b02c6fb0cf0f91719a8c8aa2806f4",
+      "bytes": 5380
+    },
+    {
+      "path": "gradle.properties",
+      "sha256": "e56e23e1a5b16ab10bd1b6893443adb2d95cb76d7fd7ac469d714c94225c0188",
+      "bytes": 126
+    },
+    {
+      "path": "gradlew",
+      "sha256": "a5a5c199ba02189ae8c46a334223371a20599d9c298ef65e7540ede4a3f72d59",
+      "bytes": 8656
+    },
+    {
+      "path": "gradlew.bat",
+      "sha256": "31ec098bd961c460b62875950c3eff5c8213bcb0bbde38d769b88512877fd21f",
+      "bytes": 4776
+    },
+    {
+      "path": "settings.gradle",
+      "sha256": "a1667a42b2efd43920ba8c3230ae9751e0ba65dbe5104985444bad1563d5af3a",
+      "bytes": 41
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/AdvancedSetting.java",
+      "sha256": "1927be9aa2f2eeda44728259091e30d079ee7edb24d0e8f59f5a50685a110158",
+      "bytes": 6908
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/EventTelemetry.java",
+      "sha256": "575bd05bd0d20ece9b5b03fbbd749ea6a39f1f3c87dab3db23dd37571efcd5cd",
+      "bytes": 46184
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/GuardianPlugin.java",
+      "sha256": "e82dfb1b43a1fb2183c5ce173c962bdf377e19aa78408bfc8a94217b7d7645d6",
+      "bytes": 47379
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/GuardianSettings.java",
+      "sha256": "f313d19350afaaa2fa053ff3cf1e3deae6be4b0f2ea1fc917a08e569513ecadc",
+      "bytes": 4370
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/GuiManager.java",
+      "sha256": "126e2e9ec3e03b51a5dd14a5be5dd62c2e4c3ba6b4f0bcf036a31f929e24431d",
+      "bytes": 45097
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/PermanentIpController.java",
+      "sha256": "9727588df30a4822c703c99be0efd4ee339006f2e0fffaecfcc37f263fb73f6c",
+      "bytes": 29972
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/RuntimeMessages.java",
+      "sha256": "b9ae0da3bca924821c085dd4f1e3a154a0ee891c236c429562040cfde09faf68",
+      "bytes": 6545
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/telemetry/BoundedHistory.java",
+      "sha256": "fc1631fde579c79edad70d7c771365b025fb6ce4390427093bfe386dd733e979",
+      "bytes": 1900
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/telemetry/SessionStateStore.java",
+      "sha256": "5d09a4083e089fb42185ae1050da9fd001d93825c57e85cb6467c113602adcfc",
+      "bytes": 2719
+    },
+    {
+      "path": "src/main/java/dev/guardianac/checks/CheckCatalog.java",
+      "sha256": "49bb720cd6bf2034ab5b2e039f9f029fc8e234a70fb3a28aaffa4f210e38837f",
+      "bytes": 14274
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/AutomaticBanGate.java",
+      "sha256": "2adf39357d52490c9c1a899ff9facd10a26800f9c92d9d77595961c74700f739",
+      "bytes": 4645
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/BanEvidence.java",
+      "sha256": "b8b4a53688440c813001e4bcb59b0404afa5b66ca5c87ff62447dd4f320ac020",
+      "bytes": 2049
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/Check.java",
+      "sha256": "743928242088f9c24fde813d4cd2a6eacb84640cfe023e3481e7d75fbbbb0d39",
+      "bytes": 1028
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/DetectionEngine.java",
+      "sha256": "d6c30ed72bb39306eeecd3e4c786963091e35f6e0fc3d931fc237cc0cd6bf12c",
+      "bytes": 5868
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/Finding.java",
+      "sha256": "ebc766fc5000310656cd24c1c3a305f083216732257ad06e1d860a6a62ded40a",
+      "bytes": 314
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/PersistedBanEvidence.java",
+      "sha256": "5408f2f3490831750c0fefb6a56ede3c8469575804866700306ef0b45279fae1",
+      "bytes": 15595
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/Preset.java",
+      "sha256": "a366e6aa9f5fe4db4519a7d06924a225d80f5c2ad725cf7a58b44600310ee145",
+      "bytes": 345
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/RuntimeTarget.java",
+      "sha256": "88ccf6c786e40eae4900eecaf09698b436b157fa5d636ded31a8f99cb3a22d9f",
+      "bytes": 955
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/Sample.java",
+      "sha256": "5725bfe6ae6ac26e0775089ccda79a16d568df0c2decb0f35c6242bdf7743a0a",
+      "bytes": 2410
+    },
+    {
+      "path": "src/main/java/dev/guardianac/packet/PacketAdapter.java",
+      "sha256": "b16899fd2c6ca28e52e127ba0c284541b17ada3ab8e7742c8598e2ecbe2c92ba",
+      "bytes": 16093
+    },
+    {
+      "path": "src/main/java/dev/guardianac/packet/PacketContext.java",
+      "sha256": "929173a912f86107e1140625ece17fd29bdd74be3282de491ad72e69d75ee4a3",
+      "bytes": 819
+    },
+    {
+      "path": "src/main/java/dev/guardianac/packet/PacketMovement.java",
+      "sha256": "54b346bf70f82c01119db3c7c7c89f3a5e83779ea4764cb59fcfb49049c2d92d",
+      "bytes": 399
+    },
+    {
+      "path": "src/main/java/dev/guardianac/packet/PacketSession.java",
+      "sha256": "44bf235af2110c7f39494223e5e72f10ce48a0c9bd4ddc12f280bf157b4c3982",
+      "bytes": 1441
+    },
+    {
+      "path": "src/main/java/dev/guardianac/packet/PacketTelemetry.java",
+      "sha256": "9f53a57fd359c77e048ba9271773f10d8793ff203ad747df3ea56ae14ab64aca",
+      "bytes": 3625
+    },
+    {
+      "path": "src/main/java/dev/guardianac/packet/RateWindow.java",
+      "sha256": "2c1c06f0e52a6452c3fe1d8e6b3107fc3f05e134b8b1fd1b1c057ae0c7a46234",
+      "bytes": 1222
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/BoundedRateLimiter.java",
+      "sha256": "913e8971705914b921a6593bcf229c65e6b02f64907a76f1817e0d32d486a08d",
+      "bytes": 1414
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/ConfirmationManager.java",
+      "sha256": "0245dbf1676a0642b7a845aa93a6703ab0b14fcd551bbf45af3b09110a78e503",
+      "bytes": 1963
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/DiscordNotifier.java",
+      "sha256": "36a89ed824402bcefbf6040877eb0be62ce6fdc8e64efb5e7771a38838739320",
+      "bytes": 3547
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/NativeBanDecision.java",
+      "sha256": "167f7e732983b8d18213cffcda89ad4cc6831033aad7c61c4b0b5e8785db16a5",
+      "bytes": 1163
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/NativeBanDelivery.java",
+      "sha256": "602c66dcfba21bdc53a956dd47ef6879fe1f0bfe70ab9b00b905c52a5b25db91",
+      "bytes": 776
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/NativeBanOwnership.java",
+      "sha256": "c7ad5558f5b6061c5ace74bf4516ec50c4ccc108650a3fee81c98555e3a4f297",
+      "bytes": 637
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/NativeBanReconciler.java",
+      "sha256": "b60ed8d5a9637f0c534bd106e71566ed9149281eab1286def393703d98df7ba8",
+      "bytes": 8030
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/PermanentIpApprovalGate.java",
+      "sha256": "270d608ccb35f751b98359557a7751ce259670d329d78791fd075268237ba5e3",
+      "bytes": 7144
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/PrivateFiles.java",
+      "sha256": "20ded66e4786880585c4ab1807910844984cb290222fab16f1c2e9bfb9dd1f8c",
+      "bytes": 3540
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/ReplayBuffer.java",
+      "sha256": "9387237c1930b789505a39d6129b558d98c2712b46853fbf24fffd7f97b26164",
+      "bytes": 3756
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/SessionActionGate.java",
+      "sha256": "ac790a51b6e9fcf9c9f496d0082f388729248ab700299d1bde2c9388617cc2fa",
+      "bytes": 708
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BanDuration.java",
+      "sha256": "222d14db6522c8395c9f33d79ba9e900f102cee22e28922886a448a0216e8ac4",
+      "bytes": 643
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BanReconciliationSnapshot.java",
+      "sha256": "f417ad8f8f89cc60676945f7f0afeafd0e4b208c4b03b167e46f62e71d0c9b5f",
+      "bytes": 1031
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BanRecord.java",
+      "sha256": "efd8079ca4df54fc4517a11ecd162b5b64728b5e9f6e23ee40b9c3b3524b4ca3",
+      "bytes": 1625
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BanRequest.java",
+      "sha256": "12d0023319e2acf2897084cb7c6be23245cba5fa0ca4209e35bfa70b9aab0d6d",
+      "bytes": 1399
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BanStateSnapshot.java",
+      "sha256": "71eca23c3599f6713e56e4c7c4a62034a9b92997927d9438eed3da63d690f8ca",
+      "bytes": 445
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BanType.java",
+      "sha256": "acd8fbc80fdf46ba3c34c29258449e8a2134981eccf606c4d8f6a6b1b5f8cefb",
+      "bytes": 234
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BoundedStorageExecutor.java",
+      "sha256": "b3f6ec433d7480b094e3c5ccab2dc1168ba6d8ccd4d1bac07917a66d65328f7b",
+      "bytes": 3535
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/EvidenceInput.java",
+      "sha256": "e55ad39e58ec5abcf880aabef913c6f3b66678a54bacb297668f133c58b45931",
+      "bytes": 707
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/EvidenceRecord.java",
+      "sha256": "8f699cde2a6c9ae5a34ee368332840fe99166f9a586344f55f014cb9cd0fca50",
+      "bytes": 640
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/EvidenceSummary.java",
+      "sha256": "0dafb93a759048f0ddf0aa7792aba18de3aa19aa34e8b2d8aeb063f5339309f6",
+      "bytes": 403
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/IpBanPolicy.java",
+      "sha256": "9b66899cefe1a04089960805c10b3be8b960125b5b9994d213801122b525dfc2",
+      "bytes": 3353
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/IpPrivacy.java",
+      "sha256": "f4c65d2be44b6c2940c83c1720ef0f5d186f9bdefafb9de18b1d0f64e7c3ecd2",
+      "bytes": 7028
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/PermanentIpAudit.java",
+      "sha256": "bfe853f17e98007f655a28ad19eaa462becc89f206d1b3ea0f8636492635179a",
+      "bytes": 406
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/PermanentIpCandidate.java",
+      "sha256": "a0314da013abf9cb53977fa43bf0db4b396479d71770a9e4227ca6503f8d6e61",
+      "bytes": 3640
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/PermanentIpReview.java",
+      "sha256": "99484e068b510f2a227fe30ac2fc779a834b39383f64dfdde386e20053acc11a",
+      "bytes": 570
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/SecurePaths.java",
+      "sha256": "cdd95bfcb924a085eea81b37b4d6f044a2053bcaea0268c1095e9aa231d838d6",
+      "bytes": 1383
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/SqliteBanRepository.java",
+      "sha256": "ed07f0cede8c5485aebec2708066a8c691e2fcd114cc8b6fed55485a520ae11a",
+      "bytes": 80719
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/StorageConfig.java",
+      "sha256": "ea5ba9dccfe5aa7e4576927ec378eba8e247ba1c2aaaf6dc189c1104c52930b9",
+      "bytes": 1069
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/StorageException.java",
+      "sha256": "9edfc2980211844922cdf38154e588802e134d67ca4b2042313d31ef5397cc9c",
+      "bytes": 348
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/StorageValidation.java",
+      "sha256": "50e7daa0e4e09985178aae50285e17467227062a817bb6ceba74195ca7e3551b",
+      "bytes": 586
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/UnbanAudit.java",
+      "sha256": "73643764910bec62bd10a5742fd36cdd8d7086dfc99fe8fa4e52c9364741e0eb",
+      "bytes": 216
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/package-info.java",
+      "sha256": "11fc252abb686cb80f2bcfdea8f71c7e54bd814f7c751e29d977b761e64120a1",
+      "bytes": 2882
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/BlockPosition.java",
+      "sha256": "d018b93c556c38df847dda83a60d23bd391d1f92571609464122294a2be6ca01",
+      "bytes": 352
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/ChunkConcealment.java",
+      "sha256": "1b378c824ff6d2036e33aeaa02ca2d9889091ae0a71c32292510750b9d7b45b3",
+      "bytes": 12128
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/ChunkWorkBudget.java",
+      "sha256": "0c37595a39629f9371abb0440f3cd04287a3c1724c43cfbdff74781602560cce",
+      "bytes": 767
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/ConcealmentMask.java",
+      "sha256": "a2d4d9f1741c0abe85da42bd81df6e868cf0848a160b2c044028b0921ed461ab",
+      "bytes": 1791
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/ConcealmentPolicy.java",
+      "sha256": "9031d817652ca8c72d942692a58ec54674dc6fdce5c7e6838c5d8d5daf687302",
+      "bytes": 790
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/HiddenBlockCache.java",
+      "sha256": "4db153ea8a63ae0a3350bf683c19421e63ceb86050095040930a713b9e1da991",
+      "bytes": 5756
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/MiningStatistics.java",
+      "sha256": "ccf1e0daf52c813729cbf76824101334ff95659c482658fcecebe9cdb0db9376",
+      "bytes": 3200
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/NativeAntiXray.java",
+      "sha256": "23c017e3074b825ec8266282468ff2cc3eeefcd1ddd048957c148eb85b1e9fa4",
+      "bytes": 1472
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/PalettePrefilter.java",
+      "sha256": "28768ecc3aa92d46e68f92ade731f604eb6260392fb85ac070e8ae182d923512",
+      "bytes": 2095
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/XrayService.java",
+      "sha256": "866ed1b920533156410840e65f7f466c34725a3b2fdc0f15848c58ad8e8280da",
+      "bytes": 9508
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/XraySettings.java",
+      "sha256": "14ad7b98c966c2cec18cca1cfde1dbac7f877268a756fd2da2bcbb48eb192007",
+      "bytes": 2165
+    },
+    {
+      "path": "src/main/resources/config.yml",
+      "sha256": "d1770454f4bb51a30506c5cb1081fddf0cc5380e09f7cbc7eae8ae78d395ebe7",
+      "bytes": 689
+    },
+    {
+      "path": "src/main/resources/locales/runtime_en.properties",
+      "sha256": "62443dfdd75935daded77d0fbeb8bd376ab893fb10c14c33d89081cc8e6f34fc",
+      "bytes": 5370
+    },
+    {
+      "path": "src/main/resources/locales/runtime_ja.properties",
+      "sha256": "59e5810da1fac29d6925c36ff56d6cbdd488d58661c69d77fa6fa831b88eed0d",
+      "bytes": 7195
+    },
+    {
+      "path": "src/main/resources/plugin.yml",
+      "sha256": "c02ef6e072cd9ce22a2872820bd13339717aa41013238c586ce955cd902c14ce",
+      "bytes": 1152
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/AdvancedSettingsTest.java",
+      "sha256": "1a659d8d1f6ea7bea71666843e3878696471dccef43b2b2fa7fd1372c2ef70f6",
+      "bytes": 13870
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/GuardianSettingsTest.java",
+      "sha256": "2a905d77b9d9383f226852e9326d6b85d8a3aeb7a68146123c36a19c45bd8f2f",
+      "bytes": 7440
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/GuiEvidenceReplayTest.java",
+      "sha256": "d702e267951bf144e455194b8cc00c1b2973fa1985753422a8319ef8d0e4e70a",
+      "bytes": 2418
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/GuiUnbanPreviewTest.java",
+      "sha256": "167bd24aa4d64e8b152cf6e1f926c7ba1d4b6ed2f2fdae41b2f719db9962a213",
+      "bytes": 4868
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/LoginAssociationTest.java",
+      "sha256": "76ec0d8d0bd1fa7b6969966cebe735817a8324cebeb595196167075e7ea3753e",
+      "bytes": 2996
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/PermanentIpReviewViewTest.java",
+      "sha256": "22fcad7164ec3323f326e54bf8deb9d1448d06c86cd521db817b96a3ce63f928",
+      "bytes": 9697
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/RuntimeMessagesTest.java",
+      "sha256": "ad8156342e5c634efe5246eb30798d30af3dfadb172e0d97c7714ee0c0f767dc",
+      "bytes": 9648
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/UnbanActionBindingTest.java",
+      "sha256": "cabb2956302207e2773106fbca0d2d7e9fdbca9b8f90fabd681d5f0bfe9019c4",
+      "bytes": 2818
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/telemetry/SessionStateStoreTest.java",
+      "sha256": "d0a1022c2a6c2a1cb865149194bc476ac5aec29c6c815bc0ebbc704b5ad3d2df",
+      "bytes": 5497
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/AutomaticBanGateTest.java",
+      "sha256": "a8db6cc7b83719bdef886c8e7a1b0bb9debcf09c0cbbe0a2ff2acbd53c1d1dec",
+      "bytes": 6107
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/BanEvidenceTest.java",
+      "sha256": "9b71c040573d1b48ddfb30e8a898986c6641a42cdb71c85bda42ace40ca68ed4",
+      "bytes": 4329
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/CheckCatalogTest.java",
+      "sha256": "90af7dc2d3227d750f6768c306279b5dbb15dbcf4c9c4da509e6fa9130060bb0",
+      "bytes": 13833
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/DetectionEngineTest.java",
+      "sha256": "dd0dafd4bd154f0536a96014020ed8bb8cf673f9b8d4327fba04aeeb89a6d6d8",
+      "bytes": 11347
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/DetectionLoadTest.java",
+      "sha256": "b60d1e702fbff8fec1ae2b2453e8c3a4591a69eea876f2e115e5d8ddfb7fc723",
+      "bytes": 1847
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/PersistedBanEvidenceTest.java",
+      "sha256": "6714cb58e9e53b17f3b061ed41fe47d85c59aab86e4b50bc6486333deaade6f4",
+      "bytes": 8328
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/RuntimeTargetTest.java",
+      "sha256": "bb43576f0ce9f3e6c8d736c8cae00c8d93a2756009540113e31c666560815e69",
+      "bytes": 1895
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/SampleAndHistoryTest.java",
+      "sha256": "f12b39778bd214e04ac951ec00e8571b894524b8de5cf723b66380a9bb3c1072",
+      "bytes": 2834
+    },
+    {
+      "path": "src/test/java/dev/guardianac/packet/PacketSessionTest.java",
+      "sha256": "84ac551a63936aad94fd9251f413fc9713d099476a0113e8880b52e609a3f805",
+      "bytes": 4859
+    },
+    {
+      "path": "src/test/java/dev/guardianac/packet/PacketTelemetryTest.java",
+      "sha256": "ffbdacdcdf68d5c4a880ff1ba599509a9fa9eb23c306b64ec7b7700291c57694",
+      "bytes": 4312
+    },
+    {
+      "path": "src/test/java/dev/guardianac/packet/ProtocolTargetTest.java",
+      "sha256": "8dc23f23c365a82f47cf44391bdc1db4f40f36fc0ae866f7c5b5add90a67250e",
+      "bytes": 1257
+    },
+    {
+      "path": "src/test/java/dev/guardianac/security/IntegrationSafetyTest.java",
+      "sha256": "298ff3b8c6bbce6ec01b4adf4da3f2e7c93a5a65c4e1ed8eef5f817bbc2c5f86",
+      "bytes": 6700
+    },
+    {
+      "path": "src/test/java/dev/guardianac/security/NativeBanDecisionTest.java",
+      "sha256": "cc447957492d4cfa7aa35c21444e86ed6b701db359c48d0d510406504cf97de9",
+      "bytes": 3023
+    },
+    {
+      "path": "src/test/java/dev/guardianac/security/NativeBanReconcilerTest.java",
+      "sha256": "75487dc13d5cda4fd99556eebc73fc43fc85c40ba930f5b8a34dff7afd9550d7",
+      "bytes": 13124
+    },
+    {
+      "path": "src/test/java/dev/guardianac/security/PermanentIpApprovalGateTest.java",
+      "sha256": "7c5f5bd4fb49644d0b34e9ac9e63c9abd4703e87b8071ec226964c965025c40e",
+      "bytes": 7654
+    },
+    {
+      "path": "src/test/java/dev/guardianac/security/SecurityTests.java",
+      "sha256": "8845ef4ca35ea079e8c07785fad55e58d748be0d138663913ce7fa612d1bce68",
+      "bytes": 3635
+    },
+    {
+      "path": "src/test/java/dev/guardianac/storage/BoundedStorageExecutorTest.java",
+      "sha256": "b88c3183a1fb7fb02cc32fab7ba6f6372525259ddf82ec2f7cf980cb4e09f94b",
+      "bytes": 2328
+    },
+    {
+      "path": "src/test/java/dev/guardianac/storage/IpBanPolicyTest.java",
+      "sha256": "69e5653aefdf7ef1a3e69a796acdc86300488856b55c771f0316b8ee20fe90d4",
+      "bytes": 4076
+    },
+    {
+      "path": "src/test/java/dev/guardianac/storage/IpPrivacyTest.java",
+      "sha256": "2a13f46e2b3f6c52bf40771cfa8d97954e09d67169920108efd7f323ebcda852",
+      "bytes": 4793
+    },
+    {
+      "path": "src/test/java/dev/guardianac/storage/PermanentIpCandidateTest.java",
+      "sha256": "d2a871a17ae0a61ffc8ec4a490cd45272b62e54e639d0cb50ef45a24afeabad8",
+      "bytes": 2701
+    },
+    {
+      "path": "src/test/java/dev/guardianac/storage/PermanentIpRepositoryTest.java",
+      "sha256": "ebd9e6546ea7e5171ef7a383fe085d61c516c7584edb5a63153f29a0ee04295a",
+      "bytes": 39866
+    },
+    {
+      "path": "src/test/java/dev/guardianac/storage/SqliteBanRepositoryTest.java",
+      "sha256": "a2a273642ea431694e43f5d63dc44379daf3deff3809f16d48e57a7ef8024c2e",
+      "bytes": 36494
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/ChunkPaletteApiTest.java",
+      "sha256": "901ad0c612573b39793c6dd99e9ea8338bf8ef7a5e3d68bcb36ac0c077cb1f60",
+      "bytes": 2846
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/ChunkReplacementTest.java",
+      "sha256": "a05702013d3faaf8d669570e30e5837737d3e984c87b2c912658e6a001ad42c9",
+      "bytes": 2955
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/ChunkWorkBudgetTest.java",
+      "sha256": "85599700bdaa8916d28c02b01852ac4d4a705f530deb568ea6a0b9beacd1ea8f",
+      "bytes": 3182
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/ConcealmentMaskTest.java",
+      "sha256": "227c323c7ce62564799dc63350dfba2f4a43bd1c6ff13c98e9b81ecd0eb9aca5",
+      "bytes": 2451
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/ConcealmentPolicyTest.java",
+      "sha256": "08279bb4962a91f9521f4a276302ea6ade259054381d6362f15f2b9abeb77330",
+      "bytes": 4285
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/HiddenBlockCacheTest.java",
+      "sha256": "05bf81ba202aa7a870046169fc05456853b46e6ae8b8bbbe7ad7f05beddc6621",
+      "bytes": 3494
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/MiningStatisticsTest.java",
+      "sha256": "3ccef8dd03d2ebacd265e717852a6a8cab819a287ac7c8ae3431cc3696d9addb",
+      "bytes": 3441
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/PalettePrefilterTest.java",
+      "sha256": "d1603c45eb7d614d6f0549c9455770c0a844a20e7524f1ce5dfd638548f7f972",
+      "bytes": 5997
+    },
+    {
+      "path": "third-party/licenses/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "third-party/licenses/PacketEvents-LICENSE.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    {
+      "path": "third-party/licenses/adventure-license.txt",
+      "sha256": "6f3f7529e339bca44fb8693f606267dabf80e11ce228e12e9a4fa3316a30d6b5",
+      "bytes": 1074
+    },
+    {
+      "path": "third-party/licenses/bstats-LICENSE.txt",
+      "sha256": "6d3c689b613d867e7d70425eccc32577160b80d24cba3c31bed168409376bdbb",
+      "bytes": 1073
+    },
+    {
+      "path": "third-party/licenses/bstats-base-3.1.0.pom",
+      "sha256": "88ac01a943da03c5e22a0383194cb369e1350e55d9ea77740b52d0422482c20f",
+      "bytes": 1522
+    },
+    {
+      "path": "third-party/licenses/bstats-bukkit-3.1.0.pom",
+      "sha256": "f215d18080427d7bb8eb5eae2fb636ffc682e74214ac20b036fd1d667db2fb4a",
+      "bytes": 1733
+    },
+    {
+      "path": "third-party/licenses/com.github.retrooper.packetevents-api-2.14.0/packetevents-api-2.14.0.pom",
+      "sha256": "bffcefe5dff99d8504e3f495cae582374f5f0473b735f53db33e4f6849722ef2",
+      "bytes": 1125
+    },
+    {
+      "path": "third-party/licenses/com.github.retrooper.packetevents-netty-common-2.14.0/packetevents-netty-common-2.14.0.pom",
+      "sha256": "4c6f8435697596a1b7608c0151f357b4d26b0f89367af3e390f92ad9dfc2cde4",
+      "bytes": 1888
+    },
+    {
+      "path": "third-party/licenses/com.github.retrooper.packetevents-spigot-2.14.0/packetevents-spigot-2.14.0.pom",
+      "sha256": "7e1317faf9d69e0cadb3c07f514dfa78cfc222ca2adc94338f58b0b6b1b3601d",
+      "bytes": 2422
+    },
+    {
+      "path": "third-party/licenses/com.google.code.gson.gson-2.14.0/gson-2.14.0.pom",
+      "sha256": "1fa0122c0e3733192642861c36be4c6f799a795327a23bdd2922691b6e9ba480",
+      "bytes": 22768
+    },
+    {
+      "path": "third-party/licenses/com.google.errorprone.error_prone_annotations-2.48.0/error_prone_annotations-2.48.0.pom",
+      "sha256": "189e09ad0489c325e90daaa9d5c8f406330602fa366609bca07cbcdad03ab9da",
+      "bytes": 4252
+    },
+    {
+      "path": "third-party/licenses/error-prone-COPYING.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "third-party/licenses/examination-license.txt",
+      "sha256": "09feac81b5b0c6536121a8cd7be6ba8a00207f8b3ca8a020f4d3017848f00a33",
+      "bytes": 1073
+    },
+    {
+      "path": "third-party/licenses/gson-LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "third-party/licenses/net.kyori.adventure-api-4.26.1/adventure-api-4.26.1.pom",
+      "sha256": "9c7682ecb494d5bec25690f6564278261f477d351d1ab44f2f9001ea4008a818",
+      "bytes": 3325
+    },
+    {
+      "path": "third-party/licenses/net.kyori.adventure-key-4.26.1/adventure-key-4.26.1.pom",
+      "sha256": "532300907d2f7a8418c32c2d88994adbe64aa2f1130336f9f51e80d1d10cbca9",
+      "bytes": 3149
+    },
+    {
+      "path": "third-party/licenses/net.kyori.adventure-nbt-4.26.1/adventure-nbt-4.26.1.pom",
+      "sha256": "557e832dcda0b1b377fd8410adf0abc587f8c318c392abd0fb43019ead0b07ad",
+      "bytes": 3149
+    },
+    {
+      "path": "third-party/licenses/net.kyori.examination-api-1.3.0/examination-api-1.3.0.pom",
+      "sha256": "c122186bb74364add5e93471bbd1c5e738e52939bd2bb1f40b19e0a3b8b7c82e",
+      "bytes": 2051
+    },
+    {
+      "path": "third-party/licenses/net.kyori.examination-string-1.3.0/examination-string-1.3.0.pom",
+      "sha256": "5ee00410822f36e9019d94762ce01bcd6039569765351bef0660945cd4f9a56e",
+      "bytes": 2056
+    },
+    {
+      "path": "third-party/licenses/option-1.1.0.pom",
+      "sha256": "1f3318a1cee63e8085096242cf0619a44b8576f6b56c2391a00cc5e1275847b6",
+      "bytes": 2195
+    },
+    {
+      "path": "third-party/licenses/option-license.txt",
+      "sha256": "71c1374a3b176c6728754ac99275b321fddbb3e4c2a139e734a3566640e6c1b9",
+      "bytes": 1069
+    },
+    {
+      "path": "third-party/licenses/org.xerial.sqlite-jdbc-3.53.4.0/META-INF_maven_org.xerial_sqlite-jdbc_LICENSE",
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "bytes": 11560
+    },
+    {
+      "path": "third-party/licenses/org.xerial.sqlite-jdbc-3.53.4.0/META-INF_maven_org.xerial_sqlite-jdbc_LICENSE.zentus",
+      "sha256": "89167dab92289c7e5e2b65b044f0856b703d05e5d5e35c3548e73d9c7d2f5048",
+      "bytes": 1312
+    },
+    {
+      "path": "third-party/licenses/org.xerial.sqlite-jdbc-3.53.4.0/sqlite-jdbc-3.53.4.0.pom",
+      "sha256": "ff588556ba06aa68a568062f2cb9d243dde1f631eafd2010cfef23cab06a7ab9",
+      "bytes": 28419
+    },
+    {
+      "path": "third-party/licenses/sqlite-jdbc-NOTICE.txt",
+      "sha256": "a0670cf020edf700524c43c85321c2ba027a8bace5682001db60875d4a9fe52b",
+      "bytes": 174
+    },
+    {
+      "path": "third-party/patches/packetevents-2.14.0/README.md",
+      "sha256": "a16ca2553b75fd6810e0e50b5e9676bdfbb0462dd311ba60a1e03554fd48c6fc",
+      "bytes": 7772
+    },
+    {
+      "path": "third-party/patches/packetevents-2.14.0/disable-embedded-metrics.patch",
+      "sha256": "c65f18ac4945a1b154899d46556d724e5f70081bc718a43e22383094ca4b5fdf",
+      "bytes": 1395
+    },
+    {
+      "path": "third-party/patches/packetevents-2.14.0/src/compileOnly/java/org/bukkit/Bukkit.java",
+      "sha256": "758a316244009afc6e9b5e6bbd20a33a84b18505f0ed7f040c459571f031a157",
+      "bytes": 1140
+    },
+    {
+      "path": "third-party/patches/packetevents-2.14.0/src/main/java/io/github/retrooper/packetevents/factory/spigot/SpigotPacketEventsBuilder.java",
+      "sha256": "0dd2b519702ae8fa67fd615b4e9203da14fb2c642164acc9be8281cce2729fb3",
+      "bytes": 18556
+    },
+    {
+      "path": "third-party/sources/packetevents-v2.14.0.tar.gz",
+      "sha256": "0474b4a507699a9eef60d6676a84a5f086858786b0c155b2aed6addb2edb6e49",
+      "bytes": 3445769
+    }
+  ]
+}

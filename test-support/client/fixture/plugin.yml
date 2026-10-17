@@ -1,0 +1,11 @@
+name: RealClientFixture
+version: 1.0
+main: test.guardianreal.RealClientFixture
+api-version: '26.3'
+depend: [GuardianAC]
+commands:
+  gacreal:
+    permission: gacreal.admin
+permissions:
+  gacreal.admin:
+    default: op

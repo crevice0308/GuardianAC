@@ -1,0 +1,11 @@
+name: ModifierFixture
+version: '1.0'
+main: test.guardianmod.ModifierFixture
+api-version: '26.3'
+depend: [GuardianAC]
+commands:
+  gacmod:
+    permission: guardianfixture.modifier
+permissions:
+  guardianfixture.modifier:
+    default: op

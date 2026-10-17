@@ -1,0 +1,24 @@
+--- a/spigot/src/main/java/io/github/retrooper/packetevents/factory/spigot/SpigotPacketEventsBuilder.java
++++ b/spigot/src/main/java/io/github/retrooper/packetevents/factory/spigot/SpigotPacketEventsBuilder.java
+@@ -50,8 +50,6 @@
+ import io.github.retrooper.packetevents.util.protocolsupport.ProtocolSupportUtil;
+ import io.github.retrooper.packetevents.util.viaversion.CustomPipelineUtil;
+ import io.github.retrooper.packetevents.util.viaversion.ViaVersionUtil;
+-import org.bstats.bukkit.Metrics;
+-import org.bstats.charts.SimplePie;
+ import org.bukkit.Bukkit;
+ import org.bukkit.entity.Player;
+ import org.bukkit.plugin.Plugin;
+@@ -214,9 +212,9 @@
+                     }
+                     if (stopping.get()) return;
+ 
+-                    Metrics metrics = new Metrics(plugin, 11327);
+-                    //Just to have an idea of which versions of packetevents people use
+-                    metrics.addCustomChart(new SimplePie("packetevents_version", () -> getVersion().toStringWithoutSnapshot()));
++                    // GuardianAC local modification (2026-10-14): omit embedded metrics.
++                    // Do not construct bStats, schedule reports, or touch its shared config.
++                    // This change only affects GuardianAC's privately relocated copy.
+ 
+                     Bukkit.getPluginManager().registerEvents(new InternalGlobalBukkitListener(), plugin);
+ 

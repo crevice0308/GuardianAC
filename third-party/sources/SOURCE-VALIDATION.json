@@ -1,0 +1,2029 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-10-14",
+  "method": "Static archive checks, normalized source text comparisons, JVM SourceFile metadata inspection, and native byte/hash/source-ID comparison; no dependency code execution",
+  "runtime_classpath_coverage": {
+    "object_code_coordinates": [
+      "com.github.retrooper:packetevents-api:2.14.0",
+      "com.github.retrooper:packetevents-netty-common:2.14.0",
+      "com.github.retrooper:packetevents-spigot:2.14.0",
+      "com.google.code.gson:gson:2.14.0",
+      "com.google.errorprone:error_prone_annotations:2.48.0",
+      "net.kyori:adventure-api:4.26.1",
+      "net.kyori:adventure-key:4.26.1",
+      "net.kyori:adventure-nbt:4.26.1",
+      "net.kyori:examination-api:1.3.0",
+      "net.kyori:examination-string:1.3.0",
+      "org.xerial:sqlite-jdbc:3.53.4.0"
+    ],
+    "metadata_only_exclusion": "net.kyori:adventure-bom:4.26.1"
+  },
+  "published_source_to_tag_comparison": [
+    {
+      "published_sources": "bstats-base-3.1.0-sources.zip",
+      "tag_archive": "bstats-metrics-v3.1.0.tar.gz",
+      "exact_text_matches_after_crlf_normalization": 11,
+      "verified_generated_sources": [],
+      "verified_multi_release_path_mappings": [],
+      "unresolved": []
+    },
+    {
+      "published_sources": "bstats-bukkit-3.1.0-sources.zip",
+      "tag_archive": "bstats-metrics-v3.1.0.tar.gz",
+      "exact_text_matches_after_crlf_normalization": 1,
+      "verified_generated_sources": [],
+      "verified_multi_release_path_mappings": [],
+      "unresolved": []
+    },
+    {
+      "published_sources": "option-1.1.0-sources.zip",
+      "tag_archive": "option-v1.1.0.tar.gz",
+      "exact_text_matches_after_crlf_normalization": 12,
+      "verified_generated_sources": [],
+      "verified_multi_release_path_mappings": [
+        {
+          "published_path": "META-INF/versions/9/module-info.java",
+          "tag_path": "option-1.1.0/src/main/java9/module-info.java"
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "published_sources": "gson-2.14.0-sources.zip",
+      "tag_archive": "gson-gson-parent-2.14.0.tar.gz",
+      "exact_text_matches_after_crlf_normalization": 86,
+      "verified_generated_sources": [
+        {
+          "published_path": "com/google/gson/internal/GsonBuildConfig.java",
+          "tag_path": "gson-gson-parent-2.14.0/gson/src/main/java-templates/com/google/gson/internal/GsonBuildConfig.java",
+          "transformation": "Maven templating substitutes ${project.version} with 2.14.0"
+        }
+      ],
+      "verified_multi_release_path_mappings": [],
+      "unresolved": []
+    },
+    {
+      "published_sources": "error_prone_annotations-2.48.0-sources.zip",
+      "tag_archive": "error-prone-v2.48.0.tar.gz",
+      "exact_text_matches_after_crlf_normalization": 30,
+      "verified_generated_sources": [],
+      "verified_multi_release_path_mappings": [],
+      "unresolved": []
+    },
+    {
+      "published_sources": "adventure-api-4.26.1-sources.zip",
+      "tag_archive": "adventure-v4.26.1.tar.gz",
+      "exact_text_matches_after_crlf_normalization": 203,
+      "verified_generated_sources": [],
+      "verified_multi_release_path_mappings": [],
+      "unresolved": []
+    },
+    {
+      "published_sources": "adventure-key-4.26.1-sources.zip",
+      "tag_archive": "adventure-v4.26.1.tar.gz",
+      "exact_text_matches_after_crlf_normalization": 9,
+      "verified_generated_sources": [],
+      "verified_multi_release_path_mappings": [],
+      "unresolved": []
+    },
+    {
+      "published_sources": "adventure-nbt-4.26.1-sources.zip",
+      "tag_archive": "adventure-v4.26.1.tar.gz",
+      "exact_text_matches_after_crlf_normalization": 52,
+      "verified_generated_sources": [],
+      "verified_multi_release_path_mappings": [],
+      "unresolved": []
+    },
+    {
+      "published_sources": "examination-api-1.3.0-sources.zip",
+      "tag_archive": "examination-v1.3.0.tar.gz",
+      "exact_text_matches_after_crlf_normalization": 5,
+      "verified_generated_sources": [],
+      "verified_multi_release_path_mappings": [
+        {
+          "published_path": "META-INF/versions/9/module-info.java",
+          "tag_path": "examination-1.3.0/api/src/main/java9/module-info.java"
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "published_sources": "examination-string-1.3.0-sources.zip",
+      "tag_archive": "examination-v1.3.0.tar.gz",
+      "exact_text_matches_after_crlf_normalization": 4,
+      "verified_generated_sources": [],
+      "verified_multi_release_path_mappings": [
+        {
+          "published_path": "META-INF/versions/9/module-info.java",
+          "tag_path": "examination-1.3.0/string/src/main/java9/module-info.java"
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "published_sources": "sqlite-jdbc-3.53.4.0-sources.zip",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "exact_text_matches_after_crlf_normalization": 60,
+      "verified_generated_sources": [],
+      "verified_multi_release_path_mappings": [],
+      "unresolved": []
+    }
+  ],
+  "runtime_artifact_source_coverage": [
+    {
+      "coordinate": "com.github.retrooper:packetevents-api:2.14.0",
+      "sha256": "cf1afcfd1ccffba5108b3227918f1d8d4d0f10fc6b654901cff42d0070e427ca",
+      "bytes": 4793680,
+      "classfiles_with_matching_source": 1657,
+      "classfiles_without_sourcefile_attribute": [],
+      "classfiles_with_unresolved_source_path": [],
+      "classfiles_with_explicit_generated_or_relocation_mapping": [
+        {
+          "class": "com/github/retrooper/packetevents/util/PEVersions.class",
+          "resolution": "Generated by buildSrc/src/main/kotlin/com/github/retrooper/version/PEVersionTask.kt in PacketEvents tag; includes build-time timestamp, not bit-reproducible as supplied"
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/BackwardCompatUtil$ShowAchievementToComponent.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/BackwardCompatUtil.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/BackwardCompatUtil.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/BackwardCompatUtil.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/ComponentSerializerImpl$1.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/ComponentSerializerImpl$2.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/ComponentSerializerImpl$3.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/ComponentSerializerImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/GsonComponentSerializer$Builder.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonComponentSerializer.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonComponentSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/GsonComponentSerializer$Provider.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonComponentSerializer.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonComponentSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/GsonComponentSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonComponentSerializer.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonComponentSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/GsonComponentSerializerImpl$BuilderImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/GsonComponentSerializerImpl$Instances.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/GsonComponentSerializerImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/SerializerFactory.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/SerializerFactory.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/SerializerFactory.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/ShowEntitySerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ShowEntitySerializer.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ShowEntitySerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/ShowItemSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ShowItemSerializer.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ShowItemSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/StyleSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/StyleSerializer.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/StyleSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/legacyimpl/NBTLegacyHoverEventSerializerImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json-legacy-impl/src/main/java/net/kyori/adventure/text/serializer/json/legacyimpl/NBTLegacyHoverEventSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/json/legacyimpl/NBTLegacyHoverEventSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/legacyimpl/NBTLegacyHoverEventSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json-legacy-impl/src/main/java/net/kyori/adventure/text/serializer/json/legacyimpl/NBTLegacyHoverEventSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/DummyJSONComponentSerializer$BuilderImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/DummyJSONComponentSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/DummyJSONComponentSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/DummyJSONComponentSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/JSONComponentConstants.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/JSONComponentConstants.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/JSONComponentSerializer$Builder.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/JSONComponentSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/JSONComponentSerializer$Provider.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/JSONComponentSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/JSONComponentSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/JSONComponentSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/JSONComponentSerializerAccessor$Instances.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/JSONComponentSerializerAccessor.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/JSONComponentSerializerAccessor.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/JSONComponentSerializerAccessor.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/JSONOptions$ClickEventValueMode.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/JSONOptions.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/JSONOptions$HoverEventValueMode.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/JSONOptions.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/JSONOptions$ShadowColorEmitMode.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/JSONOptions.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/JSONOptions$ShowItemHoverDataMode.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/JSONOptions.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/JSONOptions.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/JSONOptions.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/json/LegacyHoverEventSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-json/src/main/java/net/kyori/adventure/text/serializer/json/LegacyHoverEventSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/commons/ComponentTreeConstants.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-commons/src/main/java/net/kyori/adventure/text/serializer/commons/ComponentTreeConstants.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/BlockNBTComponentPosSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/BlockNBTComponentPosSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/ClickEventActionSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ClickEventActionSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/GsonDataComponentValue.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonDataComponentValue.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/GsonDataComponentValueImpl$RemovedGsonComponentValueImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonDataComponentValueImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/GsonDataComponentValueImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonDataComponentValueImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/GsonHacks.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/GsonHacks.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/HoverEventActionSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/HoverEventActionSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/IndexedSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/IndexedSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/KeySerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/KeySerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/LegacyHoverEventSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/LegacyHoverEventSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/ProfilePropertySerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ProfilePropertySerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/ShadowColorSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/ShadowColorSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/StyleSerializer$1.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/StyleSerializer.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/StyleSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/TextColorSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/TextColorSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/TextColorWrapper$Serializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/TextColorWrapper.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/TextColorWrapper.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/TextColorWrapper.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/TextDecorationSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/TextDecorationSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/TranslationArgumentSerializer$1.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/TranslationArgumentSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/TranslationArgumentSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/TranslationArgumentSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/UUIDSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/UUIDSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/impl/GsonDataComponentValueConverterProvider.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/impl/GsonDataComponentValueConverterProvider.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/impl/JSONComponentSerializerProviderImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/impl/JSONComponentSerializerProviderImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/gson/impl/package-info.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-gson/src/main/java/net/kyori/adventure/text/serializer/gson/impl/package-info.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/Option.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/Option.java",
+            "option-1.1.0/src/main/java/net/kyori/option/Option.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionSchema$Mutable.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionSchema.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionSchema.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionSchema.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionSchema.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionSchema.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionSchemaImpl$Instances.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionSchemaImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionSchemaImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionSchemaImpl$MutableImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionSchemaImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionSchemaImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionSchemaImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionSchemaImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionSchemaImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionState$Builder.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionState.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionState.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionState$Versioned.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionState.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionState.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionState$VersionedBuilder.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionState.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionState.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionState.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionState.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionState.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionStateImpl$BuilderImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionStateImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionStateImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionStateImpl$VersionedBuilderImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionStateImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionStateImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionStateImpl$VersionedImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionStateImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionStateImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/OptionStateImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/OptionStateImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/OptionStateImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/package-info.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/package-info.java",
+            "option-1.1.0/src/main/java/net/kyori/option/package-info.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/value/ValueSource.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/value/ValueSource.java",
+            "option-1.1.0/src/main/java/net/kyori/option/value/ValueSource.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/value/ValueSources$EnvironmentVariable.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/value/ValueSources.java",
+            "option-1.1.0/src/main/java/net/kyori/option/value/ValueSources.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/value/ValueSources$SystemProperty.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/value/ValueSources.java",
+            "option-1.1.0/src/main/java/net/kyori/option/value/ValueSources.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/value/ValueSources.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/value/ValueSources.java",
+            "option-1.1.0/src/main/java/net/kyori/option/value/ValueSources.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/value/ValueType.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/value/ValueType.java",
+            "option-1.1.0/src/main/java/net/kyori/option/value/ValueType.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/value/ValueTypeImpl$EnumType.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/value/ValueTypeImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/value/ValueTypeImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/value/ValueTypeImpl$Types$1.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/value/ValueTypeImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/value/ValueTypeImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/value/ValueTypeImpl$Types$2.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/value/ValueTypeImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/value/ValueTypeImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/value/ValueTypeImpl$Types$3.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/value/ValueTypeImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/value/ValueTypeImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/value/ValueTypeImpl$Types$4.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/value/ValueTypeImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/value/ValueTypeImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/value/ValueTypeImpl$Types.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/value/ValueTypeImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/value/ValueTypeImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/value/ValueTypeImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/value/ValueTypeImpl.java",
+            "option-1.1.0/src/main/java/net/kyori/option/value/ValueTypeImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/option/value/package-info.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "net/kyori/option/value/package-info.java",
+            "option-1.1.0/src/main/java/net/kyori/option/value/package-info.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/CharacterAndFormat.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/CharacterAndFormat.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/CharacterAndFormat.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/CharacterAndFormatImpl$Defaults.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/CharacterAndFormatImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/CharacterAndFormatImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/CharacterAndFormatImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/CharacterAndFormatImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/CharacterAndFormatImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/LegacyComponentSerializerImpl$1.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/LegacyComponentSerializerImpl$BuilderImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/LegacyComponentSerializerImpl$Cereal$StyleState.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/LegacyComponentSerializerImpl$Cereal.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/LegacyComponentSerializerImpl$DecodedFormat.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/LegacyComponentSerializerImpl$FormatCodeType.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/LegacyComponentSerializerImpl$Instances.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/LegacyComponentSerializerImpl.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java",
+            "packetevents-2.14.0/patch/adventure-text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializerImpl.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/CharacterAndFormatSet.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/CharacterAndFormatSet.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/LegacyComponentSerializer$Builder.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/LegacyComponentSerializer$Provider.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/LegacyComponentSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyComponentSerializer.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/LegacyFormat.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/LegacyFormat.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/legacy/Reset.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/text-serializer-legacy/src/main/java/net/kyori/adventure/text/serializer/legacy/Reset.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/ComponentDecoder.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/api/src/main/java/net/kyori/adventure/text/serializer/ComponentDecoder.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/ComponentEncoder.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/api/src/main/java/net/kyori/adventure/text/serializer/ComponentEncoder.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/adventure/serializer/ComponentSerializer.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "adventure-4.26.1/api/src/main/java/net/kyori/adventure/text/serializer/ComponentSerializer.java"
+          ]
+        }
+      ],
+      "class_prefix_counts": {
+        "com/github/retrooper/packetevents/PacketEvents.class": 1,
+        "com/github/retrooper/packetevents/PacketEventsAPI.class": 1,
+        "com/github/retrooper/packetevents/annotations": 1,
+        "com/github/retrooper/packetevents/event": 30,
+        "com/github/retrooper/packetevents/exception": 4,
+        "com/github/retrooper/packetevents/injector": 1,
+        "com/github/retrooper/packetevents/manager": 8,
+        "com/github/retrooper/packetevents/netty": 9,
+        "com/github/retrooper/packetevents/protocol": 1143,
+        "com/github/retrooper/packetevents/resources": 2,
+        "com/github/retrooper/packetevents/settings": 1,
+        "com/github/retrooper/packetevents/util": 87,
+        "com/github/retrooper/packetevents/wrapper": 369,
+        "io/github/retrooper/packetevents/adventure": 105,
+        "META-INF/versions/9/module-info.class": 1
+      }
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-netty-common:2.14.0",
+      "sha256": "ca76c618085561a3cb578c743ef88c0be0c559d3e1e7a7d9934cafb3da2fa7d8",
+      "bytes": 14838,
+      "classfiles_with_matching_source": 10,
+      "classfiles_without_sourcefile_attribute": [],
+      "classfiles_with_unresolved_source_path": [],
+      "classfiles_with_explicit_generated_or_relocation_mapping": [],
+      "class_prefix_counts": {
+        "io/github/retrooper/packetevents/impl": 10
+      }
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "sha256": "13e771d25e75aab7c7c9d3f383464bd956a7bee49f3d948cc74a1870e8440a0f",
+      "bytes": 149078,
+      "classfiles_with_matching_source": 49,
+      "classfiles_without_sourcefile_attribute": [],
+      "classfiles_with_unresolved_source_path": [],
+      "classfiles_with_explicit_generated_or_relocation_mapping": [
+        {
+          "class": "io/github/retrooper/packetevents/bstats/bukkit/Metrics.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/bukkit/src/main/java/org/bstats/bukkit/Metrics.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/bstats/config/MetricsConfig.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/base/src/main/java/org/bstats/config/MetricsConfig.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/bstats/MetricsBase.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/base/src/main/java/org/bstats/MetricsBase.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/bstats/charts/DrilldownPie.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/base/src/main/java/org/bstats/charts/DrilldownPie.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/bstats/charts/SimplePie.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/base/src/main/java/org/bstats/charts/SimplePie.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/bstats/charts/SingleLineChart.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/base/src/main/java/org/bstats/charts/SingleLineChart.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/bstats/charts/MultiLineChart.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/base/src/main/java/org/bstats/charts/MultiLineChart.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/bstats/charts/SimpleBarChart.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/base/src/main/java/org/bstats/charts/SimpleBarChart.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/bstats/charts/AdvancedPie.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/base/src/main/java/org/bstats/charts/AdvancedPie.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/bstats/charts/AdvancedBarChart.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/base/src/main/java/org/bstats/charts/AdvancedBarChart.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/bstats/charts/CustomChart.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/base/src/main/java/org/bstats/charts/CustomChart.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/bstats/json/JsonObjectBuilder.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/base/src/main/java/org/bstats/json/JsonObjectBuilder.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/bstats/json/JsonObjectBuilder$1.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/base/src/main/java/org/bstats/json/JsonObjectBuilder.java"
+          ]
+        },
+        {
+          "class": "io/github/retrooper/packetevents/bstats/json/JsonObjectBuilder$JsonObject.class",
+          "resolution": "PacketEvents upstream relocation; PacketEvents patch/ source takes precedence when present",
+          "source_candidates": [
+            "bstats-metrics-3.1.0/base/src/main/java/org/bstats/json/JsonObjectBuilder.java"
+          ]
+        }
+      ],
+      "class_prefix_counts": {
+        "io/github/retrooper/packetevents/PacketEventsPlugin$1.class": 1,
+        "io/github/retrooper/packetevents/PacketEventsPlugin.class": 1,
+        "io/github/retrooper/packetevents/bukkit": 5,
+        "io/github/retrooper/packetevents/factory": 2,
+        "io/github/retrooper/packetevents/injector": 9,
+        "io/github/retrooper/packetevents/manager": 4,
+        "io/github/retrooper/packetevents/netty": 4,
+        "io/github/retrooper/packetevents/util": 23,
+        "io/github/retrooper/packetevents/bstats": 14
+      }
+    },
+    {
+      "coordinate": "com.google.code.gson:gson:2.14.0",
+      "sha256": "2cbd119bf1961c28788310963dc80ba65f58cdeec1dd139c8bdb1240faa2c36f",
+      "bytes": 313604,
+      "classfiles_with_matching_source": 221,
+      "classfiles_without_sourcefile_attribute": [
+        "META-INF/versions/9/module-info.class"
+      ],
+      "classfiles_with_unresolved_source_path": [],
+      "classfiles_with_explicit_generated_or_relocation_mapping": [],
+      "class_prefix_counts": {
+        "com/google/gson/ExclusionStrategy.class": 1,
+        "com/google/gson/FieldAttributes.class": 1,
+        "com/google/gson/FieldNamingPolicy$1.class": 1,
+        "com/google/gson/FieldNamingPolicy$2.class": 1,
+        "com/google/gson/FieldNamingPolicy$3.class": 1,
+        "com/google/gson/FieldNamingPolicy$4.class": 1,
+        "com/google/gson/FieldNamingPolicy$5.class": 1,
+        "com/google/gson/FieldNamingPolicy$6.class": 1,
+        "com/google/gson/FieldNamingPolicy$7.class": 1,
+        "com/google/gson/FieldNamingPolicy.class": 1,
+        "com/google/gson/FieldNamingStrategy.class": 1,
+        "com/google/gson/FormattingStyle.class": 1,
+        "com/google/gson/Gson$FutureTypeAdapter.class": 1,
+        "com/google/gson/Gson.class": 1,
+        "com/google/gson/GsonBuilder.class": 1,
+        "com/google/gson/InstanceCreator.class": 1,
+        "com/google/gson/JsonArray.class": 1,
+        "com/google/gson/JsonDeserializationContext.class": 1,
+        "com/google/gson/JsonDeserializer.class": 1,
+        "com/google/gson/JsonElement.class": 1,
+        "com/google/gson/JsonIOException.class": 1,
+        "com/google/gson/JsonNull.class": 1,
+        "com/google/gson/JsonObject.class": 1,
+        "com/google/gson/JsonParseException.class": 1,
+        "com/google/gson/JsonParser.class": 1,
+        "com/google/gson/JsonPrimitive.class": 1,
+        "com/google/gson/JsonSerializationContext.class": 1,
+        "com/google/gson/JsonSerializer.class": 1,
+        "com/google/gson/JsonStreamParser.class": 1,
+        "com/google/gson/JsonSyntaxException.class": 1,
+        "com/google/gson/LongSerializationPolicy$1.class": 1,
+        "com/google/gson/LongSerializationPolicy$2.class": 1,
+        "com/google/gson/LongSerializationPolicy.class": 1,
+        "com/google/gson/ReflectionAccessFilter$1.class": 1,
+        "com/google/gson/ReflectionAccessFilter$2.class": 1,
+        "com/google/gson/ReflectionAccessFilter$3.class": 1,
+        "com/google/gson/ReflectionAccessFilter$4.class": 1,
+        "com/google/gson/ReflectionAccessFilter$FilterResult.class": 1,
+        "com/google/gson/ReflectionAccessFilter.class": 1,
+        "com/google/gson/Strictness.class": 1,
+        "com/google/gson/ToNumberPolicy$1.class": 1,
+        "com/google/gson/ToNumberPolicy$2.class": 1,
+        "com/google/gson/ToNumberPolicy$3.class": 1,
+        "com/google/gson/ToNumberPolicy$4.class": 1,
+        "com/google/gson/ToNumberPolicy.class": 1,
+        "com/google/gson/ToNumberStrategy.class": 1,
+        "com/google/gson/TypeAdapter$1.class": 1,
+        "com/google/gson/TypeAdapter$NullSafeTypeAdapter.class": 1,
+        "com/google/gson/TypeAdapter.class": 1,
+        "com/google/gson/TypeAdapterFactory.class": 1,
+        "com/google/gson/annotations/Expose.class": 1,
+        "com/google/gson/annotations/JsonAdapter.class": 1,
+        "com/google/gson/annotations/SerializedName.class": 1,
+        "com/google/gson/annotations/Since.class": 1,
+        "com/google/gson/annotations/Until.class": 1,
+        "com/google/gson/annotations/package-info.class": 1,
+        "com/google/gson/internal/ConstructorConstructor$InstanceCreatorConstructor.class": 1,
+        "com/google/gson/internal/ConstructorConstructor$ThrowingObjectConstructor.class": 1,
+        "com/google/gson/internal/ConstructorConstructor.class": 1,
+        "com/google/gson/internal/Excluder$1.class": 1,
+        "com/google/gson/internal/Excluder.class": 1,
+        "com/google/gson/internal/GsonBuildConfig.class": 1,
+        "com/google/gson/internal/GsonTypes$GenericArrayTypeImpl.class": 1,
+        "com/google/gson/internal/GsonTypes$ParameterizedTypeImpl.class": 1,
+        "com/google/gson/internal/GsonTypes$WildcardTypeImpl.class": 1,
+        "com/google/gson/internal/GsonTypes.class": 1,
+        "com/google/gson/internal/JavaVersion.class": 1,
+        "com/google/gson/internal/JsonReaderInternalAccess.class": 1,
+        "com/google/gson/internal/LazilyParsedNumber.class": 1,
+        "com/google/gson/internal/LinkedTreeMap$1.class": 1,
+        "com/google/gson/internal/LinkedTreeMap$EntrySet$1.class": 1,
+        "com/google/gson/internal/LinkedTreeMap$EntrySet.class": 1,
+        "com/google/gson/internal/LinkedTreeMap$KeySet$1.class": 1,
+        "com/google/gson/internal/LinkedTreeMap$KeySet.class": 1,
+        "com/google/gson/internal/LinkedTreeMap$LinkedTreeMapIterator.class": 1,
+        "com/google/gson/internal/LinkedTreeMap$Node.class": 1,
+        "com/google/gson/internal/LinkedTreeMap.class": 1,
+        "com/google/gson/internal/NonNullElementWrapperList.class": 1,
+        "com/google/gson/internal/NumberLimits.class": 1,
+        "com/google/gson/internal/ObjectConstructor.class": 1,
+        "com/google/gson/internal/PreJava9DateFormatProvider.class": 1,
+        "com/google/gson/internal/Primitives.class": 1,
+        "com/google/gson/internal/ReflectionAccessFilterHelper$1.class": 1,
+        "com/google/gson/internal/ReflectionAccessFilterHelper$AccessChecker$1.class": 1,
+        "com/google/gson/internal/ReflectionAccessFilterHelper$AccessChecker$2.class": 1,
+        "com/google/gson/internal/ReflectionAccessFilterHelper$AccessChecker.class": 1,
+        "com/google/gson/internal/ReflectionAccessFilterHelper.class": 1,
+        "com/google/gson/internal/Streams$1.class": 1,
+        "com/google/gson/internal/Streams$AppendableWriter$CurrentWrite.class": 1,
+        "com/google/gson/internal/Streams$AppendableWriter.class": 1,
+        "com/google/gson/internal/Streams.class": 1,
+        "com/google/gson/internal/TroubleshootingGuide.class": 1,
+        "com/google/gson/internal/UnsafeAllocator$1.class": 1,
+        "com/google/gson/internal/UnsafeAllocator$2.class": 1,
+        "com/google/gson/internal/UnsafeAllocator$3.class": 1,
+        "com/google/gson/internal/UnsafeAllocator$4.class": 1,
+        "com/google/gson/internal/UnsafeAllocator.class": 1,
+        "com/google/gson/internal/bind": 99,
+        "com/google/gson/internal/package-info.class": 1,
+        "com/google/gson/internal/reflect": 5,
+        "com/google/gson/internal/sql": 9,
+        "com/google/gson/package-info.class": 1,
+        "com/google/gson/reflect/TypeToken.class": 1,
+        "com/google/gson/reflect/package-info.class": 1,
+        "com/google/gson/stream/JsonReader$1.class": 1,
+        "com/google/gson/stream/JsonReader.class": 1,
+        "com/google/gson/stream/JsonScope.class": 1,
+        "com/google/gson/stream/JsonToken.class": 1,
+        "com/google/gson/stream/JsonWriter.class": 1,
+        "com/google/gson/stream/MalformedJsonException.class": 1,
+        "com/google/gson/stream/package-info.class": 1,
+        "META-INF/versions/9/module-info.class": 1
+      }
+    },
+    {
+      "coordinate": "com.google.errorprone:error_prone_annotations:2.48.0",
+      "sha256": "b49c5c958316ed67a09c699dda9aa749caf434d51d863dea599ef36a49b9c855",
+      "bytes": 20255,
+      "classfiles_with_matching_source": 30,
+      "classfiles_without_sourcefile_attribute": [],
+      "classfiles_with_unresolved_source_path": [],
+      "classfiles_with_explicit_generated_or_relocation_mapping": [],
+      "class_prefix_counts": {
+        "com/google/errorprone/annotations/DoNotMock.class": 1,
+        "com/google/errorprone/annotations/RestrictedApi.class": 1,
+        "com/google/errorprone/annotations/SuppressPackageLocation.class": 1,
+        "com/google/errorprone/annotations/Immutable.class": 1,
+        "com/google/errorprone/annotations/ThreadSafe.class": 1,
+        "com/google/errorprone/annotations/Keep.class": 1,
+        "com/google/errorprone/annotations/CheckReturnValue.class": 1,
+        "com/google/errorprone/annotations/concurrent": 4,
+        "com/google/errorprone/annotations/ThreadSafeTypeParameter.class": 1,
+        "com/google/errorprone/annotations/NoAllocation.class": 1,
+        "com/google/errorprone/annotations/CompatibleWith.class": 1,
+        "com/google/errorprone/annotations/ForOverride.class": 1,
+        "com/google/errorprone/annotations/Var.class": 1,
+        "com/google/errorprone/annotations/ImmutableTypeParameter.class": 1,
+        "com/google/errorprone/annotations/RequiredModifiers.class": 1,
+        "com/google/errorprone/annotations/FormatMethod.class": 1,
+        "com/google/errorprone/annotations/DoNotCall.class": 1,
+        "com/google/errorprone/annotations/MustBeClosed.class": 1,
+        "com/google/errorprone/annotations/InlineMe.class": 1,
+        "com/google/errorprone/annotations/InlineMeValidationDisabled.class": 1,
+        "com/google/errorprone/annotations/OverridingMethodsMustInvokeSuper.class": 1,
+        "com/google/errorprone/annotations/Modifier.class": 1,
+        "com/google/errorprone/annotations/IncompatibleModifiers.class": 1,
+        "com/google/errorprone/annotations/CompileTimeConstant.class": 1,
+        "com/google/errorprone/annotations/FormatString.class": 1,
+        "com/google/errorprone/annotations/CanIgnoreReturnValue.class": 1,
+        "META-INF/versions/9/module-info.class": 1
+      }
+    },
+    {
+      "coordinate": "net.kyori:adventure-api:4.26.1",
+      "sha256": "551e536b9ea868f30e72c7900a309b35124ee7d4889fa3b3aed0910299751a26",
+      "bytes": 454911,
+      "classfiles_with_matching_source": 328,
+      "classfiles_without_sourcefile_attribute": [],
+      "classfiles_with_unresolved_source_path": [],
+      "classfiles_with_explicit_generated_or_relocation_mapping": [],
+      "class_prefix_counts": {
+        "net/kyori/adventure/Adventure.class": 1,
+        "net/kyori/adventure/audience/Audience.class": 1,
+        "net/kyori/adventure/audience/Audiences.class": 1,
+        "net/kyori/adventure/audience/EmptyAudience.class": 1,
+        "net/kyori/adventure/audience/ForwardingAudience$Single.class": 1,
+        "net/kyori/adventure/audience/ForwardingAudience.class": 1,
+        "net/kyori/adventure/audience/ForwardingAudienceOverrideNotRequired.class": 1,
+        "net/kyori/adventure/audience/MessageType.class": 1,
+        "net/kyori/adventure/bossbar/BossBar$Color.class": 1,
+        "net/kyori/adventure/bossbar/BossBar$Flag.class": 1,
+        "net/kyori/adventure/bossbar/BossBar$Listener.class": 1,
+        "net/kyori/adventure/bossbar/BossBar$Overlay.class": 1,
+        "net/kyori/adventure/bossbar/BossBar.class": 1,
+        "net/kyori/adventure/bossbar/BossBarImpl$ImplementationAccessor.class": 1,
+        "net/kyori/adventure/bossbar/BossBarImpl.class": 1,
+        "net/kyori/adventure/bossbar/BossBarImplementation$Provider.class": 1,
+        "net/kyori/adventure/bossbar/BossBarImplementation.class": 1,
+        "net/kyori/adventure/bossbar/BossBarViewer.class": 1,
+        "net/kyori/adventure/bossbar/HackyBossBarPlatformBridge.class": 1,
+        "net/kyori/adventure/builder/AbstractBuilder.class": 1,
+        "net/kyori/adventure/chat/ChatType$Bound.class": 1,
+        "net/kyori/adventure/chat/ChatType.class": 1,
+        "net/kyori/adventure/chat/ChatTypeImpl$BoundImpl.class": 1,
+        "net/kyori/adventure/chat/ChatTypeImpl.class": 1,
+        "net/kyori/adventure/chat/SignedMessage$Signature.class": 1,
+        "net/kyori/adventure/chat/SignedMessage.class": 1,
+        "net/kyori/adventure/chat/SignedMessageImpl$SignatureImpl.class": 1,
+        "net/kyori/adventure/chat/SignedMessageImpl.class": 1,
+        "net/kyori/adventure/dialog/DialogLike.class": 1,
+        "net/kyori/adventure/identity/Identified.class": 1,
+        "net/kyori/adventure/identity/Identity.class": 1,
+        "net/kyori/adventure/identity/IdentityImpl.class": 1,
+        "net/kyori/adventure/identity/NilIdentity.class": 1,
+        "net/kyori/adventure/internal/Internals.class": 1,
+        "net/kyori/adventure/internal/package-info.class": 1,
+        "net/kyori/adventure/internal/properties": 7,
+        "net/kyori/adventure/inventory/Book$Builder.class": 1,
+        "net/kyori/adventure/inventory/Book.class": 1,
+        "net/kyori/adventure/inventory/BookImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/inventory/BookImpl.class": 1,
+        "net/kyori/adventure/nbt/api": 2,
+        "net/kyori/adventure/permission/PermissionChecker.class": 1,
+        "net/kyori/adventure/permission/PermissionCheckers$1.class": 1,
+        "net/kyori/adventure/permission/PermissionCheckers$Always.class": 1,
+        "net/kyori/adventure/permission/PermissionCheckers.class": 1,
+        "net/kyori/adventure/pointer/Pointer.class": 1,
+        "net/kyori/adventure/pointer/PointerImpl.class": 1,
+        "net/kyori/adventure/pointer/Pointered.class": 1,
+        "net/kyori/adventure/pointer/Pointers$Builder.class": 1,
+        "net/kyori/adventure/pointer/Pointers.class": 1,
+        "net/kyori/adventure/pointer/PointersImpl$1.class": 1,
+        "net/kyori/adventure/pointer/PointersImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/pointer/PointersImpl.class": 1,
+        "net/kyori/adventure/pointer/PointersSupplier$Builder.class": 1,
+        "net/kyori/adventure/pointer/PointersSupplier.class": 1,
+        "net/kyori/adventure/pointer/PointersSupplierImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/pointer/PointersSupplierImpl$ForwardingPointers.class": 1,
+        "net/kyori/adventure/pointer/PointersSupplierImpl.class": 1,
+        "net/kyori/adventure/resource/ResourcePackCallback.class": 1,
+        "net/kyori/adventure/resource/ResourcePackCallbacks.class": 1,
+        "net/kyori/adventure/resource/ResourcePackInfo$Builder.class": 1,
+        "net/kyori/adventure/resource/ResourcePackInfo.class": 1,
+        "net/kyori/adventure/resource/ResourcePackInfoImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/resource/ResourcePackInfoImpl.class": 1,
+        "net/kyori/adventure/resource/ResourcePackInfoLike.class": 1,
+        "net/kyori/adventure/resource/ResourcePackRequest$Builder.class": 1,
+        "net/kyori/adventure/resource/ResourcePackRequest.class": 1,
+        "net/kyori/adventure/resource/ResourcePackRequestImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/resource/ResourcePackRequestImpl.class": 1,
+        "net/kyori/adventure/resource/ResourcePackRequestLike.class": 1,
+        "net/kyori/adventure/resource/ResourcePackStatus.class": 1,
+        "net/kyori/adventure/sound/Sound$Builder.class": 1,
+        "net/kyori/adventure/sound/Sound$Emitter.class": 1,
+        "net/kyori/adventure/sound/Sound$Source$Provider.class": 1,
+        "net/kyori/adventure/sound/Sound$Source.class": 1,
+        "net/kyori/adventure/sound/Sound$Type.class": 1,
+        "net/kyori/adventure/sound/Sound.class": 1,
+        "net/kyori/adventure/sound/SoundImpl$1.class": 1,
+        "net/kyori/adventure/sound/SoundImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/sound/SoundImpl$Eager.class": 1,
+        "net/kyori/adventure/sound/SoundImpl$Lazy.class": 1,
+        "net/kyori/adventure/sound/SoundImpl.class": 1,
+        "net/kyori/adventure/sound/SoundStop$1.class": 1,
+        "net/kyori/adventure/sound/SoundStop$2.class": 1,
+        "net/kyori/adventure/sound/SoundStop$3.class": 1,
+        "net/kyori/adventure/sound/SoundStop$4.class": 1,
+        "net/kyori/adventure/sound/SoundStop$5.class": 1,
+        "net/kyori/adventure/sound/SoundStop$6.class": 1,
+        "net/kyori/adventure/sound/SoundStop.class": 1,
+        "net/kyori/adventure/sound/SoundStopImpl$1.class": 1,
+        "net/kyori/adventure/sound/SoundStopImpl.class": 1,
+        "net/kyori/adventure/text/AbstractComponent.class": 1,
+        "net/kyori/adventure/text/AbstractComponentBuilder.class": 1,
+        "net/kyori/adventure/text/AbstractNBTComponentBuilder.class": 1,
+        "net/kyori/adventure/text/BlockNBTComponent$Builder.class": 1,
+        "net/kyori/adventure/text/BlockNBTComponent$LocalPos.class": 1,
+        "net/kyori/adventure/text/BlockNBTComponent$Pos.class": 1,
+        "net/kyori/adventure/text/BlockNBTComponent$WorldPos$Coordinate$Type.class": 1,
+        "net/kyori/adventure/text/BlockNBTComponent$WorldPos$Coordinate.class": 1,
+        "net/kyori/adventure/text/BlockNBTComponent$WorldPos.class": 1,
+        "net/kyori/adventure/text/BlockNBTComponent.class": 1,
+        "net/kyori/adventure/text/BlockNBTComponentImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/text/BlockNBTComponentImpl$LocalPosImpl.class": 1,
+        "net/kyori/adventure/text/BlockNBTComponentImpl$Tokens.class": 1,
+        "net/kyori/adventure/text/BlockNBTComponentImpl$WorldPosImpl$CoordinateImpl.class": 1,
+        "net/kyori/adventure/text/BlockNBTComponentImpl$WorldPosImpl.class": 1,
+        "net/kyori/adventure/text/BlockNBTComponentImpl.class": 1,
+        "net/kyori/adventure/text/BuildableComponent.class": 1,
+        "net/kyori/adventure/text/Component.class": 1,
+        "net/kyori/adventure/text/ComponentApplicable.class": 1,
+        "net/kyori/adventure/text/ComponentBuilder.class": 1,
+        "net/kyori/adventure/text/ComponentBuilderApplicable.class": 1,
+        "net/kyori/adventure/text/ComponentCompaction.class": 1,
+        "net/kyori/adventure/text/ComponentInternals.class": 1,
+        "net/kyori/adventure/text/ComponentIterator.class": 1,
+        "net/kyori/adventure/text/ComponentIteratorFlag.class": 1,
+        "net/kyori/adventure/text/ComponentIteratorType.class": 1,
+        "net/kyori/adventure/text/ComponentLike.class": 1,
+        "net/kyori/adventure/text/EntityNBTComponent$Builder.class": 1,
+        "net/kyori/adventure/text/EntityNBTComponent.class": 1,
+        "net/kyori/adventure/text/EntityNBTComponentImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/text/EntityNBTComponentImpl.class": 1,
+        "net/kyori/adventure/text/JoinConfiguration$Builder.class": 1,
+        "net/kyori/adventure/text/JoinConfiguration.class": 1,
+        "net/kyori/adventure/text/JoinConfigurationImpl$1.class": 1,
+        "net/kyori/adventure/text/JoinConfigurationImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/text/JoinConfigurationImpl.class": 1,
+        "net/kyori/adventure/text/KeybindComponent$Builder.class": 1,
+        "net/kyori/adventure/text/KeybindComponent$KeybindLike.class": 1,
+        "net/kyori/adventure/text/KeybindComponent.class": 1,
+        "net/kyori/adventure/text/KeybindComponentImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/text/KeybindComponentImpl.class": 1,
+        "net/kyori/adventure/text/LegacyFormattingDetected.class": 1,
+        "net/kyori/adventure/text/LinearComponents.class": 1,
+        "net/kyori/adventure/text/NBTComponent.class": 1,
+        "net/kyori/adventure/text/NBTComponentBuilder.class": 1,
+        "net/kyori/adventure/text/NBTComponentImpl.class": 1,
+        "net/kyori/adventure/text/ObjectComponent$Builder.class": 1,
+        "net/kyori/adventure/text/ObjectComponent.class": 1,
+        "net/kyori/adventure/text/ObjectComponentImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/text/ObjectComponentImpl.class": 1,
+        "net/kyori/adventure/text/PatternReplacementResult.class": 1,
+        "net/kyori/adventure/text/ScopedComponent.class": 1,
+        "net/kyori/adventure/text/ScopedComponentOverrideNotRequired.class": 1,
+        "net/kyori/adventure/text/ScoreComponent$Builder.class": 1,
+        "net/kyori/adventure/text/ScoreComponent.class": 1,
+        "net/kyori/adventure/text/ScoreComponentImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/text/ScoreComponentImpl.class": 1,
+        "net/kyori/adventure/text/SelectorComponent$Builder.class": 1,
+        "net/kyori/adventure/text/SelectorComponent.class": 1,
+        "net/kyori/adventure/text/SelectorComponentImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/text/SelectorComponentImpl.class": 1,
+        "net/kyori/adventure/text/StorageNBTComponent$Builder.class": 1,
+        "net/kyori/adventure/text/StorageNBTComponent.class": 1,
+        "net/kyori/adventure/text/StorageNBTComponentImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/text/StorageNBTComponentImpl.class": 1,
+        "net/kyori/adventure/text/TextComponent$Builder.class": 1,
+        "net/kyori/adventure/text/TextComponent.class": 1,
+        "net/kyori/adventure/text/TextComponentImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/text/TextComponentImpl.class": 1,
+        "net/kyori/adventure/text/TextReplacementConfig$Builder.class": 1,
+        "net/kyori/adventure/text/TextReplacementConfig$Condition.class": 1,
+        "net/kyori/adventure/text/TextReplacementConfig.class": 1,
+        "net/kyori/adventure/text/TextReplacementConfigImpl$Builder.class": 1,
+        "net/kyori/adventure/text/TextReplacementConfigImpl.class": 1,
+        "net/kyori/adventure/text/TextReplacementRenderer$State.class": 1,
+        "net/kyori/adventure/text/TextReplacementRenderer.class": 1,
+        "net/kyori/adventure/text/TranslatableComponent$Builder.class": 1,
+        "net/kyori/adventure/text/TranslatableComponent.class": 1,
+        "net/kyori/adventure/text/TranslatableComponentImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/text/TranslatableComponentImpl.class": 1,
+        "net/kyori/adventure/text/TranslationArgument.class": 1,
+        "net/kyori/adventure/text/TranslationArgumentImpl.class": 1,
+        "net/kyori/adventure/text/TranslationArgumentLike.class": 1,
+        "net/kyori/adventure/text/VirtualComponent.class": 1,
+        "net/kyori/adventure/text/VirtualComponentImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/text/VirtualComponentImpl.class": 1,
+        "net/kyori/adventure/text/VirtualComponentRenderer.class": 1,
+        "net/kyori/adventure/text/event": 40,
+        "net/kyori/adventure/text/flattener": 7,
+        "net/kyori/adventure/text/format": 26,
+        "net/kyori/adventure/text/object": 10,
+        "net/kyori/adventure/text/renderer": 4,
+        "net/kyori/adventure/text/serializer": 3,
+        "net/kyori/adventure/title/Title$Times.class": 1,
+        "net/kyori/adventure/title/Title.class": 1,
+        "net/kyori/adventure/title/TitleImpl$TimesImpl.class": 1,
+        "net/kyori/adventure/title/TitleImpl.class": 1,
+        "net/kyori/adventure/title/TitlePart$1.class": 1,
+        "net/kyori/adventure/title/TitlePart$2.class": 1,
+        "net/kyori/adventure/title/TitlePart$3.class": 1,
+        "net/kyori/adventure/title/TitlePart.class": 1,
+        "net/kyori/adventure/translation/AbstractTranslationStore$1.class": 1,
+        "net/kyori/adventure/translation/AbstractTranslationStore$StringBased.class": 1,
+        "net/kyori/adventure/translation/AbstractTranslationStore$Translation.class": 1,
+        "net/kyori/adventure/translation/AbstractTranslationStore.class": 1,
+        "net/kyori/adventure/translation/ComponentTranslationStore.class": 1,
+        "net/kyori/adventure/translation/GlobalTranslator.class": 1,
+        "net/kyori/adventure/translation/GlobalTranslatorImpl.class": 1,
+        "net/kyori/adventure/translation/MessageFormatTranslationStore.class": 1,
+        "net/kyori/adventure/translation/Translatable.class": 1,
+        "net/kyori/adventure/translation/TranslationLocales.class": 1,
+        "net/kyori/adventure/translation/TranslationRegistry.class": 1,
+        "net/kyori/adventure/translation/TranslationStore$StringBased.class": 1,
+        "net/kyori/adventure/translation/TranslationStore.class": 1,
+        "net/kyori/adventure/translation/Translator.class": 1,
+        "net/kyori/adventure/util/ARGBLike.class": 1,
+        "net/kyori/adventure/util/Buildable$Builder.class": 1,
+        "net/kyori/adventure/util/Buildable.class": 1,
+        "net/kyori/adventure/util/Codec$1.class": 1,
+        "net/kyori/adventure/util/Codec$2.class": 1,
+        "net/kyori/adventure/util/Codec$Decoder.class": 1,
+        "net/kyori/adventure/util/Codec$Encoder.class": 1,
+        "net/kyori/adventure/util/Codec.class": 1,
+        "net/kyori/adventure/util/ComponentMessageThrowable.class": 1,
+        "net/kyori/adventure/util/ForwardingIterator.class": 1,
+        "net/kyori/adventure/util/HSVLike.class": 1,
+        "net/kyori/adventure/util/HSVLikeImpl.class": 1,
+        "net/kyori/adventure/util/Index.class": 1,
+        "net/kyori/adventure/util/InheritanceAwareMap$Builder.class": 1,
+        "net/kyori/adventure/util/InheritanceAwareMap.class": 1,
+        "net/kyori/adventure/util/InheritanceAwareMapImpl$BuilderImpl.class": 1,
+        "net/kyori/adventure/util/InheritanceAwareMapImpl.class": 1,
+        "net/kyori/adventure/util/IntFunction2.class": 1,
+        "net/kyori/adventure/util/Listenable.class": 1,
+        "net/kyori/adventure/util/MonkeyBars.class": 1,
+        "net/kyori/adventure/util/Nag.class": 1,
+        "net/kyori/adventure/util/PlatformAPI.class": 1,
+        "net/kyori/adventure/util/RGBLike.class": 1,
+        "net/kyori/adventure/util/Services$Fallback.class": 1,
+        "net/kyori/adventure/util/Services.class": 1,
+        "net/kyori/adventure/util/Services0.class": 1,
+        "net/kyori/adventure/util/ShadyPines.class": 1,
+        "net/kyori/adventure/util/Ticks.class": 1,
+        "net/kyori/adventure/util/TriState$1.class": 1,
+        "net/kyori/adventure/util/TriState.class": 1,
+        "net/kyori/adventure/util/UTF8ResourceBundleControl.class": 1
+      }
+    },
+    {
+      "coordinate": "net.kyori:adventure-key:4.26.1",
+      "sha256": "eec172d63db77b40eb7abeeb25f65eedea89bd30264d057b68b12fecb731be5e",
+      "bytes": 11368,
+      "classfiles_with_matching_source": 10,
+      "classfiles_without_sourcefile_attribute": [],
+      "classfiles_with_unresolved_source_path": [],
+      "classfiles_with_explicit_generated_or_relocation_mapping": [],
+      "class_prefix_counts": {
+        "net/kyori/adventure/key/InvalidKeyException.class": 1,
+        "net/kyori/adventure/key/Key.class": 1,
+        "net/kyori/adventure/key/KeyImpl.class": 1,
+        "net/kyori/adventure/key/KeyPattern$Namespace.class": 1,
+        "net/kyori/adventure/key/KeyPattern$Value.class": 1,
+        "net/kyori/adventure/key/KeyPattern.class": 1,
+        "net/kyori/adventure/key/Keyed.class": 1,
+        "net/kyori/adventure/key/KeyedValue.class": 1,
+        "net/kyori/adventure/key/KeyedValueImpl.class": 1,
+        "net/kyori/adventure/key/Namespaced.class": 1
+      }
+    },
+    {
+      "coordinate": "net.kyori:adventure-nbt:4.26.1",
+      "sha256": "f26ef6bff5fcdd817902b4dfd353561d98cb131b4ecb67341ff00ef2ed1336f8",
+      "bytes": 106264,
+      "classfiles_with_matching_source": 73,
+      "classfiles_without_sourcefile_attribute": [],
+      "classfiles_with_unresolved_source_path": [],
+      "classfiles_with_explicit_generated_or_relocation_mapping": [],
+      "class_prefix_counts": {
+        "net/kyori/adventure/nbt/AbstractBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/ArrayBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/ArrayBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/BinaryTag.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagIO$Compression$1.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagIO$Compression$2.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagIO$Compression$3.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagIO$Compression.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagIO$Reader.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagIO$Writer.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagIO.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagLike.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagReaderImpl.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagScope$NoOp.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagScope.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagType$Impl$Numeric.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagType$Impl.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagType$Reader.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagType$Writer.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagType.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagTypes.class": 1,
+        "net/kyori/adventure/nbt/BinaryTagWriterImpl.class": 1,
+        "net/kyori/adventure/nbt/ByteArrayBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/ByteArrayBinaryTagImpl$1.class": 1,
+        "net/kyori/adventure/nbt/ByteArrayBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/ByteBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/ByteBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/CharBuffer.class": 1,
+        "net/kyori/adventure/nbt/CompoundBinaryTag$Builder.class": 1,
+        "net/kyori/adventure/nbt/CompoundBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/CompoundBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/CompoundTagBuilder.class": 1,
+        "net/kyori/adventure/nbt/CompoundTagSetter.class": 1,
+        "net/kyori/adventure/nbt/DoubleBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/DoubleBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/EndBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/EndBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/FloatBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/FloatBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/IOStreamUtil$1.class": 1,
+        "net/kyori/adventure/nbt/IOStreamUtil$2.class": 1,
+        "net/kyori/adventure/nbt/IOStreamUtil.class": 1,
+        "net/kyori/adventure/nbt/IntArrayBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/IntArrayBinaryTagImpl$1.class": 1,
+        "net/kyori/adventure/nbt/IntArrayBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/IntBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/IntBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/ListBinaryTag$Builder.class": 1,
+        "net/kyori/adventure/nbt/ListBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/ListBinaryTag0.class": 1,
+        "net/kyori/adventure/nbt/ListBinaryTagImpl$1.class": 1,
+        "net/kyori/adventure/nbt/ListBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/ListTagBuilder.class": 1,
+        "net/kyori/adventure/nbt/ListTagSetter.class": 1,
+        "net/kyori/adventure/nbt/LongArrayBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/LongArrayBinaryTagImpl$1.class": 1,
+        "net/kyori/adventure/nbt/LongArrayBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/LongBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/LongBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/NumberBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/ShadyPines.class": 1,
+        "net/kyori/adventure/nbt/ShortBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/ShortBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/StringBinaryTag.class": 1,
+        "net/kyori/adventure/nbt/StringBinaryTagImpl.class": 1,
+        "net/kyori/adventure/nbt/StringTagParseException.class": 1,
+        "net/kyori/adventure/nbt/TagStringIO$1.class": 1,
+        "net/kyori/adventure/nbt/TagStringIO$Builder.class": 1,
+        "net/kyori/adventure/nbt/TagStringIO.class": 1,
+        "net/kyori/adventure/nbt/TagStringReader.class": 1,
+        "net/kyori/adventure/nbt/TagStringWriter.class": 1,
+        "net/kyori/adventure/nbt/Tokens.class": 1,
+        "net/kyori/adventure/nbt/TrackingDataInput.class": 1
+      }
+    },
+    {
+      "coordinate": "net.kyori:examination-api:1.3.0",
+      "sha256": "c9237ffecb05428f6eff86216246ac70ce0b47b04c08ea7ca35020fde57f8492",
+      "bytes": 23446,
+      "classfiles_with_matching_source": 23,
+      "classfiles_without_sourcefile_attribute": [],
+      "classfiles_with_unresolved_source_path": [],
+      "classfiles_with_explicit_generated_or_relocation_mapping": [],
+      "class_prefix_counts": {
+        "net/kyori/examination/AbstractExaminer.class": 1,
+        "net/kyori/examination/Examinable.class": 1,
+        "net/kyori/examination/ExaminableProperty$1.class": 1,
+        "net/kyori/examination/ExaminableProperty$10.class": 1,
+        "net/kyori/examination/ExaminableProperty$11.class": 1,
+        "net/kyori/examination/ExaminableProperty$12.class": 1,
+        "net/kyori/examination/ExaminableProperty$13.class": 1,
+        "net/kyori/examination/ExaminableProperty$14.class": 1,
+        "net/kyori/examination/ExaminableProperty$15.class": 1,
+        "net/kyori/examination/ExaminableProperty$16.class": 1,
+        "net/kyori/examination/ExaminableProperty$17.class": 1,
+        "net/kyori/examination/ExaminableProperty$18.class": 1,
+        "net/kyori/examination/ExaminableProperty$2.class": 1,
+        "net/kyori/examination/ExaminableProperty$3.class": 1,
+        "net/kyori/examination/ExaminableProperty$4.class": 1,
+        "net/kyori/examination/ExaminableProperty$5.class": 1,
+        "net/kyori/examination/ExaminableProperty$6.class": 1,
+        "net/kyori/examination/ExaminableProperty$7.class": 1,
+        "net/kyori/examination/ExaminableProperty$8.class": 1,
+        "net/kyori/examination/ExaminableProperty$9.class": 1,
+        "net/kyori/examination/ExaminableProperty.class": 1,
+        "net/kyori/examination/Examiner.class": 1,
+        "META-INF/versions/9/module-info.class": 1
+      }
+    },
+    {
+      "coordinate": "net.kyori:examination-string:1.3.0",
+      "sha256": "7d01fc25a4bb3af0e1662685455f4541fbf4626216ea5846e455c1491e156b8c",
+      "bytes": 13135,
+      "classfiles_with_matching_source": 6,
+      "classfiles_without_sourcefile_attribute": [],
+      "classfiles_with_unresolved_source_path": [],
+      "classfiles_with_explicit_generated_or_relocation_mapping": [],
+      "class_prefix_counts": {
+        "net/kyori/examination/string/MultiLineStringExaminer$Instances.class": 1,
+        "net/kyori/examination/string/MultiLineStringExaminer.class": 1,
+        "net/kyori/examination/string/StringExaminer$Instances.class": 1,
+        "net/kyori/examination/string/StringExaminer.class": 1,
+        "net/kyori/examination/string/Strings.class": 1,
+        "META-INF/versions/9/module-info.class": 1
+      }
+    },
+    {
+      "coordinate": "org.xerial:sqlite-jdbc:3.53.4.0",
+      "sha256": "bcb1f51e36f940867e83342f9efbf5968ac44a6bef4d397bb4af7b17b45cd2fb",
+      "bytes": 12002370,
+      "classfiles_with_matching_source": 130,
+      "classfiles_without_sourcefile_attribute": [],
+      "classfiles_with_unresolved_source_path": [],
+      "classfiles_with_explicit_generated_or_relocation_mapping": [],
+      "class_prefix_counts": {
+        "META-INF/versions/9/org/sqlite": 3,
+        "org/sqlite/SQLiteConfig$HexKeyMode.class": 1,
+        "org/sqlite/FileException.class": 1,
+        "org/sqlite/SQLiteJDBCLoader.class": 1,
+        "org/sqlite/Function.class": 1,
+        "org/sqlite/SQLiteJDBCLoader$VersionHolder.class": 1,
+        "org/sqlite/SQLiteUpdateListener$Type.class": 1,
+        "org/sqlite/JDBC.class": 1,
+        "org/sqlite/date/FastDatePrinter$TwoDigitNumberField.class": 1,
+        "org/sqlite/date/FastDatePrinter$TwoDigitMonthField.class": 1,
+        "org/sqlite/date/FastDatePrinter$TextField.class": 1,
+        "org/sqlite/date/FastDatePrinter$StringLiteral.class": 1,
+        "org/sqlite/date/FastDatePrinter$Iso8601_Rule.class": 1,
+        "org/sqlite/date/FastDatePrinter$Rule.class": 1,
+        "org/sqlite/date/FastDatePrinter$TimeZoneDisplayKey.class": 1,
+        "org/sqlite/date/FastDateFormat.class": 1,
+        "org/sqlite/date/FormatCache.class": 1,
+        "org/sqlite/date/FastDatePrinter$TwoDigitYearField.class": 1,
+        "org/sqlite/date/FastDateParser$2.class": 1,
+        "org/sqlite/date/FastDatePrinter$CharacterLiteral.class": 1,
+        "org/sqlite/date/FastDatePrinter$TimeZoneNumberRule.class": 1,
+        "org/sqlite/date/FastDateParser$NumberStrategy.class": 1,
+        "org/sqlite/date/FormatCache$MultipartKey.class": 1,
+        "org/sqlite/date/FastDateParser$ISO8601TimeZoneStrategy.class": 1,
+        "org/sqlite/date/FastDateParser$CaseInsensitiveTextStrategy.class": 1,
+        "org/sqlite/date/FastDatePrinter.class": 1,
+        "org/sqlite/date/DateFormatUtils.class": 1,
+        "org/sqlite/date/DateParser.class": 1,
+        "org/sqlite/date/FastDatePrinter$UnpaddedMonthField.class": 1,
+        "org/sqlite/date/FastDatePrinter$TimeZoneNameRule.class": 1,
+        "org/sqlite/date/FastDatePrinter$NumberRule.class": 1,
+        "org/sqlite/date/FastDateParser$1.class": 1,
+        "org/sqlite/date/FastDateParser$3.class": 1,
+        "org/sqlite/date/FastDateParser$TimeZoneStrategy.class": 1,
+        "org/sqlite/date/DatePrinter.class": 1,
+        "org/sqlite/date/FastDateParser$Strategy.class": 1,
+        "org/sqlite/date/FastDatePrinter$PaddedNumberField.class": 1,
+        "org/sqlite/date/FastDatePrinter$TwentyFourHourField.class": 1,
+        "org/sqlite/date/FastDatePrinter$TwelveHourField.class": 1,
+        "org/sqlite/date/FastDateFormat$1.class": 1,
+        "org/sqlite/date/FastDateParser$4.class": 1,
+        "org/sqlite/date/FastDateParser.class": 1,
+        "org/sqlite/date/ExceptionUtils.class": 1,
+        "org/sqlite/date/FastDatePrinter$UnpaddedNumberField.class": 1,
+        "org/sqlite/date/FastDateParser$CopyQuotedStrategy.class": 1,
+        "org/sqlite/date/package-info.class": 1,
+        "org/sqlite/SQLiteConfig$Pragma.class": 1,
+        "org/sqlite/SQLiteConfig.class": 1,
+        "org/sqlite/SQLiteConnectionConfig.class": 1,
+        "org/sqlite/SQLiteConfig$DatePrecision.class": 1,
+        "org/sqlite/javax/SQLitePooledConnection.class": 1,
+        "org/sqlite/javax/SQLitePooledConnection$1.class": 1,
+        "org/sqlite/javax/SQLiteConnectionPoolDataSource.class": 1,
+        "org/sqlite/javax/SQLitePooledConnectionHandle.class": 1,
+        "org/sqlite/SQLiteLimits.class": 1,
+        "org/sqlite/ExtendedCommand.class": 1,
+        "org/sqlite/Function$Window.class": 1,
+        "org/sqlite/SQLiteConfig$LockingMode.class": 1,
+        "org/sqlite/SQLiteErrorCode.class": 1,
+        "org/sqlite/ProgressHandler.class": 1,
+        "org/sqlite/SQLiteOpenMode.class": 1,
+        "org/sqlite/SQLiteConfig$DateClass.class": 1,
+        "org/sqlite/NativeLibraryNotFoundException.class": 1,
+        "org/sqlite/SQLiteConfig$TransactionMode.class": 1,
+        "org/sqlite/SQLiteConfig$TempStore.class": 1,
+        "org/sqlite/SQLiteConfig$PragmaValue.class": 1,
+        "org/sqlite/SQLiteUpdateListener.class": 1,
+        "org/sqlite/core/SafeStmtPtr.class": 1,
+        "org/sqlite/core/SafeStmtPtr$SafePtrFunction.class": 1,
+        "org/sqlite/core/NativeDB.class": 1,
+        "org/sqlite/core/CoreStatement.class": 1,
+        "org/sqlite/core/SafeStmtPtr$SafePtrConsumer.class": 1,
+        "org/sqlite/core/DB.class": 1,
+        "org/sqlite/core/DB$ProgressObserver.class": 1,
+        "org/sqlite/core/SafeStmtPtr$SafePtrLongFunction.class": 1,
+        "org/sqlite/core/SafeStmtPtr$SafePtrIntFunction.class": 1,
+        "org/sqlite/core/CoreResultSet.class": 1,
+        "org/sqlite/core/Codes.class": 1,
+        "org/sqlite/core/CorePreparedStatement$1.class": 1,
+        "org/sqlite/core/CorePreparedStatement.class": 1,
+        "org/sqlite/core/CoreDatabaseMetaData.class": 1,
+        "org/sqlite/core/SafeStmtPtr$SafePtrDoubleFunction.class": 1,
+        "org/sqlite/jdbc4/JDBC4PreparedStatement.class": 1,
+        "org/sqlite/jdbc4/JDBC4Statement.class": 1,
+        "org/sqlite/jdbc4/JDBC4PooledConnection.class": 1,
+        "org/sqlite/jdbc4/JDBC4ResultSet.class": 1,
+        "org/sqlite/jdbc4/JDBC4Connection.class": 1,
+        "org/sqlite/jdbc4/JDBC4ResultSet$SqliteClob.class": 1,
+        "org/sqlite/jdbc4/JDBC4DatabaseMetaData.class": 1,
+        "org/sqlite/ExtendedCommand$RestoreCommand.class": 1,
+        "org/sqlite/Function$Aggregate.class": 1,
+        "org/sqlite/SQLiteDataSource.class": 1,
+        "org/sqlite/SQLiteConfig$Encoding.class": 1,
+        "org/sqlite/jdbc3/JDBC3DatabaseMetaData$LogHolder.class": 1,
+        "org/sqlite/jdbc3/JDBC3Statement$SQLCallable.class": 1,
+        "org/sqlite/jdbc3/JDBC3DatabaseMetaData$ImportedKeyFinder.class": 1,
+        "org/sqlite/jdbc3/JDBC3DatabaseMetaData$PrimaryKeyFinder.class": 1,
+        "org/sqlite/jdbc3/JDBC3DatabaseMetaData$ImportedKeyFinder$ForeignKey.class": 1,
+        "org/sqlite/jdbc3/JDBC3ResultSet.class": 1,
+        "org/sqlite/jdbc3/JDBC3Statement$BackupObserver.class": 1,
+        "org/sqlite/jdbc3/JDBC3PreparedStatement.class": 1,
+        "org/sqlite/jdbc3/JDBC3Connection.class": 1,
+        "org/sqlite/jdbc3/JDBC3Statement.class": 1,
+        "org/sqlite/jdbc3/JDBC3DatabaseMetaData.class": 1,
+        "org/sqlite/jdbc3/JDBC3Savepoint.class": 1,
+        "org/sqlite/SQLiteConfig$SynchronousMode.class": 1,
+        "org/sqlite/SQLiteException.class": 1,
+        "org/sqlite/ExtendedCommand$SQLExtension.class": 1,
+        "org/sqlite/Collation.class": 1,
+        "org/sqlite/util/AndroidSignatureIgnore.class": 1,
+        "org/sqlite/util/ProcessRunner.class": 1,
+        "org/sqlite/util/LibraryLoaderUtil.class": 1,
+        "org/sqlite/util/LoggerFactory$JDKLogger.class": 1,
+        "org/sqlite/util/ResourceFinder.class": 1,
+        "org/sqlite/util/Logger.class": 1,
+        "org/sqlite/util/OSInfo$LogHolder.class": 1,
+        "org/sqlite/util/StringUtils.class": 1,
+        "org/sqlite/util/LoggerFactory.class": 1,
+        "org/sqlite/util/QueryUtils.class": 1,
+        "org/sqlite/util/LoggerFactory$SLF4JLogger.class": 1,
+        "org/sqlite/util/OSInfo.class": 1,
+        "org/sqlite/SQLiteCommitListener.class": 1,
+        "org/sqlite/SQLiteConnection.class": 1,
+        "org/sqlite/ExtendedCommand$BackupCommand.class": 1,
+        "org/sqlite/SQLiteConfig$JournalMode.class": 1,
+        "org/sqlite/SQLiteConfig$OnOff.class": 1,
+        "org/sqlite/BusyHandler.class": 1,
+        "META-INF/versions/9/module-info.class": 1
+      }
+    }
+  ],
+  "sqlite_native_comparisons": [
+    {
+      "runtime_member": "org/sqlite/native/Linux/riscv64/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/riscv64/libsqlitejdbc.so",
+      "bytes": 776872,
+      "sha256": "1829666a647af59e5046d16c5a746872c46ccc2fb16b83490f8e0d20aa047a73",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Linux/x86_64/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/x86_64/libsqlitejdbc.so",
+      "bytes": 1097664,
+      "sha256": "aaad97362c429a34b47488c4a5a966ab090450edde70c2186d1a02c0e2d17cd0",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Linux/aarch64/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/aarch64/libsqlitejdbc.so",
+      "bytes": 1113360,
+      "sha256": "4e253e3f886f8da539e6d8fbd92c3a281f50e395bcba568ced953865e8bea5be",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Linux/armv7/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/armv7/libsqlitejdbc.so",
+      "bytes": 981784,
+      "sha256": "f49b80d6de01be54ec686b85dafaa4bb6545c31896e1fbc315c5ef0cc664cdf5",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Linux/arm/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/arm/libsqlitejdbc.so",
+      "bytes": 994056,
+      "sha256": "98f03696254b725b1754580e155eb4aa849f1a121a7bc8a986c5aa83fdc71eba",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Linux/x86/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/x86/libsqlitejdbc.so",
+      "bytes": 985112,
+      "sha256": "8c3379b8fba34ac9ae82f98549958315a48ae78eddfdedac390167b34f3e521a",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Linux/ppc64/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/ppc64/libsqlitejdbc.so",
+      "bytes": 1330224,
+      "sha256": "9f8eef49153a522091054c0e3ac1ff183f4667e9ea7c1a599e155622c04b22b4",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Linux/armv6/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux/armv6/libsqlitejdbc.so",
+      "bytes": 985884,
+      "sha256": "c7fff3794ec3834c6af17d02bca06685cfa0d9392408fcd2e4374180ec9d57ad",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/FreeBSD/x86_64/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/FreeBSD/x86_64/libsqlitejdbc.so",
+      "bytes": 1081280,
+      "sha256": "4c7adc6cc7451db795a14b7ed867cac3add71c9c8f1b7054595a010ce458f12b",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/FreeBSD/aarch64/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/FreeBSD/aarch64/libsqlitejdbc.so",
+      "bytes": 1220120,
+      "sha256": "d209d24bc2f400c8c40942e59da187130a37c36ef5954926a7deeea85aa2cf5c",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/FreeBSD/x86/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/FreeBSD/x86/libsqlitejdbc.so",
+      "bytes": 976996,
+      "sha256": "811f455f8ff7231675956f2ac02efbcbab57f490b32454aa7da31fed43bfcca7",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Mac/x86_64/libsqlitejdbc.dylib",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Mac/x86_64/libsqlitejdbc.dylib",
+      "bytes": 1288092,
+      "sha256": "82ee6752c826f490b03d883fd23b0edd15ee5652b45b56ccbdd66c289298cd7b",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Mac/aarch64/libsqlitejdbc.dylib",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Mac/aarch64/libsqlitejdbc.dylib",
+      "bytes": 1124176,
+      "sha256": "3cd1bbc5a9d639919a9772678dfd4192f73c3ac5a31c9213ee87e13ebaa49a74",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Linux-Musl/x86_64/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux-Musl/x86_64/libsqlitejdbc.so",
+      "bytes": 1104256,
+      "sha256": "086c1e4300ada20cac58671e57028043b541c58640f095b6de094a04fdd18bc6",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Linux-Musl/aarch64/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux-Musl/aarch64/libsqlitejdbc.so",
+      "bytes": 1117208,
+      "sha256": "915b89595c36749d1f2567a54c474f04af3aa354d30acf8c48fbb617bedb6b32",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Linux-Musl/x86/libsqlitejdbc.so",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Linux-Musl/x86/libsqlitejdbc.so",
+      "bytes": 1091960,
+      "sha256": "fb46d8ae47e5ff573215676b4953b2f8e41c8eb4292b11b3f416e5aff413c1d0",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Windows/x86_64/sqlitejdbc.dll",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Windows/x86_64/sqlitejdbc.dll",
+      "bytes": 1014784,
+      "sha256": "f16882d2eded914edd1e1d313e7c8579e040b0da090a52ea99ad7b0c5d961c45",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Windows/aarch64/sqlitejdbc.dll",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Windows/aarch64/sqlitejdbc.dll",
+      "bytes": 1125376,
+      "sha256": "2294c9a62231294b0bf15a61462d1d7411be5b4ce9d37f93203c7c55b61a565d",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Windows/armv7/sqlitejdbc.dll",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Windows/armv7/sqlitejdbc.dll",
+      "bytes": 832000,
+      "sha256": "75f68686cb7400dd0a03a68bb6d348cb75517341b884ad1e2120e25f73ffebcd",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    },
+    {
+      "runtime_member": "org/sqlite/native/Windows/x86/sqlitejdbc.dll",
+      "tag_archive": "sqlite-jdbc-3.53.4.0.tar.gz",
+      "tag_member": "sqlite-jdbc-3.53.4.0/src/main/resources/org/sqlite/native/Windows/x86/sqlitejdbc.dll",
+      "bytes": 953856,
+      "sha256": "567154202057ed53f82ff4a5294ab29ace39c37f7b0089f0520734e93fddaa48",
+      "byte_identical_to_official_tag": true,
+      "sqlite_source_ids": [
+        "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+      ]
+    }
+  ],
+  "sqlite_source_identity": {
+    "source_id": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc",
+    "full_source_manifest_matches": true,
+    "amalgamation_header_matches": true,
+    "all_runtime_native_source_ids_match": true,
+    "native_count": 20
+  },
+  "xerial_notice": {
+    "tag_member": "sqlite-jdbc-3.53.4.0/NOTICE",
+    "retained_copy": "../licenses/sqlite-jdbc-NOTICE.txt",
+    "sha256": "a0670cf020edf700524c43c85321c2ba027a8bace5682001db60875d4a9fe52b",
+    "byte_identical": true
+  },
+  "scope": "Historical/pristine dependency input source verification; final patched output additionally requires RUNTIME-SOURCE-OVERLAY.json and the current source verifier."
+}

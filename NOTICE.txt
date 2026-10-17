@@ -1,0 +1,13 @@
+GuardianAC Ultimate
+Original project code: Copyright (C) 2026 GuardianAC Contributors
+License: GPL-3.0-only. See LICENSE.txt.
+
+This is an independent community project. It is not an official Minecraft,
+Mojang, Microsoft, SpigotMC, PaperMC, Purpur, or PacketEvents product.
+Names identify compatibility targets and included components, not endorsement.
+
+Bundled third-party components retain their original licenses and notices.
+See THIRD-PARTY-NOTICES.md and third-party/ for corresponding source and notices.
+
+Internal development artifact. No production accuracy, complete cheat detection,
+or complete Xray protection guarantee is made.

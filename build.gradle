@@ -1,0 +1,79 @@
+plugins {
+    id 'java'
+    id 'com.gradleup.shadow' version '9.3.1'
+    id 'jacoco'
+}
+group = 'dev.guardianac'
+version = '1.0.0-dev.1'
+repositories {
+    mavenCentral()
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url = 'https://repo.codemc.io/repository/maven-releases/' }
+}
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:26.3-R0.1-20261004.024323-9'
+    implementation('com.github.retrooper:packetevents-spigot:2.14.0') { exclude group: 'io.netty' }
+    compileOnly 'io.netty:netty-all:4.1.72.Final'
+    implementation 'org.xerial:sqlite-jdbc:3.53.4.0'
+    implementation 'com.google.code.gson:gson:2.14.0'
+    testImplementation platform('org.junit:junit-bom:5.13.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    // Adapter boundary tests need the server API type, without bundling it in the plugin.
+    testImplementation 'org.spigotmc:spigot-api:26.3-R0.1-20261004.024323-9'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+java { toolchain { languageVersion = JavaLanguageVersion.of(25) }; withSourcesJar() }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.compilerArgs += ['-Xlint:all,-processing'] }
+tasks.withType(AbstractArchiveTask).configureEach { preserveFileTimestamps = false; reproducibleFileOrder = true }
+processResources { filesMatching('plugin.yml') { expand(version: project.version) } }
+test { useJUnitPlatform(); maxHeapSize = '512m'; finalizedBy jacocoTestReport }
+jacoco { toolVersion = '0.8.14' }
+jacocoTestReport { reports { xml.required = true; html.required = true } }
+shadowJar {
+    archiveClassifier = ''
+    relocate 'com.github.retrooper', 'dev.guardianac.libs.pe.api'
+    relocate 'io.github.retrooper', 'dev.guardianac.libs.pe.impl'
+    relocate 'net.kyori', 'dev.guardianac.libs.kyori'
+    relocate 'com.google.gson', 'dev.guardianac.libs.gson'
+    mergeServiceFiles()
+    exclude 'META-INF/*.SF', 'META-INF/*.RSA', 'META-INF/*.DSA'
+    from(files('LICENSE.txt', 'NOTICE.txt', 'THIRD-PARTY-NOTICES.md')) { into 'META-INF/guardianac' }
+    from('third-party/licenses') { into 'META-INF/guardianac/licenses' }
+    // Shadow's dependency iteration can differ between fresh resolution graphs even
+    // with reproducibleFileOrder. Canonicalize the final ZIP using only the JDK.
+    doLast {
+        def shaded = archiveFile.get().asFile
+        def temporary = File.createTempFile('guardianac-canonical-', '.jar', shaded.parentFile)
+        try {
+            new java.util.zip.ZipFile(shaded).withCloseable { input ->
+                def entries = Collections.list(input.entries())
+                if (entries.collect { it.name }.toSet().size() != entries.size())
+                    throw new GradleException('Duplicate shaded ZIP members are not permitted')
+                def rank = { String name -> name == 'META-INF/' ? 0 : name == 'META-INF/MANIFEST.MF' ? 1 : 2 }
+                entries.sort { a, b -> (rank(a.name) <=> rank(b.name)) ?: (a.name <=> b.name) }
+                new java.util.zip.ZipOutputStream(new BufferedOutputStream(new FileOutputStream(temporary))).withCloseable { output ->
+                    output.setLevel(9)
+                    entries.each { original ->
+                        def entry = new java.util.zip.ZipEntry(original.name)
+                        entry.setTimeLocal(java.time.LocalDateTime.of(1980, 1, 1, 0, 0))
+                        output.putNextEntry(entry)
+                        if (!original.directory) input.getInputStream(original).withCloseable { stream -> stream.transferTo(output) }
+                        output.closeEntry()
+                    }
+                }
+            }
+            java.nio.file.Files.move(temporary.toPath(), shaded.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+        } finally { temporary.delete() }
+    }
+}
+jar { archiveClassifier = 'plain' }
+build.dependsOn shadowJar
+dependencyLocking {
+    lockAllConfigurations()
+    // Gradle normalizes timestamped Maven snapshots to their base version in lock state.
+    // The explicit immutable timestamp and SHA-256 verification pin this API instead.
+    ignoredDependencies.add('org.spigotmc:spigot-api')
+}
+
+// Build the privately embedded PacketEvents variant from reviewed source.
+apply from: "gradle/embedded-packetevents.gradle"

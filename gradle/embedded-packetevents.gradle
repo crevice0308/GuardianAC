@@ -1,0 +1,105 @@
+/* SPDX-License-Identifier: GPL-3.0-only
+ * Compile the minimal local PacketEvents change from preferred editable source.
+ * Never rely on PacketEventsSettings.bStats(false), which is a no-op in 2.14.0.
+ */
+def patchRoot = file('third-party/patches/packetevents-2.14.0')
+def builderPath = 'io/github/retrooper/packetevents/factory/spigot/SpigotPacketEventsBuilder'
+def upstreamSource = file('third-party/sources/packetevents-v2.14.0.tar.gz')
+def patchedSource = new File(patchRoot, "src/main/java/${builderPath}.java")
+
+// Compile separately so a signature-only Bukkit shim cannot leak into main or
+// test classpaths. It adds Paper's method signature without modifying upstream
+// runtime behavior or downloading a different server API.
+def compileEmbeddedPacketEvents = tasks.register('compileEmbeddedPacketEvents', JavaCompile) {
+    source = files(patchedSource, new File(patchRoot, 'src/compileOnly/java/org/bukkit/Bukkit.java'))
+    classpath = project.configurations.compileClasspath
+    javaCompiler = javaToolchains.compilerFor { languageVersion = JavaLanguageVersion.of(25) }
+    destinationDirectory = layout.buildDirectory.dir('classes/embeddedPacketEventsCompile')
+    dependsOn tasks.named('verifyEmbeddedPacketEventsSource')
+}
+def embeddedPacketEventsClasses = tasks.register('embeddedPacketEventsClasses', Sync) {
+    from(compileEmbeddedPacketEvents.flatMap { it.destinationDirectory }) {
+        include "${builderPath}.class", "${builderPath}\$*.class"
+    }
+    into layout.buildDirectory.dir('classes/embeddedPacketEvents')
+    dependsOn compileEmbeddedPacketEvents
+}
+// Unit tests resolve the same replacement builder, without the compiler shim.
+tasks.named('test') {
+    dependsOn embeddedPacketEventsClasses
+    classpath = files(embeddedPacketEventsClasses) + classpath
+}
+// The normal lightweight sources JAR also carries the modified preferred source.
+tasks.named('sourcesJar') { from(new File(patchRoot, 'src/main/java')) }
+
+tasks.register('verifyEmbeddedPacketEventsSource') {
+    group = 'verification'
+    description = 'Verify the editable embedded builder differs from pinned upstream only by omitting metrics.'
+    inputs.files(upstreamSource, patchedSource)
+    doLast {
+        def actualHash = java.security.MessageDigest.getInstance('SHA-256').digest(upstreamSource.bytes).encodeHex().toString()
+        if (actualHash != '0474b4a507699a9eef60d6676a84a5f086858786b0c155b2aed6addb2edb6e49')
+            throw new GradleException('PacketEvents pristine source archive SHA-256 mismatch')
+        def upstream = tarTree(resources.gzip(upstreamSource)).matching {
+            include "packetevents-2.14.0/spigot/src/main/java/${builderPath}.java"
+        }.singleFile.getText('UTF-8')
+        def changes = [
+            ['import org.bstats.bukkit.Metrics;\n', ''],
+            ['import org.bstats.charts.SimplePie;\n', ''],
+            ['''                    Metrics metrics = new Metrics(plugin, 11327);
+                    //Just to have an idea of which versions of packetevents people use
+                    metrics.addCustomChart(new SimplePie("packetevents_version", () -> getVersion().toStringWithoutSnapshot()));''',
+             '''                    // GuardianAC local modification (2026-10-14): omit embedded metrics.
+                    // Do not construct bStats, schedule reports, or touch its shared config.
+                    // This change only affects GuardianAC's privately relocated copy.''']
+        ]
+        changes.each { change ->
+            if (upstream.indexOf(change[0]) < 0 || upstream.indexOf(change[0]) != upstream.lastIndexOf(change[0]))
+                throw new GradleException('PacketEvents metrics patch no longer applies exactly once')
+            upstream = upstream.replace(change[0], change[1])
+        }
+        if (upstream != patchedSource.getText('UTF-8'))
+            throw new GradleException('Editable embedded PacketEvents source differs from the reviewed minimal patch')
+    }
+}
+tasks.named('compileJava') { dependsOn tasks.named('verifyEmbeddedPacketEventsSource') }
+tasks.named('sourcesJar') { dependsOn tasks.named('verifyEmbeddedPacketEventsSource') }
+tasks.named('check') { dependsOn tasks.named('verifyEmbeddedPacketEventsSource') }
+
+// The Maven JAR stays locked and verified on the compile/runtime classpaths.
+// At assembly, retain its unchanged content except the builder compiled above
+// and the now-unused bStats implementation. This avoids duplicate class choice.
+tasks.named('shadowJar') {
+    dependsOn embeddedPacketEventsClasses
+    from(embeddedPacketEventsClasses)
+    dependencies { exclude(dependency('com.github.retrooper:packetevents-spigot:2.14.0')) }
+    from({
+        def candidates = project.configurations.runtimeClasspath.resolvedConfiguration.resolvedArtifacts.findAll {
+            it.moduleVersion.id.group == 'com.github.retrooper' &&
+                it.name == 'packetevents-spigot' && it.moduleVersion.id.version == '2.14.0'
+        }
+        if (candidates.size() != 1) throw new GradleException('Expected one pinned PacketEvents Spigot artifact')
+        zipTree(candidates[0].file)
+    }) {
+        exclude "${builderPath}.class", "${builderPath}\$*.class"
+        exclude 'io/github/retrooper/packetevents/bstats/**'
+    }
+    // Fail closed on the final shaded bytes, including anything introduced by a
+    // future dependency change. No server or third-party code is executed here.
+    doLast {
+        new java.util.zip.ZipFile(archiveFile.get().asFile).withCloseable { jar ->
+            def classes = Collections.list(jar.entries()).findAll { it.name.endsWith('.class') }
+            def builderClasses = classes.findAll { it.name.startsWith('dev/guardianac/libs/pe/impl/packetevents/factory/spigot/SpigotPacketEventsBuilder') }
+            if (builderClasses*.name.toSet() != [
+                'dev/guardianac/libs/pe/impl/packetevents/factory/spigot/SpigotPacketEventsBuilder.class',
+                'dev/guardianac/libs/pe/impl/packetevents/factory/spigot/SpigotPacketEventsBuilder$1.class'
+            ].toSet()) throw new GradleException('Unexpected embedded PacketEvents builder class set')
+            classes.each { entry ->
+                def bytes = jar.getInputStream(entry).withCloseable { it.readAllBytes() }
+                def constants = new String(bytes, java.nio.charset.StandardCharsets.ISO_8859_1).toLowerCase(Locale.ROOT)
+                if (constants.contains('/bstats/') || constants.contains('.bstats.') || constants.contains('bstats.org'))
+                    throw new GradleException("Embedded bStats class/reference/endpoint is forbidden: ${entry.name}")
+            }
+        }
+    }
+}

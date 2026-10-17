@@ -1,0 +1,2180 @@
+{
+  "schema": 1,
+  "repository": "crevice0308/GuardianAC",
+  "tag": "v1.0.0-dev.1",
+  "source_file_count": 292,
+  "build_input_count": 155,
+  "source_zip": {
+    "name": "GuardianAC-Ultimate-1.0.0-dev.1-fb56fa5d8fcc-public-source.zip",
+    "bytes": 57898239,
+    "sha256": "7ca8ec302b4f7488fb4a35776a8b9031e4a219cd2a89fee5f0110068a52ba999"
+  },
+  "jar": {
+    "name": "GuardianAC-Ultimate-1.0.0-dev.1-fb56fa5d8fcc.jar",
+    "bytes": 18399808,
+    "sha256": "fb56fa5d8fcca60271863f7ced20df1ff9dfc79bbbc9e0757fc68b309687a5d1",
+    "parts": [
+      {
+        "index": 0,
+        "path": "release-input/parts/jar-000.bin",
+        "bytes": 4194304,
+        "sha256": "71f7fdd14a2dd851af185c7af0c4a448380ea853b0db1e7fde98c09ee17bf852"
+      },
+      {
+        "index": 1,
+        "path": "release-input/parts/jar-001.bin",
+        "bytes": 4194304,
+        "sha256": "ecb8d29b609760cfad6dfcda20af06b60f834ae57658292fb7eccf613f2c70e2"
+      },
+      {
+        "index": 2,
+        "path": "release-input/parts/jar-002.bin",
+        "bytes": 4194304,
+        "sha256": "fd1adce019a46b3b48f094b07d763175322ac90db9e0e9808d82b24e90b992ce"
+      },
+      {
+        "index": 3,
+        "path": "release-input/parts/jar-003.bin",
+        "bytes": 4194304,
+        "sha256": "229c1b0e709e29e720b84a30123c42e0cad683b7ca8a71494182f78c7d3ab568"
+      },
+      {
+        "index": 4,
+        "path": "release-input/parts/jar-004.bin",
+        "bytes": 1622592,
+        "sha256": "78d84416cdfd3e7d749c6b4591ee11cec52dd4f4e9f6a3b6d537d8c12bf15e04"
+      }
+    ]
+  },
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 2263,
+      "sha256": "a66a02160068248aa43f5700fb3622fe7193f29c6d215c040d05365692abe4f7",
+      "git_blob_sha": "426ef689f23bab8ac35cf60460dea9efcee0aac3",
+      "mode": "100644",
+      "input_path": "release-input/original-ci.yml"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 174,
+      "sha256": "c3832e5eacd66a8820f3820b031bc8aa9c621134f25f16873300c7bc943286de",
+      "git_blob_sha": "57281435e5e01fa1c947867086898cfcf4bedf46",
+      "mode": "100644"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 862,
+      "sha256": "c0b495369c0af087ef3c8986b5deb892d3a89dc2f7b6973386735ef295c13c0f",
+      "git_blob_sha": "8f9eefe0ca6f1862b64b0c16406506d4e105c34b",
+      "mode": "100644"
+    },
+    {
+      "path": "CONFIGURATION.md",
+      "bytes": 15357,
+      "sha256": "3c2fbc4610beb2e4a8f48ecd8c09d167b291acb574467ceebf6c19fc0a2a19f0",
+      "git_blob_sha": "5c6b25d81f4ad452fa45461a21e53d8cf0dd2c67",
+      "mode": "100644"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1383,
+      "sha256": "f313abd37a0e5328aa30a2b549f670fd90fe7bcfa9ddd92cfe4a5dae987cfcf8",
+      "git_blob_sha": "d5d23c693faa7bf1feb55c18fdf3c8531b8cf998",
+      "mode": "100644"
+    },
+    {
+      "path": "INSTALL.md",
+      "bytes": 6597,
+      "sha256": "3e4621cc588eff20d0aeefb3b771e1d00264aca1182d8497dbb09d75a03871e4",
+      "git_blob_sha": "697919b86945e18fe309ea15ffba5f433d613209",
+      "mode": "100644"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "mode": "100644"
+    },
+    {
+      "path": "NOTICE.txt",
+      "bytes": 639,
+      "sha256": "cdb840c6da929b6a4f2738187faa8df621ac64b32edafcd658abb28ad7305ec1",
+      "git_blob_sha": "48f03b777b501bf6194197c9cf5d24e17499e6db",
+      "mode": "100644"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3945,
+      "sha256": "5f94446c7bb18a00859eda623592c6a892623ca509d19881441dc9dbefe804b0",
+      "git_blob_sha": "81b95a6157febd5b2629a525f2cfdd54b7716042",
+      "mode": "100644"
+    },
+    {
+      "path": "RELEASE-NOTES.md",
+      "bytes": 1003,
+      "sha256": "7e887e58b9afd40ef0a0dedfd38310b33e977023e7b33b5f4aee14e8a4f0d600",
+      "git_blob_sha": "6934ef467e0bd9507d78578ebd0b7a8977822eb4",
+      "mode": "100644"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 8588,
+      "sha256": "d6bfb21f210166246cf19d90e648e550e66ec66c57afcd803adc032f2086df6d",
+      "git_blob_sha": "8e016c2856c5ef386d669826956fe59400307819",
+      "mode": "100644"
+    },
+    {
+      "path": "TEST-RESULTS.md",
+      "bytes": 6145,
+      "sha256": "63555e4156a666363f2e317707c83f101c050ca7d05cd90fe44a3238cbe6a649",
+      "git_blob_sha": "2800d818418411b9c2bed41f19c3125284559f4a",
+      "mode": "100644"
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "bytes": 6998,
+      "sha256": "7a4f497486f8302c0aa0520eeeee5129cb076e9b71342611534406a27590390a",
+      "git_blob_sha": "9dddb3d72f49cb690a9e5d997d92341acd5d4075",
+      "mode": "100644"
+    },
+    {
+      "path": "build.gradle",
+      "bytes": 4344,
+      "sha256": "7a4853d4face8e8580cb57101cdfd33e78689e8ca13599f4beb9087336b93c8c",
+      "git_blob_sha": "470583d6b50449dfc466351605e98ff3f03c7c6b",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/DESIGN.md",
+      "bytes": 5389,
+      "sha256": "9a235f08873bc286b355057583799fd2cc67506c5af938978a3dcf9712ec6516",
+      "git_blob_sha": "0fb8a3a0e2c528c0cb2cf28cf6a93f00ef52b2fb",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/EVENT-TELEMETRY.md",
+      "bytes": 9484,
+      "sha256": "d9df001c061e5c063ccf183f9ec4dedda6b79fd1145b8db75d59d7dea0e6a35b",
+      "git_blob_sha": "807544affb3a81adcfeb88a7fc137371416d9e4b",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/FEATURE-MATRIX.md",
+      "bytes": 13789,
+      "sha256": "b47b5cde4d8b4e77bcc97bdfa98e02c5a1ba9267fcd33c56aa4b9b4fbe5dcefc",
+      "git_blob_sha": "08d4c7b3fc5a94c8162f878f28c865b6cb21b516",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/METRICS-PRIVACY.md",
+      "bytes": 7924,
+      "sha256": "19eb060986f9ea21996d61794fdab0bb3ed73dea105d72ea696d0f1105998069",
+      "git_blob_sha": "8b086db26f80709866311d9e049c49249ed31935",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/MODULES.md",
+      "bytes": 6921,
+      "sha256": "f0dbdae0fe7af23457191008f6e67bdccf4db3248e44c27d7eab851634c51811",
+      "git_blob_sha": "4b97e168a146c5d8a9f1a77fe9d49d50d3016f66",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/OBFUSCATION.md",
+      "bytes": 1423,
+      "sha256": "d98ee79dcd9346e273e80915902b83d436e39dd32068fafde0b659447361709e",
+      "git_blob_sha": "be811b2f037856cc4d48207e1b1f6e378c7d339f",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/PACKET-XRAY.md",
+      "bytes": 12295,
+      "sha256": "57b42e1d162286be92ceb3606f7ccd21891defefdeab277f8a12fdda8afb1e66",
+      "git_blob_sha": "ad2e47dfbd186630b210cf2dd8858090b9901177",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/PERMANENT-IP-REVIEW.md",
+      "bytes": 6117,
+      "sha256": "a7f33385f4f7e658bc76558fc7312301c0d9d679828364accba32df53ad4174c",
+      "git_blob_sha": "38e644df1d5b357c4166a02f9078956bf9f5c73e",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/PRERELEASE-PROVENANCE.md",
+      "bytes": 2440,
+      "sha256": "1c516663901656b6bd3f0e3beb41b7f38695acaeebb0da77ca6fa7ad554ee9f9",
+      "git_blob_sha": "c49d43fc379677eef6a29b36c411827e773f3b2c",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/README-en.md",
+      "bytes": 2667,
+      "sha256": "10f952d00604646da2fee5992139384cd8227a0734bb2e687833757536c15361",
+      "git_blob_sha": "0fb38a6c9519f27b8489fcd1f4aeeba053b334cf",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/RUNTIME-LOCALIZATION.md",
+      "bytes": 6366,
+      "sha256": "738d0f6df3ac096527c2f190b399376796bc274eec1835a92f6a1dfe303348d8",
+      "git_blob_sha": "8a7630ba091bc9d17fd7a9de5f52ab1a5e6d4a0f",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/SECURITY-AUDIT.md",
+      "bytes": 17464,
+      "sha256": "4f6c409ee94dad1d5d84ae988fbcb9e01b9da7add37c1d450b7535282be15ed9",
+      "git_blob_sha": "92b922698bb08208246422dedeca9e3a5028ea24",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/SPECIFICATION-ja.md",
+      "bytes": 12698,
+      "sha256": "8acda6d26b51cb83d457f311555a4bc7ac5e14b001503535e1a5bc7b3e859385",
+      "git_blob_sha": "4adfda9b045496055e3fe72f8f1e88ee35daa4f6",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/reports/build-inputs.json",
+      "bytes": 29860,
+      "sha256": "58cdb74ba1a28ef16bd8506fb7858ecb8e3cbfa9eb2c2150745da689de95e1b7",
+      "git_blob_sha": "5562039e3c43102d6928670ac4f7767032ed79ce",
+      "mode": "100644"
+    },
+    {
+      "path": "gradle.lockfile",
+      "bytes": 5380,
+      "sha256": "4cfea653a36470111bb6154270d50cc13a4b02c6fb0cf0f91719a8c8aa2806f4",
+      "git_blob_sha": "8e8bb7908cc1ae9c7001f76666af278c131d78ae",
+      "mode": "100644"
+    },
+    {
+      "path": "gradle.properties",
+      "bytes": 126,
+      "sha256": "e56e23e1a5b16ab10bd1b6893443adb2d95cb76d7fd7ac469d714c94225c0188",
+      "git_blob_sha": "17ba53963089a72ef69c600497d50ab7f326c581",
+      "mode": "100644"
+    },
+    {
+      "path": "gradle/embedded-packetevents.gradle",
+      "bytes": 6652,
+      "sha256": "47b62d6cbc10e72769788ba61af1e0bf1af237ea12b6c4df0e70a9998b7bfa18",
+      "git_blob_sha": "7825d7cdaf958e9a7f8ae3d0b0b85cfb29b3e322",
+      "mode": "100644"
+    },
+    {
+      "path": "gradle/verification-metadata.xml",
+      "bytes": 51177,
+      "sha256": "241b33da7a4ee138d1429dd4de30476bf1bee7691a00b6611a1ff6063aef37c1",
+      "git_blob_sha": "68ac6d0e25c99f3d2216fc6a6ca17e6828f4c780",
+      "mode": "100644"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "bytes": 48749,
+      "sha256": "3b8a25775a69158b5ad2b1d17a80a88dc7b40a352a73eb27d06c612a7ce68e98",
+      "git_blob_sha": "9fa7f288283f81eec4952784c271abd7e0938dee",
+      "mode": "100644"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "bytes": 368,
+      "sha256": "b9c24447093e4fab2b1f37bfb461d2a1eb14157a4808dff50e0f954801a8f8f1",
+      "git_blob_sha": "a78c88e5392b8d74a8c3e8c665b11bbca0ad5b30",
+      "mode": "100644"
+    },
+    {
+      "path": "gradlew",
+      "bytes": 8656,
+      "sha256": "a5a5c199ba02189ae8c46a334223371a20599d9c298ef65e7540ede4a3f72d59",
+      "git_blob_sha": "249efbb032ce46a80c687c0723eb172e85f6a136",
+      "mode": "100755"
+    },
+    {
+      "path": "gradlew.bat",
+      "bytes": 4776,
+      "sha256": "31ec098bd961c460b62875950c3eff5c8213bcb0bbde38d769b88512877fd21f",
+      "git_blob_sha": "3185a43f78fabec15ca99b0ca6bf1e666218d5ca",
+      "mode": "100644"
+    },
+    {
+      "path": "settings.gradle",
+      "bytes": 41,
+      "sha256": "a1667a42b2efd43920ba8c3230ae9751e0ba65dbe5104985444bad1563d5af3a",
+      "git_blob_sha": "87ebd7004a4b70ecbd1066fb5050d465f326f695",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/AdvancedSetting.java",
+      "bytes": 6908,
+      "sha256": "1927be9aa2f2eeda44728259091e30d079ee7edb24d0e8f59f5a50685a110158",
+      "git_blob_sha": "78f0155428f9d486081a92b8f4d0ec0b4627b050",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/EventTelemetry.java",
+      "bytes": 46184,
+      "sha256": "575bd05bd0d20ece9b5b03fbbd749ea6a39f1f3c87dab3db23dd37571efcd5cd",
+      "git_blob_sha": "9cd7891ce2d3da15629c55aef08f086b36359488",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/GuardianPlugin.java",
+      "bytes": 47379,
+      "sha256": "e82dfb1b43a1fb2183c5ce173c962bdf377e19aa78408bfc8a94217b7d7645d6",
+      "git_blob_sha": "dab3fb9fb5345b29f39b6389e4c6d45ba9fa8270",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/GuardianSettings.java",
+      "bytes": 4370,
+      "sha256": "f313d19350afaaa2fa053ff3cf1e3deae6be4b0f2ea1fc917a08e569513ecadc",
+      "git_blob_sha": "829d9f277839240f701574e7bc9dbe32dff4ad5e",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/GuiManager.java",
+      "bytes": 45097,
+      "sha256": "126e2e9ec3e03b51a5dd14a5be5dd62c2e4c3ba6b4f0bcf036a31f929e24431d",
+      "git_blob_sha": "4ef7e4989ea23a1130861a3283a268b47e884536",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/PermanentIpController.java",
+      "bytes": 29972,
+      "sha256": "9727588df30a4822c703c99be0efd4ee339006f2e0fffaecfcc37f263fb73f6c",
+      "git_blob_sha": "3078a2e8973c9d8c631e75126d0865f74eef447a",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/RuntimeMessages.java",
+      "bytes": 6545,
+      "sha256": "b9ae0da3bca924821c085dd4f1e3a154a0ee891c236c429562040cfde09faf68",
+      "git_blob_sha": "3419bb4349708fb8778969649f5ad8146a2dc50e",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/telemetry/BoundedHistory.java",
+      "bytes": 1900,
+      "sha256": "fc1631fde579c79edad70d7c771365b025fb6ce4390427093bfe386dd733e979",
+      "git_blob_sha": "503272fca01580d7bc3a2d3a58ae1ee46db57bb1",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/bukkit/telemetry/SessionStateStore.java",
+      "bytes": 2719,
+      "sha256": "5d09a4083e089fb42185ae1050da9fd001d93825c57e85cb6467c113602adcfc",
+      "git_blob_sha": "6c75ba4f32889cbdb1c7932f90df68b9d70d6954",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/checks/CheckCatalog.java",
+      "bytes": 14274,
+      "sha256": "49bb720cd6bf2034ab5b2e039f9f029fc8e234a70fb3a28aaffa4f210e38837f",
+      "git_blob_sha": "deef961567de90e4ea621e91d618c4ba6b46dd7f",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/AutomaticBanGate.java",
+      "bytes": 4645,
+      "sha256": "2adf39357d52490c9c1a899ff9facd10a26800f9c92d9d77595961c74700f739",
+      "git_blob_sha": "f89af0865e3597e10e27398bf8d1f520281ad6b8",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/BanEvidence.java",
+      "bytes": 2049,
+      "sha256": "b8b4a53688440c813001e4bcb59b0404afa5b66ca5c87ff62447dd4f320ac020",
+      "git_blob_sha": "85d63da003377cc4371ab7d3c39f6bafa7ce00da",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/Check.java",
+      "bytes": 1028,
+      "sha256": "743928242088f9c24fde813d4cd2a6eacb84640cfe023e3481e7d75fbbbb0d39",
+      "git_blob_sha": "c1f0fe51ffea0b068224b4505462a8ea8ff30b43",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/DetectionEngine.java",
+      "bytes": 5868,
+      "sha256": "d6c30ed72bb39306eeecd3e4c786963091e35f6e0fc3d931fc237cc0cd6bf12c",
+      "git_blob_sha": "23fa2339baa287705f1121adf2a0c40f3ed51143",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/Finding.java",
+      "bytes": 314,
+      "sha256": "ebc766fc5000310656cd24c1c3a305f083216732257ad06e1d860a6a62ded40a",
+      "git_blob_sha": "072422c7f5427146b5416f4def34dde3080bd907",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/PersistedBanEvidence.java",
+      "bytes": 15595,
+      "sha256": "5408f2f3490831750c0fefb6a56ede3c8469575804866700306ef0b45279fae1",
+      "git_blob_sha": "75b779ff991d8cb152a1cd6095b85f8148fceca0",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/Preset.java",
+      "bytes": 345,
+      "sha256": "a366e6aa9f5fe4db4519a7d06924a225d80f5c2ad725cf7a58b44600310ee145",
+      "git_blob_sha": "2d3071d67f0a03edb63aa0878d737961808ef0e9",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/RuntimeTarget.java",
+      "bytes": 955,
+      "sha256": "88ccf6c786e40eae4900eecaf09698b436b157fa5d636ded31a8f99cb3a22d9f",
+      "git_blob_sha": "99a7b0f71e50fa22177a7a61c7378570b80850e3",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/core/Sample.java",
+      "bytes": 2410,
+      "sha256": "5725bfe6ae6ac26e0775089ccda79a16d568df0c2decb0f35c6242bdf7743a0a",
+      "git_blob_sha": "af60b423f68fb88c10c07c732a64d348a111b8e6",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/packet/PacketAdapter.java",
+      "bytes": 16093,
+      "sha256": "b16899fd2c6ca28e52e127ba0c284541b17ada3ab8e7742c8598e2ecbe2c92ba",
+      "git_blob_sha": "71ee6925775c0a96ad9e92e8ee1acdff72f299af",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/packet/PacketContext.java",
+      "bytes": 819,
+      "sha256": "929173a912f86107e1140625ece17fd29bdd74be3282de491ad72e69d75ee4a3",
+      "git_blob_sha": "907b43205f004a16477cd393d9681bc0708aa6f3",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/packet/PacketMovement.java",
+      "bytes": 399,
+      "sha256": "54b346bf70f82c01119db3c7c7c89f3a5e83779ea4764cb59fcfb49049c2d92d",
+      "git_blob_sha": "ed2654976595c5d6247d7f8388b992cdcd27a588",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/packet/PacketSession.java",
+      "bytes": 1441,
+      "sha256": "44bf235af2110c7f39494223e5e72f10ce48a0c9bd4ddc12f280bf157b4c3982",
+      "git_blob_sha": "08fac8a34bcd39a2f4783c6bbdbd25cd56d31590",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/packet/PacketTelemetry.java",
+      "bytes": 3625,
+      "sha256": "9f53a57fd359c77e048ba9271773f10d8793ff203ad747df3ea56ae14ab64aca",
+      "git_blob_sha": "8bd2e710ab6ed0b7a480015ee328ae6362248e46",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/packet/RateWindow.java",
+      "bytes": 1222,
+      "sha256": "2c1c06f0e52a6452c3fe1d8e6b3107fc3f05e134b8b1fd1b1c057ae0c7a46234",
+      "git_blob_sha": "77d1c275e54d154bd9ce0e306f5aacefa66c2ec8",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/BoundedRateLimiter.java",
+      "bytes": 1414,
+      "sha256": "913e8971705914b921a6593bcf229c65e6b02f64907a76f1817e0d32d486a08d",
+      "git_blob_sha": "7a9a0b6a5fefb835d942c8530860ea2907a8e9bd",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/ConfirmationManager.java",
+      "bytes": 1963,
+      "sha256": "0245dbf1676a0642b7a845aa93a6703ab0b14fcd551bbf45af3b09110a78e503",
+      "git_blob_sha": "04d8b4438fb3c06d63b62637f4a96ef0dc606545",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/DiscordNotifier.java",
+      "bytes": 3547,
+      "sha256": "36a89ed824402bcefbf6040877eb0be62ce6fdc8e64efb5e7771a38838739320",
+      "git_blob_sha": "e90c59aa02d384ee1792cbe81529547678008130",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/NativeBanDecision.java",
+      "bytes": 1163,
+      "sha256": "167f7e732983b8d18213cffcda89ad4cc6831033aad7c61c4b0b5e8785db16a5",
+      "git_blob_sha": "d29d627e2509bd2c29980fed4a50418ee25736e3",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/NativeBanDelivery.java",
+      "bytes": 776,
+      "sha256": "602c66dcfba21bdc53a956dd47ef6879fe1f0bfe70ab9b00b905c52a5b25db91",
+      "git_blob_sha": "ab9a5ab281f753500348e6a4f3f6d3f8c548478a",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/NativeBanOwnership.java",
+      "bytes": 637,
+      "sha256": "c7ad5558f5b6061c5ace74bf4516ec50c4ccc108650a3fee81c98555e3a4f297",
+      "git_blob_sha": "d0008f9610ad5b81fa5e5d5996728320584fadae",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/NativeBanReconciler.java",
+      "bytes": 8030,
+      "sha256": "b60ed8d5a9637f0c534bd106e71566ed9149281eab1286def393703d98df7ba8",
+      "git_blob_sha": "763511a5a5be57f8bdec6aebed2777f0c06ec34d",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/PermanentIpApprovalGate.java",
+      "bytes": 7144,
+      "sha256": "270d608ccb35f751b98359557a7751ce259670d329d78791fd075268237ba5e3",
+      "git_blob_sha": "417bf9fea9d09a2ae1d783b0937a4d545dcf0ce2",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/PrivateFiles.java",
+      "bytes": 3540,
+      "sha256": "20ded66e4786880585c4ab1807910844984cb290222fab16f1c2e9bfb9dd1f8c",
+      "git_blob_sha": "7f91ee8842b1639872a7bf847ae1e3816389fa85",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/ReplayBuffer.java",
+      "bytes": 3756,
+      "sha256": "9387237c1930b789505a39d6129b558d98c2712b46853fbf24fffd7f97b26164",
+      "git_blob_sha": "a4908256c8c0440133fe6004584849589ca39042",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/security/SessionActionGate.java",
+      "bytes": 708,
+      "sha256": "ac790a51b6e9fcf9c9f496d0082f388729248ab700299d1bde2c9388617cc2fa",
+      "git_blob_sha": "e6daae38c16ee5757febad6560424fd5b2a6e8c5",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BanDuration.java",
+      "bytes": 643,
+      "sha256": "222d14db6522c8395c9f33d79ba9e900f102cee22e28922886a448a0216e8ac4",
+      "git_blob_sha": "273d40818c1e6ebbef64f24f15644b64722789ab",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BanReconciliationSnapshot.java",
+      "bytes": 1031,
+      "sha256": "f417ad8f8f89cc60676945f7f0afeafd0e4b208c4b03b167e46f62e71d0c9b5f",
+      "git_blob_sha": "9f5c015be21c95c1a0d0f18549f7e83c38f2ac29",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BanRecord.java",
+      "bytes": 1625,
+      "sha256": "efd8079ca4df54fc4517a11ecd162b5b64728b5e9f6e23ee40b9c3b3524b4ca3",
+      "git_blob_sha": "5115d7ca757a5a0aff15b9664de9035d12d3807b",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BanRequest.java",
+      "bytes": 1399,
+      "sha256": "12d0023319e2acf2897084cb7c6be23245cba5fa0ca4209e35bfa70b9aab0d6d",
+      "git_blob_sha": "3a5b92ff5a5eb6f85bfb6e3d0fa5a119adb19ab5",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BanStateSnapshot.java",
+      "bytes": 445,
+      "sha256": "71eca23c3599f6713e56e4c7c4a62034a9b92997927d9438eed3da63d690f8ca",
+      "git_blob_sha": "a4ae865212758fd13ba465aa753540759d6ce6eb",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BanType.java",
+      "bytes": 234,
+      "sha256": "acd8fbc80fdf46ba3c34c29258449e8a2134981eccf606c4d8f6a6b1b5f8cefb",
+      "git_blob_sha": "beb4ac83ba5cece4ad390eb5525e7e06248ea2a6",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/BoundedStorageExecutor.java",
+      "bytes": 3535,
+      "sha256": "b3f6ec433d7480b094e3c5ccab2dc1168ba6d8ccd4d1bac07917a66d65328f7b",
+      "git_blob_sha": "e7c49ff7c744270feeca1b71b3976130a7c4b1f1",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/EvidenceInput.java",
+      "bytes": 707,
+      "sha256": "e55ad39e58ec5abcf880aabef913c6f3b66678a54bacb297668f133c58b45931",
+      "git_blob_sha": "105bd0090d619524f64dd5d0a757d537aa10472f",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/EvidenceRecord.java",
+      "bytes": 640,
+      "sha256": "8f699cde2a6c9ae5a34ee368332840fe99166f9a586344f55f014cb9cd0fca50",
+      "git_blob_sha": "2d428acd49f550214d4029feb9d3691aedebf8c0",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/EvidenceSummary.java",
+      "bytes": 403,
+      "sha256": "0dafb93a759048f0ddf0aa7792aba18de3aa19aa34e8b2d8aeb063f5339309f6",
+      "git_blob_sha": "84e0a67959465689eac0df48aca6f9fbc697dbf1",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/IpBanPolicy.java",
+      "bytes": 3353,
+      "sha256": "9b66899cefe1a04089960805c10b3be8b960125b5b9994d213801122b525dfc2",
+      "git_blob_sha": "cda9effbae29e16e51acfb5392c2280cf159fec4",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/IpPrivacy.java",
+      "bytes": 7028,
+      "sha256": "f4c65d2be44b6c2940c83c1720ef0f5d186f9bdefafb9de18b1d0f64e7c3ecd2",
+      "git_blob_sha": "f5fb15babcce66f472e9a4e1d6bf5edb93ac492d",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/PermanentIpAudit.java",
+      "bytes": 406,
+      "sha256": "bfe853f17e98007f655a28ad19eaa462becc89f206d1b3ea0f8636492635179a",
+      "git_blob_sha": "508b275ba92c80e7dd5c7a725eec2137f6dd9ea7",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/PermanentIpCandidate.java",
+      "bytes": 3640,
+      "sha256": "a0314da013abf9cb53977fa43bf0db4b396479d71770a9e4227ca6503f8d6e61",
+      "git_blob_sha": "f681f045bb81c21693cda14ae2aaeea1f5470217",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/PermanentIpReview.java",
+      "bytes": 570,
+      "sha256": "99484e068b510f2a227fe30ac2fc779a834b39383f64dfdde386e20053acc11a",
+      "git_blob_sha": "9afb3148bcff6a6ee89b74ddcffb6de0d8f416c2",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/SecurePaths.java",
+      "bytes": 1383,
+      "sha256": "cdd95bfcb924a085eea81b37b4d6f044a2053bcaea0268c1095e9aa231d838d6",
+      "git_blob_sha": "1c62676d083aa745c216a2d9604e365cc653d000",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/SqliteBanRepository.java",
+      "bytes": 80719,
+      "sha256": "ed07f0cede8c5485aebec2708066a8c691e2fcd114cc8b6fed55485a520ae11a",
+      "git_blob_sha": "13f4e5ec1e8ae68cf617f59e336dec2dce7295d1",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/StorageConfig.java",
+      "bytes": 1069,
+      "sha256": "ea5ba9dccfe5aa7e4576927ec378eba8e247ba1c2aaaf6dc189c1104c52930b9",
+      "git_blob_sha": "03f5e4fdb81c2bee711c6a8771e51a59e9f6dd74",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/StorageException.java",
+      "bytes": 348,
+      "sha256": "9edfc2980211844922cdf38154e588802e134d67ca4b2042313d31ef5397cc9c",
+      "git_blob_sha": "b93a31f2639ff212d2f2c9acb755778dc5ff0410",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/StorageValidation.java",
+      "bytes": 586,
+      "sha256": "50e7daa0e4e09985178aae50285e17467227062a817bb6ceba74195ca7e3551b",
+      "git_blob_sha": "c1918949b726e93009aff43ba45c5cba03287a64",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/UnbanAudit.java",
+      "bytes": 216,
+      "sha256": "73643764910bec62bd10a5742fd36cdd8d7086dfc99fe8fa4e52c9364741e0eb",
+      "git_blob_sha": "92d29de3fc9ab7f564d764b9bbd489b9bbae8b7e",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/storage/package-info.java",
+      "bytes": 2882,
+      "sha256": "11fc252abb686cb80f2bcfdea8f71c7e54bd814f7c751e29d977b761e64120a1",
+      "git_blob_sha": "ad0ab9eb76d337e719b07d045c8fa4576e77b3d0",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/BlockPosition.java",
+      "bytes": 352,
+      "sha256": "d018b93c556c38df847dda83a60d23bd391d1f92571609464122294a2be6ca01",
+      "git_blob_sha": "cc244788605867e9f1356a2845cd3dea3384b05f",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/ChunkConcealment.java",
+      "bytes": 12128,
+      "sha256": "1b378c824ff6d2036e33aeaa02ca2d9889091ae0a71c32292510750b9d7b45b3",
+      "git_blob_sha": "cca8575c5a4ac874ba1f237a72dbfb92e97f3669",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/ChunkWorkBudget.java",
+      "bytes": 767,
+      "sha256": "0c37595a39629f9371abb0440f3cd04287a3c1724c43cfbdff74781602560cce",
+      "git_blob_sha": "98e7b1d3ed8846a39fac3a6599803c6f20a59223",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/ConcealmentMask.java",
+      "bytes": 1791,
+      "sha256": "a2d4d9f1741c0abe85da42bd81df6e868cf0848a160b2c044028b0921ed461ab",
+      "git_blob_sha": "55868a423f3c3de1a3afa3d4db5f28b68cb61e9d",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/ConcealmentPolicy.java",
+      "bytes": 790,
+      "sha256": "9031d817652ca8c72d942692a58ec54674dc6fdce5c7e6838c5d8d5daf687302",
+      "git_blob_sha": "a6f1901292691cdc20203af3bc1602e0116e789f",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/HiddenBlockCache.java",
+      "bytes": 5756,
+      "sha256": "4db153ea8a63ae0a3350bf683c19421e63ceb86050095040930a713b9e1da991",
+      "git_blob_sha": "8bdbc9b5b23b5eebcf69476480a6134451cc7201",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/MiningStatistics.java",
+      "bytes": 3200,
+      "sha256": "ccf1e0daf52c813729cbf76824101334ff95659c482658fcecebe9cdb0db9376",
+      "git_blob_sha": "05b7a030ecfdc8b7eb102d88153084be186e912d",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/NativeAntiXray.java",
+      "bytes": 1472,
+      "sha256": "23c017e3074b825ec8266282468ff2cc3eeefcd1ddd048957c148eb85b1e9fa4",
+      "git_blob_sha": "761c2b74bc8ae7dff8b10609a49dbb0a1cc441d7",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/PalettePrefilter.java",
+      "bytes": 2095,
+      "sha256": "28768ecc3aa92d46e68f92ade731f604eb6260392fb85ac070e8ae182d923512",
+      "git_blob_sha": "0e7ea371e3bff4cc37b60fbabf5b1c2006a9c19e",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/XrayService.java",
+      "bytes": 9508,
+      "sha256": "866ed1b920533156410840e65f7f466c34725a3b2fdc0f15848c58ad8e8280da",
+      "git_blob_sha": "d5d5bb30970ca491ab1f7c8dd692b5344053c7a8",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/java/dev/guardianac/xray/XraySettings.java",
+      "bytes": 2165,
+      "sha256": "14ad7b98c966c2cec18cca1cfde1dbac7f877268a756fd2da2bcbb48eb192007",
+      "git_blob_sha": "5ad6465f4a127ff0cfac9d020e50c57bad88998b",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/resources/config.yml",
+      "bytes": 689,
+      "sha256": "d1770454f4bb51a30506c5cb1081fddf0cc5380e09f7cbc7eae8ae78d395ebe7",
+      "git_blob_sha": "a8dea58731ba0460b9b3d6d182f20e5251658e46",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/resources/locales/runtime_en.properties",
+      "bytes": 5370,
+      "sha256": "62443dfdd75935daded77d0fbeb8bd376ab893fb10c14c33d89081cc8e6f34fc",
+      "git_blob_sha": "fe06a39fbca206cf8b66793a1c6cccb39c5798b7",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/resources/locales/runtime_ja.properties",
+      "bytes": 7195,
+      "sha256": "59e5810da1fac29d6925c36ff56d6cbdd488d58661c69d77fa6fa831b88eed0d",
+      "git_blob_sha": "3955693259903488c9f6e0a9d201747639d93404",
+      "mode": "100644"
+    },
+    {
+      "path": "src/main/resources/plugin.yml",
+      "bytes": 1152,
+      "sha256": "c02ef6e072cd9ce22a2872820bd13339717aa41013238c586ce955cd902c14ce",
+      "git_blob_sha": "be9c257396234dd1c5dcafd43f55196771e20e68",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/AdvancedSettingsTest.java",
+      "bytes": 13870,
+      "sha256": "1a659d8d1f6ea7bea71666843e3878696471dccef43b2b2fa7fd1372c2ef70f6",
+      "git_blob_sha": "497cd68d49704ec79125c15ef7648545decee992",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/GuardianSettingsTest.java",
+      "bytes": 7440,
+      "sha256": "2a905d77b9d9383f226852e9326d6b85d8a3aeb7a68146123c36a19c45bd8f2f",
+      "git_blob_sha": "db0153c42a8ccf72d0f067177b476ecf275f2b48",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/GuiEvidenceReplayTest.java",
+      "bytes": 2418,
+      "sha256": "d702e267951bf144e455194b8cc00c1b2973fa1985753422a8319ef8d0e4e70a",
+      "git_blob_sha": "42951cf5e838dfb59cf635121f44379053afac59",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/GuiUnbanPreviewTest.java",
+      "bytes": 4868,
+      "sha256": "167bd24aa4d64e8b152cf6e1f926c7ba1d4b6ed2f2fdae41b2f719db9962a213",
+      "git_blob_sha": "6e191ccd650f6770f85754a9d9cb1819293df9ef",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/LoginAssociationTest.java",
+      "bytes": 2996,
+      "sha256": "76ec0d8d0bd1fa7b6969966cebe735817a8324cebeb595196167075e7ea3753e",
+      "git_blob_sha": "a7e1490347d0927d0b2e5dc20d7b4ce0bcebee41",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/PermanentIpReviewViewTest.java",
+      "bytes": 9697,
+      "sha256": "22fcad7164ec3323f326e54bf8deb9d1448d06c86cd521db817b96a3ce63f928",
+      "git_blob_sha": "038a944bb07cb2e98c966c88aee6b13e5d0f7345",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/RuntimeMessagesTest.java",
+      "bytes": 9648,
+      "sha256": "ad8156342e5c634efe5246eb30798d30af3dfadb172e0d97c7714ee0c0f767dc",
+      "git_blob_sha": "a1fe012bc60e5b6f823d7cebb296edacd2ab8a7d",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/UnbanActionBindingTest.java",
+      "bytes": 2818,
+      "sha256": "cabb2956302207e2773106fbca0d2d7e9fdbca9b8f90fabd681d5f0bfe9019c4",
+      "git_blob_sha": "d417d237c5eba34ed7164e4b6e06a6497a8a01b6",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/bukkit/telemetry/SessionStateStoreTest.java",
+      "bytes": 5497,
+      "sha256": "d0a1022c2a6c2a1cb865149194bc476ac5aec29c6c815bc0ebbc704b5ad3d2df",
+      "git_blob_sha": "d683ce2ba818c0a1bc967dc0267366a0cce59444",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/AutomaticBanGateTest.java",
+      "bytes": 6107,
+      "sha256": "a8db6cc7b83719bdef886c8e7a1b0bb9debcf09c0cbbe0a2ff2acbd53c1d1dec",
+      "git_blob_sha": "6ad76d6991a7156cc5ca210b8c047175d3fb67e4",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/BanEvidenceTest.java",
+      "bytes": 4329,
+      "sha256": "9b71c040573d1b48ddfb30e8a898986c6641a42cdb71c85bda42ace40ca68ed4",
+      "git_blob_sha": "5ee9c2fd67d56dd65a9491a454a4ad448f4926a2",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/CheckCatalogTest.java",
+      "bytes": 13833,
+      "sha256": "90af7dc2d3227d750f6768c306279b5dbb15dbcf4c9c4da509e6fa9130060bb0",
+      "git_blob_sha": "8c0550f18a61f8a7dec211a49b4134ec96e5bee4",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/DetectionEngineTest.java",
+      "bytes": 11347,
+      "sha256": "dd0dafd4bd154f0536a96014020ed8bb8cf673f9b8d4327fba04aeeb89a6d6d8",
+      "git_blob_sha": "2af5a964ae1855485420a68d0d54dc0e2f58e8d8",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/DetectionLoadTest.java",
+      "bytes": 1847,
+      "sha256": "b60d1e702fbff8fec1ae2b2453e8c3a4591a69eea876f2e115e5d8ddfb7fc723",
+      "git_blob_sha": "5042a5e5d939191fddcceb2183e8b02f3ec13340",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/PersistedBanEvidenceTest.java",
+      "bytes": 8328,
+      "sha256": "6714cb58e9e53b17f3b061ed41fe47d85c59aab86e4b50bc6486333deaade6f4",
+      "git_blob_sha": "4ad9dabd898a76c9999ecdfe6f980d4f5d15cf0c",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/RuntimeTargetTest.java",
+      "bytes": 1895,
+      "sha256": "bb43576f0ce9f3e6c8d736c8cae00c8d93a2756009540113e31c666560815e69",
+      "git_blob_sha": "a633b237b50cb0f69c73ffc7e907534dd6779ddf",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/core/SampleAndHistoryTest.java",
+      "bytes": 2834,
+      "sha256": "f12b39778bd214e04ac951ec00e8571b894524b8de5cf723b66380a9bb3c1072",
+      "git_blob_sha": "c0bef78b1e947995a725f9aa54be7ae5a037f4d3",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/packet/PacketSessionTest.java",
+      "bytes": 4859,
+      "sha256": "84ac551a63936aad94fd9251f413fc9713d099476a0113e8880b52e609a3f805",
+      "git_blob_sha": "fb70d04d328929b45cb44b69a3a52581ea045cc6",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/packet/PacketTelemetryTest.java",
+      "bytes": 4312,
+      "sha256": "ffbdacdcdf68d5c4a880ff1ba599509a9fa9eb23c306b64ec7b7700291c57694",
+      "git_blob_sha": "5e32027e9ec0bf557bad43c53a7edb06be0d33fa",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/packet/ProtocolTargetTest.java",
+      "bytes": 1257,
+      "sha256": "8dc23f23c365a82f47cf44391bdc1db4f40f36fc0ae866f7c5b5add90a67250e",
+      "git_blob_sha": "afb6b04ff5c9e99f1aa80e74aa98bdbc2cc003b6",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/security/IntegrationSafetyTest.java",
+      "bytes": 6700,
+      "sha256": "298ff3b8c6bbce6ec01b4adf4da3f2e7c93a5a65c4e1ed8eef5f817bbc2c5f86",
+      "git_blob_sha": "50300488b49459b4729b571b5ab169d24538fb8a",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/security/NativeBanDecisionTest.java",
+      "bytes": 3023,
+      "sha256": "cc447957492d4cfa7aa35c21444e86ed6b701db359c48d0d510406504cf97de9",
+      "git_blob_sha": "98393b0ba3830ae7794d6f57bb82b291eeadaaf9",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/security/NativeBanReconcilerTest.java",
+      "bytes": 13124,
+      "sha256": "75487dc13d5cda4fd99556eebc73fc43fc85c40ba930f5b8a34dff7afd9550d7",
+      "git_blob_sha": "95377a7cb4ffcf96dae0096928e94e3c8bbeca61",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/security/PermanentIpApprovalGateTest.java",
+      "bytes": 7654,
+      "sha256": "7c5f5bd4fb49644d0b34e9ac9e63c9abd4703e87b8071ec226964c965025c40e",
+      "git_blob_sha": "d940d5764b0cef7a0981f61799fb98232df62cf3",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/security/SecurityTests.java",
+      "bytes": 3635,
+      "sha256": "8845ef4ca35ea079e8c07785fad55e58d748be0d138663913ce7fa612d1bce68",
+      "git_blob_sha": "bb2395a25f70251478f44ea75d854dd867341b69",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/storage/BoundedStorageExecutorTest.java",
+      "bytes": 2328,
+      "sha256": "b88c3183a1fb7fb02cc32fab7ba6f6372525259ddf82ec2f7cf980cb4e09f94b",
+      "git_blob_sha": "297621a97ad5a70c5e9766be17b91e59f3c74e18",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/storage/IpBanPolicyTest.java",
+      "bytes": 4076,
+      "sha256": "69e5653aefdf7ef1a3e69a796acdc86300488856b55c771f0316b8ee20fe90d4",
+      "git_blob_sha": "4a3061dbe431182ce80a202035da2fcfd557f1e9",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/storage/IpPrivacyTest.java",
+      "bytes": 4793,
+      "sha256": "2a13f46e2b3f6c52bf40771cfa8d97954e09d67169920108efd7f323ebcda852",
+      "git_blob_sha": "241575772a804e11533d30919b95299b7af95a51",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/storage/PermanentIpCandidateTest.java",
+      "bytes": 2701,
+      "sha256": "d2a871a17ae0a61ffc8ec4a490cd45272b62e54e639d0cb50ef45a24afeabad8",
+      "git_blob_sha": "09cef8e8b32e789a2d69fb57a94726c006438ad3",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/storage/PermanentIpRepositoryTest.java",
+      "bytes": 39866,
+      "sha256": "ebd9e6546ea7e5171ef7a383fe085d61c516c7584edb5a63153f29a0ee04295a",
+      "git_blob_sha": "fba5d286487aef21ff9f914907fb847b9edc7a00",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/storage/SqliteBanRepositoryTest.java",
+      "bytes": 36494,
+      "sha256": "a2a273642ea431694e43f5d63dc44379daf3deff3809f16d48e57a7ef8024c2e",
+      "git_blob_sha": "36d8308416d9752c66448f726b3740a2c891a20b",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/ChunkPaletteApiTest.java",
+      "bytes": 2846,
+      "sha256": "901ad0c612573b39793c6dd99e9ea8338bf8ef7a5e3d68bcb36ac0c077cb1f60",
+      "git_blob_sha": "8fe4d6628824b99361069dd278d369d5c3b84184",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/ChunkReplacementTest.java",
+      "bytes": 2955,
+      "sha256": "a05702013d3faaf8d669570e30e5837737d3e984c87b2c912658e6a001ad42c9",
+      "git_blob_sha": "1fb9545bc09cd94bfbb96fcba44fee70c6dcc264",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/ChunkWorkBudgetTest.java",
+      "bytes": 3182,
+      "sha256": "85599700bdaa8916d28c02b01852ac4d4a705f530deb568ea6a0b9beacd1ea8f",
+      "git_blob_sha": "3cb77a9446a5576a907de739343a5a59f14fa7ec",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/ConcealmentMaskTest.java",
+      "bytes": 2451,
+      "sha256": "227c323c7ce62564799dc63350dfba2f4a43bd1c6ff13c98e9b81ecd0eb9aca5",
+      "git_blob_sha": "77bc7146ed92bb726b42e0edfe7aeece6523132d",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/ConcealmentPolicyTest.java",
+      "bytes": 4285,
+      "sha256": "08279bb4962a91f9521f4a276302ea6ade259054381d6362f15f2b9abeb77330",
+      "git_blob_sha": "356aa8fc7470b741dd1567d61804ab9a0591fa15",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/HiddenBlockCacheTest.java",
+      "bytes": 3494,
+      "sha256": "05bf81ba202aa7a870046169fc05456853b46e6ae8b8bbbe7ad7f05beddc6621",
+      "git_blob_sha": "5c9039a47cbbd95299cc3d6e502a301c2fdbc055",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/MiningStatisticsTest.java",
+      "bytes": 3441,
+      "sha256": "3ccef8dd03d2ebacd265e717852a6a8cab819a287ac7c8ae3431cc3696d9addb",
+      "git_blob_sha": "2f656b030bd5a0bbd0d0450a6ada0e728336c870",
+      "mode": "100644"
+    },
+    {
+      "path": "src/test/java/dev/guardianac/xray/PalettePrefilterTest.java",
+      "bytes": 5997,
+      "sha256": "d1603c45eb7d614d6f0549c9455770c0a844a20e7524f1ce5dfd638548f7f972",
+      "git_blob_sha": "986291b69cabef0b680c8bdd00d3e6e6953ea12c",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/.gitignore",
+      "bytes": 34,
+      "sha256": "52809e43bf3a7ac1e3e378352732c019e6e4516518ae6e4cb2b218d7ff1ad2d9",
+      "git_blob_sha": "879b5e7cc5723e44c914f2a3981d99858809b5c6",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/README.md",
+      "bytes": 6045,
+      "sha256": "de57317c78b9a3f2fc38658d1315f5c340b814c3fcfcfaa32e93b7b840e97e24",
+      "git_blob_sha": "0059a335917a236d95b1b8dd4c66fef514379226",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/chunk_decode.py",
+      "bytes": 1900,
+      "sha256": "ac83e26ce0b6ff0cee715917c7a4eba31210a3b4909fef0accef3b55d8deed82",
+      "git_blob_sha": "c2e0f5a31b8597f63daf9a5d56672932c0229403",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/extract_protocol_ids.py",
+      "bytes": 903,
+      "sha256": "eaaf25d950fdf6be3153b09c2322fc14ec5390f84628cdce96d232e383ef263a",
+      "git_blob_sha": "79a78cdb212976652589fb04ced71c1209268920",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/fixture/RealClientFixture.java",
+      "bytes": 8841,
+      "sha256": "193818f2917e7a3f7eef0cda42ce0741f711289bfa91da40ae645d8d77c73f03",
+      "git_blob_sha": "9bbeaf0e3622e487d0ac5b2cb84d4a60558f31b9",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/fixture/build.sh",
+      "bytes": 998,
+      "sha256": "39ff90f6792c28502312d0d7ba7d9961aef7bb746538b824469f7217490c9117",
+      "git_blob_sha": "f82fbacf49db98bd3c0e94fb5613de685f5f5d5d",
+      "mode": "100755"
+    },
+    {
+      "path": "test-support/client/fixture/plugin.yml",
+      "bytes": 217,
+      "sha256": "f02d9311113e3ba6a012ffdeab69337eccca3365a160df35f8ce3ef308c3c3f5",
+      "git_blob_sha": "b805f88fb9339e8979bc0e6d87c7edc7677f6228",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/protocol_client.py",
+      "bytes": 7488,
+      "sha256": "a0d0530d62eb01a037fdfa6096c9472f9a085259b8f18041f2423c21a850b86a",
+      "git_blob_sha": "3646ef681f929609d1d8ad356b6f5f9091a27f7a",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/provenance.json",
+      "bytes": 1128,
+      "sha256": "7706b373bacc1a4cd77badc7cc88adbd9d04a1b857a988552933f8f0aa00650d",
+      "git_blob_sha": "77b554a5e095e38a552ac7bb74721c55c9442b99",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/run_cave_wire.py",
+      "bytes": 5209,
+      "sha256": "47491d58a1beedafbf0c8e7054f7e692eb9c0708594a7ca1e0a29a4e616cd083",
+      "git_blob_sha": "62d340ff007359fe039905b60ba5568b59b23917",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/run_configuration_overlap.py",
+      "bytes": 6279,
+      "sha256": "f78a4dd5fb6cf083227e500718dfff81656b6c330426b6a9ab4fcaab7303b476",
+      "git_blob_sha": "cca6375268810490bd7b0b79c27d16ef10827777",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/run_load_smoke.py",
+      "bytes": 6382,
+      "sha256": "952a6ef266b2be3d0a4f261ff9717f50b23418522e13443759e37cf3854466ea",
+      "git_blob_sha": "94867805110a7645f17184335e9df8f26406a79c",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/run_suite.py",
+      "bytes": 8411,
+      "sha256": "3b4839660e580e0f8a0777b122358450c75889ae1a02dec7a39f3b7180af4974",
+      "git_blob_sha": "bfb7d1c38dc7a06c209380892827582aeb36fe53",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/schema/packet-ids.json",
+      "bytes": 10645,
+      "sha256": "50fa0fdf37e7518f3540b96d2dfe48326023cf6effd6068a48bad80b36bd7c54",
+      "git_blob_sha": "07201d23dae8a4956234f6b67a444213e4811cd9",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/suite_gates.py",
+      "bytes": 2824,
+      "sha256": "6c94f367f25f997a7d89c71b2b1c0b754b57632667a849022b83f13ada9d899e",
+      "git_blob_sha": "e1ea8081d02f5edc476ea4a71b42091215407981",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/test_suite_gates.py",
+      "bytes": 7810,
+      "sha256": "32fae854281748b0c7c9dcced7f03e6833f9d3bca1fda24b621e464e41598114",
+      "git_blob_sha": "62f23aff13ee4cb18de335c02aca020e8757aca4",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/client/verify_persisted_evidence.py",
+      "bytes": 1786,
+      "sha256": "69bffde59362c8ac20fdf04a19af4a27def3fa3eaf82ced31c42f9bce79f4e05",
+      "git_blob_sha": "93879de07d9828538541dc656bfbf639f04c2696",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/ip-workflows/README.md",
+      "bytes": 5305,
+      "sha256": "7682df834699468e3ae36d0ed1f508649a7205e87e2a923a003f2c67d2ae52a8",
+      "git_blob_sha": "0385484f0d8bf85d97dccd3b21a0e7e1de386cac",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/ip-workflows/fixture/RealClientFixture.java",
+      "bytes": 5586,
+      "sha256": "ba2add3769a75281cc26e00223609429417c39dc2efa4d16585f042b594395aa",
+      "git_blob_sha": "e5433418dd1a10c5a19cc2de0eea2f1b96d661b0",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/ip-workflows/fixture/build.sh",
+      "bytes": 1423,
+      "sha256": "a32d68e3499328ff8d8c1e3453d766187722997d8f6997178fabf339485fe6c7",
+      "git_blob_sha": "3a9ed062748cb7e434ab35ab1f30f9ce0eda0503",
+      "mode": "100755"
+    },
+    {
+      "path": "test-support/ip-workflows/fixture/plugin.yml",
+      "bytes": 222,
+      "sha256": "2b933d30280bc8ac96d9314106da8b39192a3aa42b9e8c913ebb226ebc3c41c2",
+      "git_blob_sha": "7e650110f3cf185e96e05836d7712beb60012c65",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/ip-workflows/run_ip_workflows.py",
+      "bytes": 22190,
+      "sha256": "07b18714d73abd5b3ff726d696696f01be83c8197fe86f3224101e737cab0ba5",
+      "git_blob_sha": "c4e97a5ae9bd21bd8ddcdaa484630e5b912f627e",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/ip-workflows/test_ip_workflows.py",
+      "bytes": 7661,
+      "sha256": "6f8fee6b819c5ed3921174ef0c0cf366128ce03a5a1d0711a49c692fc1951f39",
+      "git_blob_sha": "b01090ecac02eae10acb4dd78cd90c691ddccca7",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/load-limits/.gitignore",
+      "bytes": 84,
+      "sha256": "f0808f85e5ab31fac1c0677a15d06ea5efa3c281e66992fda518d789b74d20dc",
+      "git_blob_sha": "6ab0d3780d3ef6c230ab90ca32e61b0fde7da47f",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/load-limits/README.md",
+      "bytes": 6426,
+      "sha256": "1aa8cd42f1fe0bb166c2a1f87bc093989b51a43fd1f75d984322aafdd579b4c1",
+      "git_blob_sha": "411f9d3a65a61268eaed745c1e9ea9d9b454a278",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/load-limits/observations.py",
+      "bytes": 2541,
+      "sha256": "5daf1c9f6caec5d21a7c732a071b746b818fe816109f788b8d2872487ce27ff2",
+      "git_blob_sha": "e08bccedbd188b29399d070e35ee88033bef821a",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/load-limits/run_load_limits.py",
+      "bytes": 20357,
+      "sha256": "2b4f580e7602594b01c7221a11f30c79fadb0a3a6baa810584eb0c642128a87c",
+      "git_blob_sha": "7e9b82d3af5b80c64465b02cbd0ca8fd61e3d0be",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/load-limits/test_observations.py",
+      "bytes": 5052,
+      "sha256": "df1b586ee674965c2ccc156fb2af071bfe7e74661ad90b0d1a165aafeeeec9fd",
+      "git_blob_sha": "47b1bf0cca1edd01e3b79008ae19abd45b469892",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/load-limits/test_source_binding.py",
+      "bytes": 1881,
+      "sha256": "ca5a8155c969332c6883983daba7bc0826704f7b031b3fd01cac7f0fc7e11da7",
+      "git_blob_sha": "e2874cd1f37e33a6142cc39ab2fe61e20be77776",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/localization/test_runtime_messages.py",
+      "bytes": 5801,
+      "sha256": "da186268439a46a608cbfa36ab9638eb972d55b16cd27a49809de19ba998404f",
+      "git_blob_sha": "cbb23632cdb3b47b001ffb9208a6b9317f61964d",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/modifier/.gitignore",
+      "bytes": 101,
+      "sha256": "05b01f84b91bc23430526aa9e64e1fca3b36e3dcb8fb0a245fc9fdfe991ff4e3",
+      "git_blob_sha": "879a96ec237d0e2c151f05f4eb04a1db83e11123",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/modifier/README.md",
+      "bytes": 8242,
+      "sha256": "07fb2801a9e123f3c8bd8536f28868226435293e10d16d9c00a91f4851ae66ae",
+      "git_blob_sha": "bc30e83a327824c95b87f3aa112b1e224d7f37b8",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/modifier/analyze_observations.py",
+      "bytes": 3480,
+      "sha256": "4afea7d6e30e0ee66b735a01b87bbd6c73ed6185661695d927f335c909b459e7",
+      "git_blob_sha": "bb2b82d8146bbecea5697a18e34113e0b7d5cd1f",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/modifier/fixture/ModifierFixture.java",
+      "bytes": 9329,
+      "sha256": "936785b936450437ab27ab9f9e021ea51a04be31b9e8b7604f7d63e98dcbeb1e",
+      "git_blob_sha": "6937cdd58a86ce6da129894a4db2cb8c29026f40",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/modifier/fixture/build.sh",
+      "bytes": 1038,
+      "sha256": "a5d3e100bc32c8ae934c67546648aeb6ffbdd205f1ba53276d9735c4812cfb43",
+      "git_blob_sha": "8a72c87503784dda12a55af57598212a4151d61f",
+      "mode": "100755"
+    },
+    {
+      "path": "test-support/modifier/fixture/plugin.yml",
+      "bytes": 235,
+      "sha256": "2981c75c2d3de5fb06b9e0b09e3c9ce29b468b6dd7824cb1f59aa182e071797f",
+      "git_blob_sha": "9d2015cedf647ba0cd0712ed1ccf1538915e7785",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/modifier/modifier_client.py",
+      "bytes": 1920,
+      "sha256": "a797aaf1eec52a313169ba74d39b7d8632ee12652bc1707015cec894a47cd09f",
+      "git_blob_sha": "e14a4f0d23b176c29e4810a2ffb1502c4d08f526",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/modifier/run_modifiers.py",
+      "bytes": 18274,
+      "sha256": "3a5070d189aafd4001caaffd7997ed18365a86631e01972f6a5fd81c4f3af502",
+      "git_blob_sha": "a1681f5d28a5bf966805ac5a9ff92846be1eab09",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/modifier/summarize_modifiers.py",
+      "bytes": 3362,
+      "sha256": "7529f3cc7c3c425c519cf2c1fd356d44163fef737e492a22d6d0019ce9ae6e83",
+      "git_blob_sha": "e8f9b4f061d08ead8ba76eefb87fb97dd83d3332",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/modifier/test_delay_fifo.py",
+      "bytes": 1211,
+      "sha256": "db9ae7a14b2d15d591bed510f6b91ddb7ef7a8ee496e92f4c662991391431762",
+      "git_blob_sha": "7eb6a9c297d91c7275e6b5e84d31caae2a54b580",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/modifier/test_packet_counter_snapshots.py",
+      "bytes": 5333,
+      "sha256": "3d663a5afc5cecd1e87e1351cff78432d442aaa353db4663b2b4185b633fd742",
+      "git_blob_sha": "51b7103ea60580c08c500cb2c97bfbaa7bb22b61",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/requirements-fixtures.txt",
+      "bytes": 87,
+      "sha256": "8c7b76a332ab5710232a26e67b4d7c25f284d67bc115308b45072bd066c673ca",
+      "git_blob_sha": "e806c71815522d677f6e2b70e36be8a315ec3183",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/.gitignore",
+      "bytes": 87,
+      "sha256": "f66051fa16baa983d988eb3c88183843f390d03564d17782d965b3b9b5127999",
+      "git_blob_sha": "e918bdd947182263370821f987a4ab1730f50870",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/PRIVACY.md",
+      "bytes": 5955,
+      "sha256": "0916c2687760dd2985fe3ff1504843c1eb0553059d2bd2bc065e70ac8b9476cc",
+      "git_blob_sha": "ddae99b9760c58a6625779a06542160cd1d05c7b",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/PROCESS-LIFECYCLE.md",
+      "bytes": 11331,
+      "sha256": "a895e532673d725a0cbf9d83f1e6c5d4ef9e75f05f36894228f0a0df5d829b1c",
+      "git_blob_sha": "6cfd1c56bf7f8d41cb63c6ad16989e2591112b88",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/README.md",
+      "bytes": 15619,
+      "sha256": "383b1482dad909d475eb2697de13167d49df003f86c580e45648901761f36dc6",
+      "git_blob_sha": "61a9b3faf85b43e4fabdf7c5cb998f672ff286f4",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/audit_server_statistics.py",
+      "bytes": 12302,
+      "sha256": "4a02d75f5fd9277c6c92df15f825cb6b303b2bccb6967d78c99bf583cf2b3473",
+      "git_blob_sha": "a38743cc430617fe19bb08cd0933e79489ed7276",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture/build.sh",
+      "bytes": 946,
+      "sha256": "1846fce06cf4b7718602743a80bfd2cbbd996162d6349c24ce1be07d0e00a36c",
+      "git_blob_sha": "b43e533af3457104aa2edbb1b04b7dc8010e9e9f",
+      "mode": "100755"
+    },
+    {
+      "path": "test-support/runtime/fixture/plugin.yml",
+      "bytes": 195,
+      "sha256": "70d4740b1ab636ab61b8f8ff915e33dda0cedfd2d40d513d63cca8e1989f3fad",
+      "git_blob_sha": "8912361c40b87857a08c9414e6a15b44e64aed2d",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture/safety/FixturePorts.java",
+      "bytes": 2472,
+      "sha256": "ee2cbd47516603609ad8ce251c11438838c145d830a5cd6966733fe802bd071c",
+      "git_blob_sha": "3f5358968896261111f9db53ae4e748103d197a1",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture/safety/FixturePortsTest.java",
+      "bytes": 3888,
+      "sha256": "c38097cf8ded294b7efd4fb94b8b465d3974c9bb2f3eae67de73d7bd7d46aa75",
+      "git_blob_sha": "27bb49157e8fee716c02ec3cc800aacf33173e79",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture/src/test/guardian/AdvancedSettingsRuntimeFixture.java",
+      "bytes": 9256,
+      "sha256": "fe994e64415887bc351bc1c36ec202acdb8a0c7cb1fa8ed4c9cd2375be3206e6",
+      "git_blob_sha": "ad0893a306563c678fa015b6eb5747d8d1fc9fd1",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture/src/test/guardian/GuardianFixture.java",
+      "bytes": 15840,
+      "sha256": "a0d42b49a075f81af2f3e7c138f5c22bf1e77e177d143fc3bd7ea1613fce1bcc",
+      "git_blob_sha": "00dd80d21f5d16d1bf499e598762cd09ea85ac71",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture/src/test/guardian/GuiIpUnbanFixture.java",
+      "bytes": 12724,
+      "sha256": "765645326f276ecc802031bbc18bf000e02fac3f0d827590505957c31f0a9cc2",
+      "git_blob_sha": "adaa110b02bb3b1b87a5e33a1458a1eee2e58bef",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture/src/test/guardian/NativeLifecycleFixture.java",
+      "bytes": 12755,
+      "sha256": "ec266f6a9f6564ccda2252a93788512809ab7774de0a9862bf3298052a710611",
+      "git_blob_sha": "14c2f0d7edc66b0d8e74d3db9c41d749f1dd7df6",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture/src/test/guardian/OfflineRecovery.java",
+      "bytes": 315,
+      "sha256": "56264aa37857f28c52f08fd9cc4af051919b314e68f7f09d806ada6d47c23cb0",
+      "git_blob_sha": "2c167ee5b458afe3ec439d4dbaca3c4514aac6cc",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture/src/test/guardian/PacketFixture.java",
+      "bytes": 15085,
+      "sha256": "c64f599a6dc607c38c9af9257d3502c1ccc6af6c73836eb04e2ffa2bf3d62e19",
+      "git_blob_sha": "ff19aba2eda2e052564f58636cd86ceb2080ddda",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture/src/test/guardian/PermanentIpFixture.java",
+      "bytes": 32120,
+      "sha256": "cde7b6cf986b33117a1f611234ab6e1eab8c3d29b0416b0b8d97f8b0325ce809",
+      "git_blob_sha": "bc4072cdc47847afec05c584e4ab8628f0987265",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture/src/test/guardian/SettingsRuntimeFixture.java",
+      "bytes": 13898,
+      "sha256": "308d845d823cd4df98146ebe6c4406ac3ede85093a4d9edac8ecac4567549192",
+      "git_blob_sha": "62aa31a6cd1926caba2e003c97a59ea2ac83d155",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture/src/test/guardian/TelemetryLifecycleFixture.java",
+      "bytes": 2817,
+      "sha256": "fac620b37c7aa5d5570f91f24de4333dd805aaf458ae50b65a003cc331c72fd3",
+      "git_blob_sha": "43caebfe7b8670d395d2dbeb9531f140790f5b60",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture_privacy.py",
+      "bytes": 10166,
+      "sha256": "ef0c59bb52145036a6843b2509fac101cb773d37bb9855a63133965e8640f3b5",
+      "git_blob_sha": "5b76f3988456de1f116807f246b4bfd155f947c2",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture_process.py",
+      "bytes": 29833,
+      "sha256": "40dd4f9f83df1b04d8f6a31ad331b6a04a188df7cb1bb5c7e23f7ccb2cda4dc6",
+      "git_blob_sha": "2264be2fbc243f1c78c21d0bef68b61f14f1c20c",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/fixture_safety.py",
+      "bytes": 4935,
+      "sha256": "6374d8cbbedbc4afed49ab53ad6252bce7d0ca4bec2d891a703cee1bdb689d64",
+      "git_blob_sha": "6ef321af0e27d79490f7930a132c5a05758ea7c0",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/reviewed-server-statistics.json",
+      "bytes": 3880,
+      "sha256": "7aaea1d3d39d123d04091f976d8f95a75373c9c737ca9d28ea3fc03bc2a5db8e",
+      "git_blob_sha": "5ab086a279de8648125b198aadd6d9f8f29a3d92",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/run_matrix.py",
+      "bytes": 6311,
+      "sha256": "9d3b9a4f294e5d5c4f9174798e4ab735e2f80c1aa5f2ffda415befe9fae8bb4d",
+      "git_blob_sha": "cce8797580c2c61d1f1887584314d76d4cb27b16",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/server-statistics-static-audit.json",
+      "bytes": 6548,
+      "sha256": "ef4f5713cb06b5af612bd65b533ad8c2f5c32f4040e994ab6e2caf0f257ba34a",
+      "git_blob_sha": "64f2d6380076302562a17f04e4b1150b622f3211",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/server_harness.py",
+      "bytes": 9391,
+      "sha256": "006eac93e2d663d05af53f8ef4a4db083a0649929d57b9b89b180aef53223d62",
+      "git_blob_sha": "d511c9524ec62109d9316504a0b92d927b9645fb",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/summarize.py",
+      "bytes": 3647,
+      "sha256": "8876eca713436ae44298a1cfd01b32a02b2815fde3c1d1b79bdfca49ff0f266d",
+      "git_blob_sha": "56e1be46a0e2aa6b87393f48a0e6eed36bbdc597",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/terminal_gates.py",
+      "bytes": 28825,
+      "sha256": "fafe1cf5ed1587178a2acaefe550e441ae7e9440d7ace92c78607610d02e2ac4",
+      "git_blob_sha": "144f9d9370dbd62540c42345e09ce32df69715e6",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/test_boundaries.py",
+      "bytes": 5626,
+      "sha256": "aca7b8ef7749ac6a4e105022fa1d108654efea0fade5d0b0a9d3da339859a8ea",
+      "git_blob_sha": "ac88418e640e67c821c6e683328e3af4e4649429",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/test_fixture_child.py",
+      "bytes": 672,
+      "sha256": "2f71da8fb99de52475a8ac37b287ce953eb208f65912f80f2893c3adaa0a7d8a",
+      "git_blob_sha": "6e99d27c9e84b8b346d8eeb0d6ad16e2fda7d5ea",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/test_fixture_ports_java.sh",
+      "bytes": 659,
+      "sha256": "9119abbc2086b564afe37d692b0b6551da39f5dc0092cb6924b27a22bccdec26",
+      "git_blob_sha": "b15822d637f05e8b293b0411e8125204ecab71fb",
+      "mode": "100755"
+    },
+    {
+      "path": "test-support/runtime/test_fixture_privacy.py",
+      "bytes": 18843,
+      "sha256": "696b780f39fd6eb096bccb75079977827288166bdb7f03260bca1527354a3493",
+      "git_blob_sha": "eef100a2b840ff8a9bcf15435ed9fe564b397dbb",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/test_fixture_process.py",
+      "bytes": 21695,
+      "sha256": "442d832fa8047ca23183d454a50ce42b7e75ae7097f63426053c40378438fd08",
+      "git_blob_sha": "fe0e0d198363d2dc4afb53b5f3f3a80dd65da58a",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/test_fixture_safety.py",
+      "bytes": 14508,
+      "sha256": "0ebdaf954f8889f7316bb02e4ff3ceb107d0a00a635512ddaab413b3044707f6",
+      "git_blob_sha": "bd5b97b1e5d975153008e68e55a55ff23ed9bdd1",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/test_server_statistics.py",
+      "bytes": 9855,
+      "sha256": "7ea7cea64d1ee92bae7f39a55c8b7a47c5425cbbba4c0c7169f6a6f9d3eaa29a",
+      "git_blob_sha": "256f5edd3f5949e81fcbe396644ad2634d52fe59",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/test_terminal_gates.py",
+      "bytes": 39607,
+      "sha256": "1f21e6627b9607eb6a27866f3c89f4dc113a2357bec546d1bb7978be170f27ed",
+      "git_blob_sha": "387f4e653ab6c63735264e2eb978858ba703773b",
+      "mode": "100644"
+    },
+    {
+      "path": "test-support/runtime/verify_harness_binding.py",
+      "bytes": 5046,
+      "sha256": "feda1c22ea3cb79fada12ed5b124a02d2ebab8cabf4053a374eca0f573402709",
+      "git_blob_sha": "9ec3871d35b6ff06dddf1e155aa2ea18c37b902e",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/dependency-inventory.json",
+      "bytes": 1878,
+      "sha256": "9335005d2d8588e0b406f56bc25a22df4be7b505851ee77abe237a03ab171ac9",
+      "git_blob_sha": "0f46343c4f14189f7915956f1eecc98ba889b728",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/Apache-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "git_blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/PacketEvents-LICENSE.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/adventure-license.txt",
+      "bytes": 1074,
+      "sha256": "6f3f7529e339bca44fb8693f606267dabf80e11ce228e12e9a4fa3316a30d6b5",
+      "git_blob_sha": "94af85c20745557345897d0059232868c0f25ee3",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/bstats-LICENSE.txt",
+      "bytes": 1073,
+      "sha256": "6d3c689b613d867e7d70425eccc32577160b80d24cba3c31bed168409376bdbb",
+      "git_blob_sha": "888a46b61f6c50d1253a35afd58b41c26297da52",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/bstats-base-3.1.0.pom",
+      "bytes": 1522,
+      "sha256": "88ac01a943da03c5e22a0383194cb369e1350e55d9ea77740b52d0422482c20f",
+      "git_blob_sha": "33987c67b7644c368820617d466a9c78b496eb5a",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/bstats-bukkit-3.1.0.pom",
+      "bytes": 1733,
+      "sha256": "f215d18080427d7bb8eb5eae2fb636ffc682e74214ac20b036fd1d667db2fb4a",
+      "git_blob_sha": "d4392cef453e0f5760fb2021c1c3f476777b250e",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/com.github.retrooper.packetevents-api-2.14.0/packetevents-api-2.14.0.pom",
+      "bytes": 1125,
+      "sha256": "bffcefe5dff99d8504e3f495cae582374f5f0473b735f53db33e4f6849722ef2",
+      "git_blob_sha": "d5843c89aebcdfc0e40f2b6591e3ba0d2feeb643",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/com.github.retrooper.packetevents-netty-common-2.14.0/packetevents-netty-common-2.14.0.pom",
+      "bytes": 1888,
+      "sha256": "4c6f8435697596a1b7608c0151f357b4d26b0f89367af3e390f92ad9dfc2cde4",
+      "git_blob_sha": "2b0d634038e02fddf954d95c0c66a7bb686774e8",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/com.github.retrooper.packetevents-spigot-2.14.0/packetevents-spigot-2.14.0.pom",
+      "bytes": 2422,
+      "sha256": "7e1317faf9d69e0cadb3c07f514dfa78cfc222ca2adc94338f58b0b6b1b3601d",
+      "git_blob_sha": "c68b819b0af2c786f30c6bea9cd6c151fc279337",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/com.google.code.gson.gson-2.14.0/gson-2.14.0.pom",
+      "bytes": 22768,
+      "sha256": "1fa0122c0e3733192642861c36be4c6f799a795327a23bdd2922691b6e9ba480",
+      "git_blob_sha": "08ad11e5ab66587495d1a41bbf099d49c662e6d3",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/com.google.errorprone.error_prone_annotations-2.48.0/error_prone_annotations-2.48.0.pom",
+      "bytes": 4252,
+      "sha256": "189e09ad0489c325e90daaa9d5c8f406330602fa366609bca07cbcdad03ab9da",
+      "git_blob_sha": "8d5b9423f3781ffdc1d00c04016d04c81d4c1a08",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/error-prone-COPYING.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "git_blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/examination-license.txt",
+      "bytes": 1073,
+      "sha256": "09feac81b5b0c6536121a8cd7be6ba8a00207f8b3ca8a020f4d3017848f00a33",
+      "git_blob_sha": "32d32c510efd867e64b41af61585203e14b04a2b",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/gson-LICENSE.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "git_blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/net.kyori.adventure-api-4.26.1/adventure-api-4.26.1.pom",
+      "bytes": 3325,
+      "sha256": "9c7682ecb494d5bec25690f6564278261f477d351d1ab44f2f9001ea4008a818",
+      "git_blob_sha": "36248dfd9726a736f42cf26938b054041b9637f1",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/net.kyori.adventure-key-4.26.1/adventure-key-4.26.1.pom",
+      "bytes": 3149,
+      "sha256": "532300907d2f7a8418c32c2d88994adbe64aa2f1130336f9f51e80d1d10cbca9",
+      "git_blob_sha": "bf813e55cb35cb7b00f8ee77cdfcf79bac824f03",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/net.kyori.adventure-nbt-4.26.1/adventure-nbt-4.26.1.pom",
+      "bytes": 3149,
+      "sha256": "557e832dcda0b1b377fd8410adf0abc587f8c318c392abd0fb43019ead0b07ad",
+      "git_blob_sha": "c980e5295decd2a214efbef45ae54ec3364ac95d",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/net.kyori.examination-api-1.3.0/examination-api-1.3.0.pom",
+      "bytes": 2051,
+      "sha256": "c122186bb74364add5e93471bbd1c5e738e52939bd2bb1f40b19e0a3b8b7c82e",
+      "git_blob_sha": "8d4dec85ccd1571ad24bd38e9b4f72971674fc00",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/net.kyori.examination-string-1.3.0/examination-string-1.3.0.pom",
+      "bytes": 2056,
+      "sha256": "5ee00410822f36e9019d94762ce01bcd6039569765351bef0660945cd4f9a56e",
+      "git_blob_sha": "648a7ea3eff3c0b484c5cb9c242d8e46699fcdd9",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/option-1.1.0.pom",
+      "bytes": 2195,
+      "sha256": "1f3318a1cee63e8085096242cf0619a44b8576f6b56c2391a00cc5e1275847b6",
+      "git_blob_sha": "8bd7f88ddad857da56cb4e441f1cbb4a50a2c1d3",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/option-license.txt",
+      "bytes": 1069,
+      "sha256": "71c1374a3b176c6728754ac99275b321fddbb3e4c2a139e734a3566640e6c1b9",
+      "git_blob_sha": "4d8d798a24df88575105cbc88d4744528343458a",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/org.xerial.sqlite-jdbc-3.53.4.0/META-INF_maven_org.xerial_sqlite-jdbc_LICENSE",
+      "bytes": 11560,
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "git_blob_sha": "75b52484ea471f882c29e02693b4f02dba175b5e",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/org.xerial.sqlite-jdbc-3.53.4.0/META-INF_maven_org.xerial_sqlite-jdbc_LICENSE.zentus",
+      "bytes": 1312,
+      "sha256": "89167dab92289c7e5e2b65b044f0856b703d05e5d5e35c3548e73d9c7d2f5048",
+      "git_blob_sha": "3e044abb4cf8adce7ea0fae32d6a8ec309c2a060",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/org.xerial.sqlite-jdbc-3.53.4.0/sqlite-jdbc-3.53.4.0.pom",
+      "bytes": 28419,
+      "sha256": "ff588556ba06aa68a568062f2cb9d243dde1f631eafd2010cfef23cab06a7ab9",
+      "git_blob_sha": "f15d20746285b5186202bd1570f3d5042b64bbfc",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/licenses/sqlite-jdbc-NOTICE.txt",
+      "bytes": 174,
+      "sha256": "a0670cf020edf700524c43c85321c2ba027a8bace5682001db60875d4a9fe52b",
+      "git_blob_sha": "5b1228a33270beaa6af5c650dda2ba344d49ad2d",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/patches/packetevents-2.14.0/README.md",
+      "bytes": 7772,
+      "sha256": "a16ca2553b75fd6810e0e50b5e9676bdfbb0462dd311ba60a1e03554fd48c6fc",
+      "git_blob_sha": "0fe8a0832df7469bd55816ddbf513ba0eb9e64e4",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/patches/packetevents-2.14.0/disable-embedded-metrics.patch",
+      "bytes": 1395,
+      "sha256": "c65f18ac4945a1b154899d46556d724e5f70081bc718a43e22383094ca4b5fdf",
+      "git_blob_sha": "6ea8991e44ca9a3c4561559b988501cef1bbf0a8",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/patches/packetevents-2.14.0/src/compileOnly/java/org/bukkit/Bukkit.java",
+      "bytes": 1140,
+      "sha256": "758a316244009afc6e9b5e6bbd20a33a84b18505f0ed7f040c459571f031a157",
+      "git_blob_sha": "c0ab8c3f9793f9a935a28ca6dd0e439cf7a82585",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/patches/packetevents-2.14.0/src/main/java/io/github/retrooper/packetevents/factory/spigot/SpigotPacketEventsBuilder.java",
+      "bytes": 18556,
+      "sha256": "0dd2b519702ae8fa67fd615b4e9203da14fb2c642164acc9be8281cce2729fb3",
+      "git_blob_sha": "04a60581b53043469af8d0d5463998f30468ba58",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/CLASS-SOURCE-INDEX.json",
+      "bytes": 1755338,
+      "sha256": "44577b309f626771e04342664aa3d5d217449e32395b40a6a65f433e231884a2",
+      "git_blob_sha": "ea2f12e9cdcb5180c3f963eaa9ba7ebce2b9d4e1",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/README.md",
+      "bytes": 15416,
+      "sha256": "953b09d8ae80e18ce24c694ae6140a51147fb32c259aa062a5a6c00ea2b85923",
+      "git_blob_sha": "dc7501eb292ba8a8f1ad036d74837e633b93be1c",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/RUNTIME-SOURCE-OVERLAY.json",
+      "bytes": 9336,
+      "sha256": "5300456a02f4ab62858d1777cbcd64d53060191ab12b2ccb68dd6ed4cc3a7359",
+      "git_blob_sha": "2e7e5a2f57824c70244447cd2c3cb2720ceaa6f2",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/SHA256SUMS",
+      "bytes": 2013,
+      "sha256": "b7291c7bc3c7dc5a90d31716956a489556d42c39ac2c5f018cb4e82e57c8ccee",
+      "git_blob_sha": "130aa965b29fe47f6fe91e43457c33e0b6505e5c",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/SOURCE-INVENTORY.json",
+      "bytes": 32021,
+      "sha256": "423282b7ffbb9bed67a8f52eae9656d2d1fc761f554786151a12f503d892df64",
+      "git_blob_sha": "f4c540a4fc0e0e96bb9f61ad0858c35dfddd31a0",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/SOURCE-VALIDATION.json",
+      "bytes": 116196,
+      "sha256": "38f7ffd454d0a3fc084f851e86609e2001714b6caeb3c8e8484927a33c206d7b",
+      "git_blob_sha": "41f8fcbc74af2a26d46e94bac69eb4ec66752e3a",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/adventure-api-4.26.1-sources.zip",
+      "bytes": 356639,
+      "sha256": "a39b5ec7967ee5375457c27381c09a47d4c379b3b537c499066c571db71cae8d",
+      "git_blob_sha": "6f28b5acafc3b00c5394f4ab4118537226653685",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/adventure-key-4.26.1-sources.zip",
+      "bytes": 13405,
+      "sha256": "133cc1f89181ac4618219e985c8a12ca9db3164b9942cdd68b10917c21334c2b",
+      "git_blob_sha": "c3287e1b0ae9978db987cfb54d018f88cda1f965",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/adventure-nbt-4.26.1-sources.zip",
+      "bytes": 88348,
+      "sha256": "be29a3f8964b63067e627dabb7bb9761fbc0387262fa18607a760de4bd7dfe7c",
+      "git_blob_sha": "b59ad3b4a6815021646f5a3979d97ba4ed40efd7",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/adventure-v4.26.1.tar.gz",
+      "bytes": 440326,
+      "sha256": "a824ae526fb5c532dc2d92a188bb89efb51f142de0f6605088dbf04089217869",
+      "git_blob_sha": "a9d02951a0fe8d7c1d76379ef4a0a0d3999dec84",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/bstats-base-3.1.0-sources.zip",
+      "bytes": 12686,
+      "sha256": "0fc9ba96b71efdb64614d818ecdcbbc5a5a85b78188b7761a1230c95f7953341",
+      "git_blob_sha": "536ff7751efa3c22afd1f5bc40a12af3643c140b",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/bstats-bukkit-3.1.0-sources.zip",
+      "bytes": 2518,
+      "sha256": "7365484b92048ff6437969bafcff24819d8724ddd98b1682ee8f59b0443bd61b",
+      "git_blob_sha": "706b22c3ca1b75e98a52590fa367f3dd1e0cd67a",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/bstats-metrics-v3.1.0.tar.gz",
+      "bytes": 79447,
+      "sha256": "684ec2286baf3c55ae8c4ca754feb4f2e2fcf1e6aae41c0c8e1a5b0e6e57de82",
+      "git_blob_sha": "b374567101075d1c4ced985e0dd15a0254c2b579",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/error-prone-v2.48.0.tar.gz",
+      "bytes": 2196700,
+      "sha256": "5e18154a31ba059d53571b1af0abe35720c38849a131f1144398912de85757a4",
+      "git_blob_sha": "0099c56e9b1b034ef309d9e18a54d19e8f88e5cd",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/error_prone_annotations-2.48.0-sources.zip",
+      "bytes": 40016,
+      "sha256": "5c1c7b797aa1effa050a06d2d98534a28750f5fa8bcca56d8f49a866ca8bd03f",
+      "git_blob_sha": "c1f787904b9221c56e45096b7f9136c3a13a2812",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/examination-api-1.3.0-sources.zip",
+      "bytes": 9092,
+      "sha256": "9b12fe0aad9017e1bbbeb3b4c8e0e0094dd3596d028e229057fc092ba4747f99",
+      "git_blob_sha": "e4474916fc50b6d103d5dfdeb28a1febb7c51b88",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/examination-string-1.3.0-sources.zip",
+      "bytes": 8462,
+      "sha256": "ec922af37b1d4538de715697a938a6c74bda9482adaea2e6ba09e70a500b4d03",
+      "git_blob_sha": "7bcc761d81395d8b8e3e421be1a2fb1b37d1679f",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/examination-v1.3.0.tar.gz",
+      "bytes": 72375,
+      "sha256": "d3b51bd5681ec4a56a3dbfe1f1d5b47abcce0ff8fa5d89c6230cb88fd48e509e",
+      "git_blob_sha": "b16a46022890e98e5ac58adf555e406ba514dcf8",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/gson-2.14.0-sources.zip",
+      "bytes": 213519,
+      "sha256": "a4873f0ef88981cab520c3d7449cd89a68e605f15e9fe46e1aa2c77d5f87eb6f",
+      "git_blob_sha": "348c75ebaef7b4659d7303a0cc44e4dcd2dc8994",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/gson-gson-parent-2.14.0.tar.gz",
+      "bytes": 484822,
+      "sha256": "587b12eae125a916b9cef2217694def2a42715339f2f239bd8c00d2783a1da82",
+      "git_blob_sha": "00dad268d832285a9c67d9845fd7270560d82352",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/option-1.1.0-sources.zip",
+      "bytes": 18741,
+      "sha256": "df829cf30d06e3eb426c9b2936f59bdf4ef3155c3a92d0b51faa301c9860abdb",
+      "git_blob_sha": "f37391e3a905410041ab34596e3c330a556c5631",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/option-v1.1.0.tar.gz",
+      "bytes": 59399,
+      "sha256": "8e584d95c777e8746dcb148e8aeb145f23dd70e5c45d10ff6463999897bbc7cc",
+      "git_blob_sha": "e828efbc175dd79853f565d5ba29abc614f1b74d",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/packetevents-v2.14.0.tar.gz",
+      "bytes": 3445769,
+      "sha256": "0474b4a507699a9eef60d6676a84a5f086858786b0c155b2aed6addb2edb6e49",
+      "git_blob_sha": "db4f18a359834652b6500542c6506fc4546570e7",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/sqlite-amalgamation-3530400.zip",
+      "bytes": 2946650,
+      "sha256": "1e71ddf93849c6a6ecf58b827c0692073d2dd7ee40196158068f7b29f422e87d",
+      "git_blob_sha": "9fcbdf18be0cacb4dbdf8295510caf67aca38c2d",
+      "mode": "100644"
+    },
+    {
+      "path": "third-party/sources/sqlite-jdbc-3.53.4.0-sources.zip",
+      "bytes": 14557234,
+      "sha256": "6f3fca1257fd02891e9b17b296b4e888cdd6af6d3e077ff7e50991657d69ed46",
+      "git_blob_sha": "4f4658a82e56f6a76fcf38fec8d0292bdae848d1",
+      "mode": "100644",
+      "parts": [
+        {
+          "index": 0,
+          "path": "release-input/parts/dep-00-000.bin",
+          "bytes": 4194304,
+          "sha256": "d900e89c35ed30cefb45a5e1765b7e6505a4f10790e6b8faddb8b3e8fd9f0e3d"
+        },
+        {
+          "index": 1,
+          "path": "release-input/parts/dep-00-001.bin",
+          "bytes": 4194304,
+          "sha256": "6542d9d3dd2818f9ab16c672ecd3a2b8e55a4c3677ad5c224b49df2ef61f919f"
+        },
+        {
+          "index": 2,
+          "path": "release-input/parts/dep-00-002.bin",
+          "bytes": 4194304,
+          "sha256": "56979e1efbab11c453ce6ae6fafa24b65869fe53e2a7b59d0e526042f8ad9669"
+        },
+        {
+          "index": 3,
+          "path": "release-input/parts/dep-00-003.bin",
+          "bytes": 1974322,
+          "sha256": "b9285d522fbc827df5b3c902c690297e7d927b899241400455cd7c07622005dc"
+        }
+      ]
+    },
+    {
+      "path": "third-party/sources/sqlite-jdbc-3.53.4.0.tar.gz",
+      "bytes": 18598025,
+      "sha256": "9dded7305b4f3bab596d6a40eaab0cf0d3afad60006eb80073492103b06b081c",
+      "git_blob_sha": "93971fbb7c91e18e00e5a4f9acac87e35e91507b",
+      "mode": "100644",
+      "parts": [
+        {
+          "index": 0,
+          "path": "release-input/parts/dep-01-000.bin",
+          "bytes": 4194304,
+          "sha256": "f24833083107cbc15a76fc1791b7d2405718d3d98299634f7cd8508346731bf2"
+        },
+        {
+          "index": 1,
+          "path": "release-input/parts/dep-01-001.bin",
+          "bytes": 4194304,
+          "sha256": "1cdeba8304cd18509615286a6d454b144ac1b16bf23364208c4d7c59eb842bbc"
+        },
+        {
+          "index": 2,
+          "path": "release-input/parts/dep-01-002.bin",
+          "bytes": 4194304,
+          "sha256": "f5a109a14c80ce6e4c78d1d5775dde188b92aa4f4e19b37b61e05b672f0f679c"
+        },
+        {
+          "index": 3,
+          "path": "release-input/parts/dep-01-003.bin",
+          "bytes": 4194304,
+          "sha256": "a9d85f6cd67bdc05e6880eb32f8711189001e983bd4eeececf39d932d5fe8eb0"
+        },
+        {
+          "index": 4,
+          "path": "release-input/parts/dep-01-004.bin",
+          "bytes": 1820809,
+          "sha256": "0e71cb925d85bd3e569f6471543fce245727b991c421c1be6f6896432011fb42"
+        }
+      ]
+    },
+    {
+      "path": "third-party/sources/sqlite-src-3530400.zip",
+      "bytes": 14557315,
+      "sha256": "d18fa15aec74d8c17e1463f861095adc01b5ad190256acb4f91d22f0368d232b",
+      "git_blob_sha": "3765a6741b08944f2e71872e5363d1b6bb7b854b",
+      "mode": "100644",
+      "parts": [
+        {
+          "index": 0,
+          "path": "release-input/parts/dep-02-000.bin",
+          "bytes": 4194304,
+          "sha256": "a0cfdce6dabc9ff59d747f020eecb468d6d9c81af0f31794351a8582bff6d139"
+        },
+        {
+          "index": 1,
+          "path": "release-input/parts/dep-02-001.bin",
+          "bytes": 4194304,
+          "sha256": "e384a20c9d6cc5d0df6666fc62a92b3ec6255ce384d663aa5ee21e750ac37780"
+        },
+        {
+          "index": 2,
+          "path": "release-input/parts/dep-02-002.bin",
+          "bytes": 4194304,
+          "sha256": "8c4be298f10ad2368d0f96e9e3ae0d8d651a00cc47404df12eb8664e8201371d"
+        },
+        {
+          "index": 3,
+          "path": "release-input/parts/dep-02-003.bin",
+          "bytes": 1974403,
+          "sha256": "1bffc1f47773410bcd6f5a971187ffec53b867dfb26e00b1bc3bb41f97c33fd2"
+        }
+      ]
+    },
+    {
+      "path": "third-party/sources/verify_sources.py",
+      "bytes": 13884,
+      "sha256": "4774a4d9a76a0fc4653136931820fec7f04e0b6eac37b7257dface42cf217ce0",
+      "git_blob_sha": "d8c1f5223c8782bfec34e41b7a893fa916624495",
+      "mode": "100644"
+    },
+    {
+      "path": "tools/package_source.py",
+      "bytes": 7598,
+      "sha256": "04afc3627522b920849cf93258ca3fc89c2e49cb0c2bb77192640457036b4db4",
+      "git_blob_sha": "8952714e0c34c3f9cde78a3900dc674e6b41c8cd",
+      "mode": "100644"
+    },
+    {
+      "path": "tools/test_embedded_telemetry.py",
+      "bytes": 7980,
+      "sha256": "453aa890f6e02bbb21e9691b4ef0cf68c9ef62c347737b89b16574c13cb671c8",
+      "git_blob_sha": "e8b6fcb9b7c685028cab8b73d27b5e81080bad49",
+      "mode": "100644"
+    },
+    {
+      "path": "tools/test_package_source.py",
+      "bytes": 7912,
+      "sha256": "dec2e65a01217aede26431372c0a3a4790ceaf97dc7cf739833b5a97acc641ac",
+      "git_blob_sha": "79f6fd95197c91c1a70ae18cb49cd64e418df34d",
+      "mode": "100644"
+    },
+    {
+      "path": "tools/test_source_handoff.py",
+      "bytes": 8507,
+      "sha256": "90fd3d17553e2e4554f04f1d94b7c43f1a610e968bd00fbc052a239a8cc68225",
+      "git_blob_sha": "9c530917e1c4a4b426d3130df06cc3e0be4a6cf2",
+      "mode": "100644"
+    },
+    {
+      "path": "tools/verify_embedded_telemetry.py",
+      "bytes": 10251,
+      "sha256": "7eb21cf184942afddde8760df1778e402d5dfd0a941d1af5b6e4f7f0bf06b465",
+      "git_blob_sha": "e2740f2739c7c4c48352f932ce19a714a764303f",
+      "mode": "100644"
+    },
+    {
+      "path": "tools/verify_jar.py",
+      "bytes": 2662,
+      "sha256": "4a1567c07b1946c86d4c01e5cdbf134cf8793881e26d7fef33d2f22b0a6fcb1e",
+      "git_blob_sha": "e4f3d6bba30f8ec7a0ad1381c840357edecff01e",
+      "mode": "100644"
+    },
+    {
+      "path": "tools/verify_source_handoff.py",
+      "bytes": 8333,
+      "sha256": "979f2a1bc19dd5d34e0219c039e2a750955b98a0bdf1d150b89c598d8e3b973a",
+      "git_blob_sha": "0bc7034e5e4dc608a997fa3285a720133fe4781e",
+      "mode": "100644"
+    }
+  ]
+}

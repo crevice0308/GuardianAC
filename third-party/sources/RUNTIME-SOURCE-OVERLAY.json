@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "patch_id": "guardianac-packetevents-2.14.0-disable-embedded-metrics-v1",
+  "modified_date_utc": "2026-10-14",
+  "purpose": "Remove embedded metrics initialization and packaged bStats object code from GuardianAC privately relocated PacketEvents; preserve upstream source archives and preferred editable local source.",
+  "pristine_input_index": "CLASS-SOURCE-INDEX.json",
+  "source_replacement": {
+    "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+    "upstream_archive": "packetevents-v2.14.0.tar.gz",
+    "upstream_source_member": "packetevents-2.14.0/spigot/src/main/java/io/github/retrooper/packetevents/factory/spigot/SpigotPacketEventsBuilder.java",
+    "upstream_source_sha256": "0bbe8524d8f7e000e7bf70dde7854a9e26cd2ed5231cd43e1dbc8b1ee5081dd9",
+    "editable_source": "third-party/patches/packetevents-2.14.0/src/main/java/io/github/retrooper/packetevents/factory/spigot/SpigotPacketEventsBuilder.java",
+    "editable_source_sha256": "0dd2b519702ae8fa67fd615b4e9203da14fb2c642164acc9be8281cce2729fb3",
+    "unified_diff": "third-party/patches/packetevents-2.14.0/disable-embedded-metrics.patch",
+    "unified_diff_sha256": "c65f18ac4945a1b154899d46556d724e5f70081bc718a43e22383094ca4b5fdf",
+    "diff_fromfile": "a/spigot/src/main/java/io/github/retrooper/packetevents/factory/spigot/SpigotPacketEventsBuilder.java",
+    "diff_tofile": "b/spigot/src/main/java/io/github/retrooper/packetevents/factory/spigot/SpigotPacketEventsBuilder.java",
+    "exact_text_transformations": [
+      {
+        "before": "import org.bstats.bukkit.Metrics;\n",
+        "after": ""
+      },
+      {
+        "before": "import org.bstats.charts.SimplePie;\n",
+        "after": ""
+      },
+      {
+        "before": "                    Metrics metrics = new Metrics(plugin, 11327);\n                    //Just to have an idea of which versions of packetevents people use\n                    metrics.addCustomChart(new SimplePie(\"packetevents_version\", () -> getVersion().toStringWithoutSnapshot()));",
+        "after": "                    // GuardianAC local modification (2026-10-14): omit embedded metrics.\n                    // Do not construct bStats, schedule reports, or touch its shared config.\n                    // This change only affects GuardianAC's privately relocated copy."
+      }
+    ],
+    "license": "GPL-3.0-or-later; original copyright/license header preserved"
+  },
+  "build_control_file": "gradle/embedded-packetevents.gradle",
+  "applied_from": "build.gradle",
+  "local_rebuilt_classes": [
+    {
+      "upstream_artifact_class": "io/github/retrooper/packetevents/factory/spigot/SpigotPacketEventsBuilder$1.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/factory/spigot/SpigotPacketEventsBuilder$1.class",
+      "editable_source": "third-party/patches/packetevents-2.14.0/src/main/java/io/github/retrooper/packetevents/factory/spigot/SpigotPacketEventsBuilder.java"
+    },
+    {
+      "upstream_artifact_class": "io/github/retrooper/packetevents/factory/spigot/SpigotPacketEventsBuilder.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/factory/spigot/SpigotPacketEventsBuilder.class",
+      "editable_source": "third-party/patches/packetevents-2.14.0/src/main/java/io/github/retrooper/packetevents/factory/spigot/SpigotPacketEventsBuilder.java"
+    }
+  ],
+  "removed_upstream_classes": [
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/bukkit/Metrics.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/bukkit/Metrics.class"
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/config/MetricsConfig.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/config/MetricsConfig.class"
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/MetricsBase.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/MetricsBase.class"
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/charts/DrilldownPie.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/charts/DrilldownPie.class"
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/charts/SimplePie.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/charts/SimplePie.class"
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/charts/SingleLineChart.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/charts/SingleLineChart.class"
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/charts/MultiLineChart.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/charts/MultiLineChart.class"
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/charts/SimpleBarChart.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/charts/SimpleBarChart.class"
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/charts/AdvancedPie.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/charts/AdvancedPie.class"
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/charts/AdvancedBarChart.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/charts/AdvancedBarChart.class"
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/charts/CustomChart.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/charts/CustomChart.class"
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/json/JsonObjectBuilder.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/json/JsonObjectBuilder.class"
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/json/JsonObjectBuilder$1.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/json/JsonObjectBuilder$1.class"
+    },
+    {
+      "coordinate": "com.github.retrooper:packetevents-spigot:2.14.0",
+      "upstream_artifact_class": "io/github/retrooper/packetevents/bstats/json/JsonObjectBuilder$JsonObject.class",
+      "guardianac_class_path": "dev/guardianac/libs/pe/impl/packetevents/bstats/json/JsonObjectBuilder$JsonObject.class"
+    }
+  ],
+  "forbidden_runtime_class_prefixes": [
+    "org/bstats/",
+    "io/github/retrooper/packetevents/bstats/",
+    "dev/guardianac/libs/pe/impl/packetevents/bstats/"
+  ],
+  "forbidden_runtime_class_tokens_ascii_case_insensitive": [
+    "/bstats/",
+    ".bstats.",
+    "bstats.org"
+  ],
+  "retained_reference_only_sources": [
+    "bstats-metrics-v3.1.0.tar.gz",
+    "bstats-base-3.1.0-sources.zip",
+    "bstats-bukkit-3.1.0-sources.zip"
+  ],
+  "limits": [
+    "Exact upstream hashes identify build inputs, not the two locally rebuilt builder classes.",
+    "Source/diff equality, packaging exclusions, class-family presence, and absent metrics references are static checks; they do not replace final runtime verification.",
+    "No unpatched or historical JAR is authorized for deployment by its old source-provenance report."
+  ],
+  "auxiliary_build_sources": [
+    {
+      "path": "third-party/patches/packetevents-2.14.0/src/compileOnly/java/org/bukkit/Bukkit.java",
+      "sha256": "758a316244009afc6e9b5e6bbd20a33a84b18505f0ed7f040c459571f031a157",
+      "purpose": "Signature-only compilation stub for Paper getMinecraftVersion and other builder-referenced Bukkit methods; preserves pristine builder compatibility fallback without a new server API download. Never executed or packaged.",
+      "forbidden_runtime_class": "org/bukkit/Bukkit.class"
+    }
+  ],
+  "build_strategy": "Dedicated compileEmbeddedPacketEvents JavaCompile task compiles the preferred replacement and the signature-only stub; embeddedPacketEventsClasses copies only builder.class and builder$*.class to the test/Shadow inputs. Stub output stays outside main/test/runtime packaging. sourcesJar includes the preferred replacement; full source handoff also includes the compile-only stub and build controls."
+}

@@ -1,0 +1,153 @@
+{
+  "audits": [
+    {
+      "kind": "offline_exact_bytecode_audit",
+      "server": {
+        "reviewed_variant": "paper-26.3",
+        "jar_sha256": {
+          "server.jar": "5c208cf990315cff647b8e8b3d487b98c8be2f31655985ed004c7bb25b3857ce",
+          "versions/26.3/paper-26.3.jar": "f9b5121a08d4af40d9459d99286a5f5b0a9768b607d7a2cce459411c495f3089"
+        },
+        "class_sha256": {
+          "com/destroystokyo/paper/Metrics$PaperMetrics.class": "165cf245ba0105f2fb1ea2888cdd43854e9c39f09d2a2bcb03418261214cb6cd",
+          "com/destroystokyo/paper/Metrics.class": "b086b4397c97704c9aeb655fd29502df0fc8445f2c8f1feec455cedf4fdb8da2",
+          "io/papermc/paper/SparksFly.class": "f9237269a5cbab5a9734b9cb2df8408b24dda1434fc7a3ebb85c8332cf263e45",
+          "net/minecraft/server/MinecraftServer.class": "8a1bed8a5c89ede6c1290dccb766009c46baf16d50e6ef5d5b187103b380bd24",
+          "com/destroystokyo/paper/PaperVersionFetcher.class": "766f424d8a821772c5a8ec0b7a7d9c3dcf7833d053369255bb3bea4410073517"
+        }
+      },
+      "statistics_gate": {
+        "config_path": "plugins/bStats/config.yml",
+        "enabled_getBoolean_offset": 121,
+        "default_if_missing": true,
+        "disabled_ifeq_offset": 124,
+        "disabled_return_offset": 324,
+        "metrics_new_offset": 127,
+        "metrics_constructor_offset": 138,
+        "disabled_returns_before_metrics_construction": true
+      },
+      "sender": {
+        "metrics_constructor_scheduler_factory_offset": 6,
+        "metrics_constructor_start_submitting_offset": 43,
+        "first_send_delay_ms": {
+          "minimum": 180000,
+          "maximum_exclusive": 360000
+        },
+        "second_send_extra_delay_ms": {
+          "minimum": 0,
+          "maximum_exclusive": 1800000
+        },
+        "repeat_interval_ms": 1800000,
+        "endpoint": "https://bstats.org/submitData/server-implementation",
+        "method": "POST",
+        "encoding": "gzip",
+        "payload_categories": [
+          "persistent server metrics identifier (value deliberately omitted)",
+          "OS name, architecture, OS version, processor count",
+          "server brand and Minecraft/server implementation version",
+          "online player count, online/offline mode, Java version, legacy plugin counts"
+        ]
+      },
+      "spark_gate": {
+        "config_path": "config/paper-global.yml",
+        "enabled_field_offset": 13,
+        "disabled_ifeq_offset": 16,
+        "disabled_target_offset": 36,
+        "module_enable_offset": 28,
+        "scope": "Disabled branch skips module.enable; construction is not claimed to be absent."
+      },
+      "startup_network_gates": {
+        "property": "paper.disableStartupVersionCheck",
+        "config_enabled_offset": 224,
+        "property_ifnonnull_offset": 215,
+        "config_ifeq_offset": 227,
+        "disabled_target_offset": 242,
+        "run_async_offset": 238,
+        "disabled_skips_startup_update_task_scheduling": true
+      },
+      "execution": {
+        "jvm_started": false,
+        "server_started": false,
+        "network_attempted": false
+      },
+      "limits": [
+        "No claim about prior denied-run payload receipt or successful transmission.",
+        "No claim of whole-process runtime network containment."
+      ]
+    },
+    {
+      "kind": "offline_exact_bytecode_audit",
+      "server": {
+        "reviewed_variant": "purpur-26.3",
+        "jar_sha256": {
+          "server.jar": "7e36f3b09d394307ae9a6a233f38a0564e8429c4c1141f468ac743220fb01a41",
+          "versions/26.3/purpur-26.3.jar": "dcc9f9d0ea1dd33e0c10b89ed5ea49702d6bb516e69ab4add9414c2226468596"
+        },
+        "class_sha256": {
+          "com/destroystokyo/paper/Metrics$PaperMetrics.class": "a9e9852dda09ca8c6aac39cd9b4a32ce209345eb55f5be574b3ac591b520cda8",
+          "com/destroystokyo/paper/Metrics.class": "b086b4397c97704c9aeb655fd29502df0fc8445f2c8f1feec455cedf4fdb8da2",
+          "io/papermc/paper/SparksFly.class": "f9237269a5cbab5a9734b9cb2df8408b24dda1434fc7a3ebb85c8332cf263e45",
+          "net/minecraft/server/MinecraftServer.class": "e7a75e943e9f7a75d806c55b9730c58684562c22bb6e244cca471bd54621c172",
+          "com/destroystokyo/paper/PaperVersionFetcher.class": "766f424d8a821772c5a8ec0b7a7d9c3dcf7833d053369255bb3bea4410073517"
+        }
+      },
+      "statistics_gate": {
+        "config_path": "plugins/bStats/config.yml",
+        "enabled_getBoolean_offset": 121,
+        "default_if_missing": true,
+        "disabled_ifeq_offset": 124,
+        "disabled_return_offset": 257,
+        "metrics_new_offset": 127,
+        "metrics_constructor_offset": 138,
+        "disabled_returns_before_metrics_construction": true
+      },
+      "sender": {
+        "metrics_constructor_scheduler_factory_offset": 6,
+        "metrics_constructor_start_submitting_offset": 43,
+        "first_send_delay_ms": {
+          "minimum": 180000,
+          "maximum_exclusive": 360000
+        },
+        "second_send_extra_delay_ms": {
+          "minimum": 0,
+          "maximum_exclusive": 1800000
+        },
+        "repeat_interval_ms": 1800000,
+        "endpoint": "https://bstats.org/submitData/server-implementation",
+        "method": "POST",
+        "encoding": "gzip",
+        "payload_categories": [
+          "persistent server metrics identifier (value deliberately omitted)",
+          "OS name, architecture, OS version, processor count",
+          "server brand and Minecraft/server implementation version",
+          "online player count, online/offline mode, Java version, legacy plugin counts"
+        ]
+      },
+      "spark_gate": {
+        "config_path": "config/paper-global.yml",
+        "enabled_field_offset": 13,
+        "disabled_ifeq_offset": 16,
+        "disabled_target_offset": 36,
+        "module_enable_offset": 28,
+        "scope": "Disabled branch skips module.enable; construction is not claimed to be absent."
+      },
+      "startup_network_gates": {
+        "property": "Purpur.IReallyDontWantStartupCommands",
+        "property_ifne_offset": 215,
+        "disabled_target_offset": 298,
+        "startup_commands_field_offset": 218,
+        "disabled_skips_startup_commands": true,
+        "paper_startup_update_method_reference_absent_in_pinned_server": true
+      },
+      "execution": {
+        "jvm_started": false,
+        "server_started": false,
+        "network_attempted": false
+      },
+      "limits": [
+        "No claim about prior denied-run payload receipt or successful transmission.",
+        "No claim of whole-process runtime network containment."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+name: GuardianFixture
+version: '1'
+main: test.guardian.GuardianFixture
+api-version: '26.3'
+depend: [GuardianAC]
+commands:
+  gactest:
+    description: Isolated synthetic integration fixtures only
